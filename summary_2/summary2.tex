@@ -7,11 +7,14 @@
 \usepackage{amssymb}
 \usepackage{geometry}
 \usepackage{scrlayer-scrpage}
+\usepackage{float}
 \pagestyle{scrheadings}
 \clearscrheadfoot
 
 \usepackage[backend=biber, maxbibnames=99]{biblatex}
 \addbibresource{references.bib}
+
+\setlength{\parindent}{0cm}
 
 
 \geometry{
@@ -20,7 +23,6 @@
   bottom=1.5cm, % Bottom margin
   left=2cm, % Left margin
   right=3cm, % Right margin
-  %showframe, % Uncomment to show how the type block is set on the page
 }
 
 \ohead{\\
@@ -31,10 +33,25 @@ piko0011}
 
 \section*{Summary: Lecture 2}
 
+Summary for the chapters \textit{7.1 Complexity classes} and \textit{7.2 Hierarchy problem}. \cite{book}
+
+\subsection*{Complexity classes}
+
+A complexity class is a set which contains problems with similar complexities. The complexities are examined in regards og a specific ressource, for example time or space. For the problems the most efficient solution/algorithm is analysed.
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.15]{images/classes.png}
+\end{center}
+\caption{Complexity classes \cite{classesPic}}
+\end{figure}
 
 
+\cite{GTI}
 
-\cite{book}
+\subsection*{Hierarchy problem}
+
+
 
 \newpage
 
