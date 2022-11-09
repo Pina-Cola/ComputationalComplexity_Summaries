@@ -54,21 +54,49 @@ Usually the complexity depends on the input size. With the asymptotic complexity
 
 \subsection*{Summary:}
 
-\textbf{Parameters of complexity classes:}
+\textbf{Parameters of complexity classes:} \cite{CC, book}
 
 \begin{itemize}
 \item \textbf{Model of computation:} \\
 here: multistring Turing Machine
 \item \textbf{Mode of computation:} \\
 for example: deterministic or non-deterministic (deterministic: the computer will always produce the same output for a given input while going through the same states, non-deterministic: can show different behaviors for the same input)
-\item \textbf{Ressources:} \\ 
+\item \textbf{Resources:} \\ 
 something \textit{expensive} that the machine uses up, for example: time or space
 \item \textbf{Restrictions/Bound:} \\ 
 for example: upper bound, lower bound as a function $f: \mathbb{N} \rightarrow \mathbb{N}$
 \end{itemize}
 
+\textbf{Definition of complexity classes:} \cite{book} \\
+The complexity class is the set of all languages which are decided by a Turing Mashine $M$ that is operating in the defined mode and for any input $x$, $M$ uses at most $f(|x|)$ units of the defined resource.
 
+\newpage
+\textbf{Definition proper complexity function:} \cite{book, CC, GTI}
+\begin{itemize}
+\item $f: \mathbb{N} \rightarrow \mathbb{N}$
+\item $\forall n \in \mathbb{N} \ f(n+1) >= f(n) $ ($f$ is non-decreasing)
+\item It exists a multistring Turing Machine $M$ that fullfills the following conditions with an input of size $n$:
+\begin{itemize}
+\item $M$ halts after $O(n + f(n))$ steps (runs in time $O(n + f(n))$)
+\item $M$ uses $O(f(n))$ space
+\item $M$ maps $1^n$ to $1^{f(n)}$
+\end{itemize}
+\end{itemize}
 
+Examples of proper functions: \cite{book} 
+\begin{align*}
+\ & f(x) = \log n^2 \\
+\ & f(x) = n \log n \\
+\ & f(x) = n^2 \\
+\ & f(x) = n^3 +3n \\
+\ & f(x) = 2^n \\
+\ & f(x) = \sqrt{n} \\
+\ & f(x) = n!
+\end{align*}
+
+If the function $f$ and $g$ are proper, $f+g$, $f \cdot g$ and $2^g$ are proper, too.
+
+% TODO: komische potenz/blank sache?
 
 
 
