@@ -153,9 +153,37 @@ The complement of a complexity class $C$, the class of all the complements is de
 
 
 
-\section*{Hierarchy problem}
+\section*{Hierarchy problem} 
+
+\textbf{Definitions:} \cite{book, CC} \\
+Let $f(n) >= n$ be a proper complexity function and $H_f$ a time-bounded version of the HALTING language $H$ with
+\begin{align*}
+H_f = \{ M; x:M \text{ accepts input \textit{x} after at most } f(|x|) \text{ steps} \}.
+\end{align*}
+$M$ is a deteministic multistring Turing Machine. The following can be concluded:
+\begin{align*}
+H_f \in \text{TIME}(f(n)^3))  \  \ \ \ \ \text{and} \ \ \ \ \ \ H_f \notin \text{TIME}(f(\lfloor \frac{n}{2} \rfloor )
+\end{align*}
+If $f(n) >= n$ is a proper complexity function, then the class TIME$(f(n))$ is strictly contained within TIME$((f(2n+1))^3)$ 
+
+\ \\
+If $f(n)$ is a proper complexity function, then the class SPACE$(f(n))$ is a proper subset of SPACE$(f(n) \log f(n))$ 
+
+\
+\\
+There is a recursive function $f: \mathbb{N} \rightarrow \mathbb{N}$ such that TIME$(f(n))=$TIME$(2^{f(n)})$.
 
 
+
+
+
+
+
+\section*{Questions and problems}
+\begin{itemize}
+\item I did not understand the proofs of the hierarchy problem yet but there will be more time and afford put into it.
+\item What is a parametrized function family? Are they numbered?
+\end{itemize}
 
 \newpage
 

@@ -2361,6 +2361,8 @@
     <bcf:citekey order="10">CC</bcf:citekey>
     <bcf:citekey order="11">book</bcf:citekey>
     <bcf:citekey order="11">CC</bcf:citekey>
+    <bcf:citekey order="12">book</bcf:citekey>
+    <bcf:citekey order="12">CC</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">
