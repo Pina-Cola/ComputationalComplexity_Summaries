@@ -101,15 +101,23 @@ If the function $f$ and $g$ are proper, $f+g$, $f \cdot g$ and $2^g$ are proper,
 \textbf{Definition precise Turing Machine:} \cite{book, CC} \\
 A multistring Turing Machine $M$ is called a precise Turing Machine, if there are functions $f$ and $g$ such that, for every input $x$ of length $n$, $M$ stops after exactly $f(n)$ steps with exactly $g(n)$ blanks on strings $2, . . . , k$.
 
+\ \\
+If $M$ is a precise Turing Machine and $f$ is a proper complexity functon such that, $M$ decides a language in $f(n)$, then there exists a precise Turing Machine $M'$ of the same type as $M$ which decides the same language in $O(f(n))$.
 
 
+\ \\
+\textbf{Complexity classes:} \cite{book, CC} \\
 
-
-
-
-
-%Lemma: If a deterministic or nondeterministic TM M decides a language in time (or space) f(n) for a proper complexity function f, then one can turn M into a precise TM M (of the same type) that runs in time (or
-%space) O(f(n)) and decides the same language.
+\begin{tabular}{l|l}
+Class name & Description \\
+\hline
+TIME($f$) & deterministic time \\
+SPACE($f$) & deterministic space \\
+NTIME($f$) & non-deterministic time \\
+NSPACE($f$) & non-deterministic space \\
+\end{tabular}
+\ \\ \\
+($f$ is a proper complexity function) 
 
 
 
