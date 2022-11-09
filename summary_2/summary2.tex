@@ -119,14 +119,37 @@ NSPACE($f$) & non-deterministic space \\
 \ \\ \\
 ($f$ is a proper complexity function) 
 
+\ \\
+Sometimes $f$ is not a particular function but a family of function which are parametrized by an integer $k>=0$. 
+\ \\ \\
+\begin{tabular}{lll}
+Class & Function & Description \\
+\hline
+P & $\bigcup_{k >= 0} $TIME$(n^k)$ & Polynomial time \\
+NP&$\bigcup_{k >= 0} $NTIME$(n^k)$ & Non-deterministic polynomial time \\
+  EXP & $\bigcup_{k >= 0} $TIME$(2^{n^k})$ & Exponential time \\
+   \hline
+   L & SPACE$\log n$ & Logarithmic space \\
+    NL &  NSPACE$(\log n)$ & Non-deterministic logarithmic space \\
+     PSPACE & $\bigcup_{k >= 0} $SPACE$(n^k)$ & Polynomial space \\
+      NPSPACE & $\bigcup_{k >= 0} $NSPACE$(n^k)$ & Non-deterministic polynomial space\\
+      \hline
+\end{tabular}
 
 
+\newpage
+\textbf{Complement classes:} \cite{book, CC} \\
 
-
+For a string that is part of a language, one \textit{yes} input needs to be found. For a string to be not part of a lanugage, all the paths must be a \textit{no}.
+The complement of a language $L \subseteq \Sigma^*$ is the set of all valid inputs that do not belong to $L$. It is denoted as $\bar{L}$ with $\bar{L} = \Sigma^* - L$.
+This can be extended to decision problems. The complement of a decision problem $A$ is called $A$ COMPLEMENT.
+The \textit{yes} and \textit{no} answers on an Turing Machine can be switched to solve the complement problems.
+\ \\
+\\
+The complement of a complexity class $C$, the class of all the complements is denoded as $coC$. The deterministic classes are closed under complement, for examlpe $coP = P$. That does not cound for non-deterministic classes.
 
 
 %------------------------------------------------------------------
-
 
 
 
