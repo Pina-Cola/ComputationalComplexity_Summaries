@@ -1,0 +1,98 @@
+\documentclass[a4]{scrartcl}
+
+% \usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{mathtools}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{geometry}
+\usepackage{scrlayer-scrpage}
+\usepackage{float}
+\pagestyle{scrheadings}
+\clearscrheadfoot
+
+\usepackage[backend=biber, maxbibnames=99]{biblatex}
+\addbibresource{references.bib}
+
+\setlength{\parindent}{0cm}
+
+
+\geometry{
+  paper=a4paper, % Change to letterpaper for US letter
+  top=2cm, % Top margin
+  bottom=1.5cm, % Bottom margin
+  left=2cm, % Left margin
+  right=3cm, % Right margin
+}
+
+\ohead{\\
+Pina Kolling\\
+piko0011}
+
+\begin{document}
+
+
+%-------------------------------------------------------------------
+
+
+
+
+\section*{Summary: Lecture 3}
+
+Summary for the chapters \textit{X} and \textit{X}. \cite{book}
+
+
+
+
+%-------------------------------------------------------------------
+
+\ \\
+\\
+\textbf{Notes in the lecture:} \\
+
+Basic relations between complexity classes \\
+
+Deterministic space includes nondeterministic time: \\
+NTIME$(f(n)) \subseteq$ SPACE$(f(n)^2)$ \\
+$d$ choices in every step (in $TM$): $1,...,d$ \\
+fill something with $1$ in first step \\
+second step: simulate nondeterminstic $TM$ \\
+pick something and simulate it? % he is drawing boxes on the board...
+Until we get to $d$ because we increment by $1$ in each step. \\
+
+The reachability method: \\
+graphs/graph edges are constructed \\
+$M$ empties the tape and puts all the heads to the start \\
+there is only a single node that is accepting \\
+
+Savitch's theorem: \\
+complexit function is at least $\log n$ \\
+we are doing an intuitive sketch now \\
+this theorem grabs some internal node $k$, check recursively if there is a path from $1$ to $k$ and from $k$ to $n$ \\
+test if path from $1$ to $k$ with picking a midpoint again... \\
+we can have $\log n$ many segments to work on \\
+PATH(startnode, endnode, pathlength) checks if there is a path from startnode to endnode with the length pathlength (?) \\
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%-------------------------------------------------------------------
+
+\newpage
+
+\printbibliography
+
+
+
+
+\end{document}
