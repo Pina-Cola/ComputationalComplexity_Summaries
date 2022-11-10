@@ -1,0 +1,48 @@
+\documentclass[a4]{scrartcl}
+
+% \usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{mathtools}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{geometry}
+\usepackage{scrlayer-scrpage}
+\usepackage{float}
+\pagestyle{scrheadings}
+\clearscrheadfoot
+
+\usepackage[backend=biber, maxbibnames=99]{biblatex}
+\addbibresource{references.bib}
+
+\setlength{\parindent}{0cm}
+
+
+\geometry{
+  paper=a4paper, % Change to letterpaper for US letter
+  top=2cm, % Top margin
+  bottom=1.5cm, % Bottom margin
+  left=2cm, % Left margin
+  right=3cm, % Right margin
+}
+
+\ohead{\\
+Pina Kolling\\
+piko0011}
+
+\begin{document}
+
+\section*{Summary: Lecture X}
+
+Summary for the chapters \textit{X} and \textit{X}. \cite{book}
+
+
+
+
+\newpage
+
+\printbibliography
+
+
+
+
+\end{document}
