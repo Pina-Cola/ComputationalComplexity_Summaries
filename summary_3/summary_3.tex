@@ -117,12 +117,22 @@ This means, that at least on of the inclusions has to be proper.
 \begin{align*}
 \text{REACHABILITY} \in \text{SPACE}(\log^2 n)
 \end{align*}
+
 complexity function is at least $\log n$ \\
 we are doing an intuitive sketch now \\
 this theorem grabs some internal node $k$, check recursively if there is a path from $1$ to $k$ and from $k$ to $n$ \\
 test if path from $1$ to $k$ with picking a midpoint again... \\
 we can have $\log n$ many segments to work on \\
 PATH(startnode, endnode, pathlength) checks if there is a path from startnode to endnode with the length pathlength (?) \\
+
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.3]{images/logplot.png}
+\caption{Red graph $f(n) = \log ^2 n$ and blue graph $g(n)= \log n$}
+\end{center}
+\end{figure}
+
 
 
 
