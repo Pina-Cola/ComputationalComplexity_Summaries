@@ -48,11 +48,14 @@ Summary for the chapter \textit{7.5} until page 150. \cite{book}
 
 \subsection*{Background knowledge}
 
+The P vs. NP problem is an unsolved problem in complexity theory.
+Mathematical problems which are solved by a computer are classified as P or NP problems: All problems that can be solved efficiently by a computer belong to the class P. In the case of NP problems it is unknown whether they can be solved efficiently or not. In this context, efficient means that the required computing time of a solution algorithm grows at most polynomially (e.g. quadratically) with increasing complexity. The only thing that is currently clear is that a correct solution to an NP problem can be checked for correctness in polynomial time. 
 
-Das P vs. NP Problem ist ein ungelöstes Rätsel der Komplexitätstheorie.
-Hierbei werden von einem Computer zu lösende mathematische Probleme als P- oder NP-Probleme klassifiziert. Vereinfacht gesagt gehören alle Probleme, die effizient von einem Computer gelöst werden können, zur Klasse P. Bei NP-Problemen hingegen ist unbekannt, ob sie sich effizient lösen lassen oder nicht. Effizient bedeutet hierbei, dass die benötigte Rechenzeit eines Lösungsalgorithmus bei steigender Komplexität höchstens polynomiell (also zum Beispiel quadratisch) wächst. Klar ist aktuell nur, dass sich eine korrekte Lösung eines NP-Problems in Polynominalzeit überprüfen lässt. Ob eine Lösung in der gleichen Zeit erzeugt werden kann, ist allerdings unklar.
+Developing an algorithm for an NP problem is usually very difficult. Computer scientists and mathematicians do not only try to work out effective algorithms, they also try to determine whether P = NP. In other words, they are trying to find out whether P and NP are really different problem classes or whether it is possible to solve NP problems in polynomial time as well. Scientists all over the world are trying to prove that P != NP. 
 
-\cite{DD, book}
+The reason why experts wish NP problems to remain almost unsolvable is called cryptography. Unlike many other fields, complexity in cryptography is not only desirable, but necessary. It is important to know that most encryption methods used today are based solely on the fact that the effort to \textit{guess} the key is too high. The problem of \textit{guessing} is therefore an NP problem. Not only theoretically, but also practically, the proof of the solvability of NP problems means the end of all currently used encryption methods.
+
+But there is still hope for cryptography. The NP problem has often been supposedly solved. Both P = NP and P != NP have been attempted to be proven many times. It turned out that every single solution and every single proof attempt so far turned out to be wrong or incomprehensible. \cite{DD, book}
 
 
 
