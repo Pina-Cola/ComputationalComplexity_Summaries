@@ -76,23 +76,24 @@ If $f(n)$ is a proper complexity function:
 & \text{NSPACE}(f(n)) \subseteq \text{TIME}(k^{\log n + f(n)}) 
 \end{align}
 
-Proof for $(1)$: \\
+\textbf{Proof for $(1)$:} \\
 Any deterministic Turing Machine is also a non-deterministic Turing Machine, which leads to $\text{SPACE}(f(n)) \subseteq \text{NSPACE}(f(n)) \text{ and TIME}(f(n)) \subseteq \text{NTIME}(f(n))$.
 
 \ \\
-Proof for $(2)$: \\
+\textbf{Proof for $(2)$:} \\
 To prove $(2)$, a language $L \in $ NTIME$(f(n))$ is considered. It exists a precis non-deterministic Turing Machine $M$ that decides $L$ in time $f(n)$ and for the prove a deterministic Turing Machine $M'$ has to be designed that decides $L$ in space $f(n)$.
 Memory space can be reused, time cannot.
-There are $d$ choices in every step: $1,...,d$. For each choice the non-determinstic Turing Machine is simulated and the previous simulations can be deleted to reuse space. Only the currently simulated and the next simulation need to be saved and tracked. \\
+There are $d$ choices in every step: $1,...,d$. For each choice the non-determinstic Turing Machine is simulated and the previous simulations can be deleted to reuse space. Only the currently simulated and the next simulation need to be saved and tracked.
 
 
 \ \\
-Proof for $(3)$: \\
+\textbf{Proof for $(3)$:} \\
 This proof involves a method for space-bounded Turing Machines, which is called \textbf{reachability method}.
-\color{red} TODO \\
-\color{black}
+For this, a multistring non-deterministic Turing Machine $M$ with input and output is given, which decides a lanugage $L$ within space $f(n)$.
+Then things happen and graphs/graph edges are constructed, $M$ empties the tape and puts all the heads to the start and there is only a single node that is accepting.
 
-\ \\
+
+\ \\ \\
 Combining the previous knowledge, it can be concluded:
 \begin{center}
 L $\subseteq$ NL $\subseteq$ P $\subseteq$ NP $\subseteq$ PSPACE
@@ -104,33 +105,18 @@ L $\subset$ PSPACE
 This means, that at least on of the inclusions has to be proper.
 
 \ \\
-\color{violet} Questions:
+\color{violet} Questions: What happens in the reachability method proof?!
 \color{black}
 
 
-
-
-
-
-
-%-------------------------------------------------------------------
-\subsection*{Notes for proof (3) The reachability method}
-graphs/graph edges are constructed \\
-$M$ empties the tape and puts all the heads to the start \\
-there is only a single node that is accepting \\
-
-
-
-\color{red} TODO
-\color{black}
-
-\color{violet} Questions:
-\color{black}
 
 
 
 %-------------------------------------------------------------------
 \subsection*{Savitch's theorem}
+\begin{align*}
+\text{REACHABILITY} \in \text{SPACE}(\log^2 n)
+\end{align*}
 complexity function is at least $\log n$ \\
 we are doing an intuitive sketch now \\
 this theorem grabs some internal node $k$, check recursively if there is a path from $1$ to $k$ and from $k$ to $n$ \\
