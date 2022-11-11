@@ -83,13 +83,13 @@ Any deterministic Turing Machine is also a non-deterministic Turing Machine, whi
 Proof for $(2)$: \\
 To prove $(2)$, a language $L \in $ NTIME$(f(n))$ is considered. It exists a precis non-deterministic Turing Machine $M$ that decides $L$ in time $f(n)$ and for the prove a deterministic Turing Machine $M'$ has to be designed that decides $L$ in space $f(n)$.
 Memory space can be reused, time cannot.
-\color{red} TODO
-\color{black}
+There are $d$ choices in every step: $1,...,d$. For each choice the non-determinstic Turing Machine is simulated and the previous simulations can be deleted to reuse space. Only the currently simulated and the next simulation need to be saved and tracked. \\
+
 
 \ \\
 Proof for $(3)$: \\
-This prrof involves a method for space-bounded Turing Machines, which is called \textbf{reachability method}.
-\color{red} TODO
+This proof involves a method for space-bounded Turing Machines, which is called \textbf{reachability method}.
+\color{red} TODO \\
 \color{black}
 
 \ \\
@@ -112,29 +112,9 @@ This means, that at least on of the inclusions has to be proper.
 
 
 
-%-------------------------------------------------------------------
-\subsection*{Deterministic space includes nondeterministic time}
-NTIME$(f(n)) \subseteq$ SPACE$(f(n)^2)$ \\
-$d$ choices in every step (in $TM$): $1,...,d$ \\
-fill something with $1$ in first step \\
-second step: simulate non-determinstic $TM$ \\
-pick something and simulate it? % he is drawing boxes on the board...
-Until we get to $d$ because we increment by $1$ in each step. \\
-
-
-
-\color{red} TODO
-\color{black}
-
-\color{violet} Questions:
-\color{black}
-
-
-
-
 
 %-------------------------------------------------------------------
-\subsection*{The reachability method}
+\subsection*{Notes for proof (3) The reachability method}
 graphs/graph edges are constructed \\
 $M$ empties the tape and puts all the heads to the start \\
 there is only a single node that is accepting \\
@@ -151,7 +131,7 @@ there is only a single node that is accepting \\
 
 %-------------------------------------------------------------------
 \subsection*{Savitch's theorem}
-complexit function is at least $\log n$ \\
+complexity function is at least $\log n$ \\
 we are doing an intuitive sketch now \\
 this theorem grabs some internal node $k$, check recursively if there is a path from $1$ to $k$ and from $k$ to $n$ \\
 test if path from $1$ to $k$ with picking a midpoint again... \\
