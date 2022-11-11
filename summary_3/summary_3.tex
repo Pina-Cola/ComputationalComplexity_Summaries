@@ -9,6 +9,7 @@
 \usepackage{scrlayer-scrpage}
 \usepackage{float}
 \pagestyle{scrheadings}
+\usepackage{xcolor}
 \clearscrheadfoot
 
 \usepackage[backend=biber, maxbibnames=99]{biblatex}
@@ -39,20 +40,46 @@ piko0011}
 
 \section*{Summary: Lecture 3}
 
-Summary for the chapters \textit{X} and \textit{X}. \cite{book}
+Summary for the chapter \textit{7.5} until page 150. \cite{book}
 
+%-------------------------------------------------------------------
+
+
+
+\subsection*{Background knowledge}
+
+
+Das P vs. NP Problem ist ein ungelöstes Rätsel der Komplexitätstheorie.
+Hierbei werden von einem Computer zu lösende mathematische Probleme als P- oder NP-Probleme klassifiziert. Vereinfacht gesagt gehören alle Probleme, die effizient von einem Computer gelöst werden können, zur Klasse P. Bei NP-Problemen hingegen ist unbekannt, ob sie sich effizient lösen lassen oder nicht. Effizient bedeutet hierbei, dass die benötigte Rechenzeit eines Lösungsalgorithmus bei steigender Komplexität höchstens polynomiell (also zum Beispiel quadratisch) wächst. Klar ist aktuell nur, dass sich eine korrekte Lösung eines NP-Problems in Polynominalzeit überprüfen lässt. Ob eine Lösung in der gleichen Zeit erzeugt werden kann, ist allerdings unklar.
+
+\cite{DD, book}
 
 
 
 %-------------------------------------------------------------------
 
-\ \\
-\\
-\textbf{Notes in the lecture:} \\
 
-Basic relations between complexity classes \\
 
-Deterministic space includes nondeterministic time: \\
+\subsection*{Basic relations between complexity classes}
+
+
+The hierarchy theorem shows how deterministic classes of the same kind (time or space) relate to each other.
+Here are the relationships between classes of a different kind exmined: P and NP.
+
+
+\color{red} TODO
+\color{black}
+
+\color{violet} Questions:
+\color{black}
+
+
+
+
+
+
+%-------------------------------------------------------------------
+\subsection*{Deterministic space includes nondeterministic time}
 NTIME$(f(n)) \subseteq$ SPACE$(f(n)^2)$ \\
 $d$ choices in every step (in $TM$): $1,...,d$ \\
 fill something with $1$ in first step \\
@@ -60,12 +87,36 @@ second step: simulate nondeterminstic $TM$ \\
 pick something and simulate it? % he is drawing boxes on the board...
 Until we get to $d$ because we increment by $1$ in each step. \\
 
-The reachability method: \\
+
+
+\color{red} TODO
+\color{black}
+
+\color{violet} Questions:
+\color{black}
+
+
+
+
+
+%-------------------------------------------------------------------
+\subsection*{The reachability method}
 graphs/graph edges are constructed \\
 $M$ empties the tape and puts all the heads to the start \\
 there is only a single node that is accepting \\
 
-Savitch's theorem: \\
+
+
+\color{red} TODO
+\color{black}
+
+\color{violet} Questions:
+\color{black}
+
+
+
+%-------------------------------------------------------------------
+\subsection*{Savitch's theorem}
 complexit function is at least $\log n$ \\
 we are doing an intuitive sketch now \\
 this theorem grabs some internal node $k$, check recursively if there is a path from $1$ to $k$ and from $k$ to $n$ \\
@@ -73,10 +124,30 @@ test if path from $1$ to $k$ with picking a midpoint again... \\
 we can have $\log n$ many segments to work on \\
 PATH(startnode, endnode, pathlength) checks if there is a path from startnode to endnode with the length pathlength (?) \\
 
-Analysis: \\
+
+
+\color{red} TODO
+\color{black}
+
+\color{violet} Questions:
+\color{black}
+
+
+
+%-------------------------------------------------------------------
+\subsection*{Analysis}
 imagine the graph \\
 graph can be too large to construct \\
 why does the meaning of $n$ change?
+
+
+
+\color{red} TODO
+\color{black}
+
+\color{violet} Questions:
+\color{black}
+
 
 
 

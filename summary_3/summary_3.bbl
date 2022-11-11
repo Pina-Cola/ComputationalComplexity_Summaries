@@ -19,6 +19,33 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
+    \entry{DD}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=38d30839da09cd7fac524939643ff14d}{%
+           family={(Website)},
+           familyi={(\bibinitperiod},
+           given={Dr\bibnamedelima Datenschutz},
+           giveni={D\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \strng{namehash}{38d30839da09cd7fac524939643ff14d}
+      \strng{fullhash}{38d30839da09cd7fac524939643ff14d}
+      \strng{bibnamehash}{38d30839da09cd7fac524939643ff14d}
+      \strng{authorbibnamehash}{38d30839da09cd7fac524939643ff14d}
+      \strng{authornamehash}{38d30839da09cd7fac524939643ff14d}
+      \strng{authorfullhash}{38d30839da09cd7fac524939643ff14d}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{last opened 11.11.2022}
+      \field{title}{P vs. NP: Ein Geschenk der Informatik an die Mathematik}
+      \verb{urlraw}
+      \verb https://www.dr-datenschutz.de/p-vs-np-ein-geschenk-der-informatik-an-die-mathematik/#:~:text=Hierbei%20werden%20von%20einem%20Computer,effizient%20l%C3%B6sen%20lassen%20oder%20nicht.
+      \endverb
+      \verb{url}
+      \verb https://www.dr-datenschutz.de/p-vs-np-ein-geschenk-der-informatik-an-die-mathematik/#:~:text=Hierbei%20werden%20von%20einem%20Computer,effizient%20l%C3%B6sen%20lassen%20oder%20nicht.
+      \endverb
+    \endentry
     \entry{book}{book}{}
       \name{author}{1}{}{%
         {{hash=b3b407bb63367a850366076095ee1970}{%
