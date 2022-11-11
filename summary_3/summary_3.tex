@@ -69,6 +69,21 @@ But there is still hope for cryptography. The NP problem has often been supposed
 The hierarchy theorem shows how deterministic classes of the same kind (time or space) relate to each other.
 Here are the relationships between classes of a different kind exmined: P and NP.
 
+If $f(n)$ is a proper complexity function:
+\begin{align}
+& \text{SPACE}(f(n)) \subseteq \text{NSPACE}(f(n)) \text{ and TIME}(f(n)) \subseteq \text{NTIME}(f(n)) \\
+& \text{NTIME}(f(n)) \subseteq \text{SPACE}(f(n)) \\
+& \text{NSPACE}(f(n)) \subseteq \text{TIME}(k^{\log n + f(n)}) 
+\end{align}
+
+Proof for $(1)$: \\
+Any deterministic Turing Machine is also a non-deterministic Turing Machine, which leads to $\text{SPACE}(f(n)) \subseteq \text{NSPACE}(f(n)) \text{ and TIME}(f(n)) \subseteq \text{NTIME}(f(n))$.
+
+\ \\
+Proof for $(2)$: \\
+
+\ \\
+Proof for $(3)$: \\
 
 \color{red} TODO
 \color{black}
