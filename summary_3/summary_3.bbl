@@ -33,17 +33,46 @@
       \strng{authorbibnamehash}{38d30839da09cd7fac524939643ff14d}
       \strng{authornamehash}{38d30839da09cd7fac524939643ff14d}
       \strng{authorfullhash}{38d30839da09cd7fac524939643ff14d}
+      \field{extraname}{1}
       \field{sortinit}{W}
       \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{note}{last opened 11.11.2022}
+      \field{note}{Last opened 11.11.2022}
       \field{title}{P vs. NP: Ein Geschenk der Informatik an die Mathematik}
       \verb{urlraw}
       \verb https://www.dr-datenschutz.de/p-vs-np-ein-geschenk-der-informatik-an-die-mathematik/#:~:text=Hierbei%20werden%20von%20einem%20Computer,effizient%20l%C3%B6sen%20lassen%20oder%20nicht.
       \endverb
       \verb{url}
       \verb https://www.dr-datenschutz.de/p-vs-np-ein-geschenk-der-informatik-an-die-mathematik/#:~:text=Hierbei%20werden%20von%20einem%20Computer,effizient%20l%C3%B6sen%20lassen%20oder%20nicht.
+      \endverb
+    \endentry
+    \entry{wiki}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=154fe4b52674e938a6c681c42174ad43}{%
+           family={(Website)},
+           familyi={(\bibinitperiod},
+           given={Wikipedia},
+           giveni={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{154fe4b52674e938a6c681c42174ad43}
+      \strng{fullhash}{154fe4b52674e938a6c681c42174ad43}
+      \strng{bibnamehash}{154fe4b52674e938a6c681c42174ad43}
+      \strng{authorbibnamehash}{154fe4b52674e938a6c681c42174ad43}
+      \strng{authornamehash}{154fe4b52674e938a6c681c42174ad43}
+      \strng{authorfullhash}{154fe4b52674e938a6c681c42174ad43}
+      \field{extraname}{2}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Last opened 12.11.2022}
+      \field{title}{Implicit graph}
+      \verb{urlraw}
+      \verb https://en.wikipedia.org/wiki/Implicit_graph
+      \endverb
+      \verb{url}
+      \verb https://en.wikipedia.org/wiki/Implicit_graph
       \endverb
     \endentry
     \entry{CC}{misc}{}

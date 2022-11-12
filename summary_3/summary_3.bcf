@@ -2349,6 +2349,7 @@
     <bcf:citekey order="2">DD</bcf:citekey>
     <bcf:citekey order="2">book</bcf:citekey>
     <bcf:citekey order="2">GTI</bcf:citekey>
+    <bcf:citekey order="3">wiki</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">
