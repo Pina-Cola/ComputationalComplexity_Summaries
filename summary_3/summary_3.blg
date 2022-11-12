@@ -1,15 +1,15 @@
 [0] Config.pm:311> INFO - This is Biber 2.16
 [0] Config.pm:314> INFO - Logfile is 'summary_3.blg'
-[201] biber-MSWIN64:340> INFO - === 
-[284] Biber.pm:415> INFO - Reading 'summary_3.bcf'
-[458] Biber.pm:952> INFO - Found 4 citekeys in bib section 0
-[489] Biber.pm:4340> INFO - Processing section 0
-[511] Biber.pm:4531> INFO - Looking for bibtex format file 'references.bib' for section 0
-[585] bibtex.pm:1689> INFO - LaTeX decoding ...
-[599] bibtex.pm:1494> INFO - Found BibTeX data source 'references.bib'
-[672] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[672] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[672] Biber.pm:4168> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
-[672] Biber.pm:4174> INFO - No sort tailoring available for locale 'en-US'
-[685] bbl.pm:654> INFO - Writing 'summary_3.bbl' with encoding 'UTF-8'
-[688] bbl.pm:757> INFO - Output to summary_3.bbl
+[140] biber-MSWIN64:340> INFO - === 
+[186] Biber.pm:415> INFO - Reading 'summary_3.bcf'
+[318] Biber.pm:952> INFO - Found 4 citekeys in bib section 0
+[335] Biber.pm:4340> INFO - Processing section 0
+[352] Biber.pm:4531> INFO - Looking for bibtex format file 'references.bib' for section 0
+[414] bibtex.pm:1689> INFO - LaTeX decoding ...
+[423] bibtex.pm:1494> INFO - Found BibTeX data source 'references.bib'
+[475] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[475] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[475] Biber.pm:4168> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[475] Biber.pm:4174> INFO - No sort tailoring available for locale 'en-US'
+[485] bbl.pm:654> INFO - Writing 'summary_3.bbl' with encoding 'UTF-8'
+[487] bbl.pm:757> INFO - Output to summary_3.bbl

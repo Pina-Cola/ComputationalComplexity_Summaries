@@ -26,6 +26,40 @@
   right=3cm, % Right margin
 }
 
+\usepackage[framemethod=TikZ]{mdframed}
+
+% Style %
+\mdfdefinestyle{enviStyle}{
+   innertopmargin = 10pt,
+  linewidth      = 1pt,
+  frametitlerule = true,
+  roundcorner    = 2pt%
+}
+
+
+
+
+
+\newenvironment{CountingDefinition}[2][]{%
+   \ifstrempty{#1}%
+   {\mdfsetup{%
+      frametitle={{\strut Problem~}}}
+   }%
+   {\mdfsetup{%
+      frametitle={{\strut Problem:~#1}}}%
+   }%
+   \mdfsetup{
+      nobreak                   = true,
+     linecolor                 = gray,
+    frametitlebackgroundcolor = gray!50,
+    style                     = enviStyle
+   }
+   \begin{mdframed}[]\relax%
+   \label{#2}}{\end{mdframed}}
+
+
+
+
 \ohead{\\
 Pina Kolling\\
 piko0011}
@@ -109,7 +143,14 @@ This means, that at least on of the inclusions has to be proper.
 \color{black}
 
 
+%-------------------------------------------------------------------
 
+
+\begin{CountingDefinition}[GRAPH REACHABILITY]{def:validLabelPlacement}
+Given a graph $G$ and two nodes $n_1, n_2 \in V$, is there  path from $n_1$ to $n_2$?
+
+(A graph $G=(V, E)$ is a finite set $V$ of nodes and a set $E$ of edges (node pairs). )
+\end{CountingDefinition}
 
 
 %-------------------------------------------------------------------
