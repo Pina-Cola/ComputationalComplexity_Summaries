@@ -159,12 +159,22 @@ Given a graph $G$ and two nodes $n_1, n_2 \in V$, is there  path from $n_1$ to $
 \text{REACHABILITY} \in \text{SPACE}(\log^2 n)
 \end{align*}
 
-complexity function is at least $\log n$ \\
-we are doing an intuitive sketch now \\
-this theorem grabs some internal node $k$, check recursively if there is a path from $1$ to $k$ and from $k$ to $n$ \\
-test if path from $1$ to $k$ with picking a midpoint again... \\
-we can have $\log n$ many segments to work on \\
-PATH(startnode, endnode, pathlength) checks if there is a path from startnode to endnode with the length pathlength (?) \\
+\textbf{Proof:} \\
+PATH$(startnode, endnode, m)$ checks if there is a path from startnode to endnode with the length of at most $2^m$. 
+
+The parameters of the function can be split up (like divide and conquer):
+\begin{align*}
+\text{PATH}(i,j,m) \Leftrightarrow \exists k : \text{PATH}(i,k,m-1) \text{ and PATH}(k,j,m-1) 
+\end{align*}
+Some internal node $k$ is choosen and it is checked recursively if there is a path from $startnode$ to $k$ and from $endnode$ to $n$. This is then recursively done with the new midpoint. \\
+
+
+There can be $\log n$ many segments to work on -- the recursion depth and the record size both are at most $\log n$. This leads to a recursion stack of $O(\log^2 n)$.
+
+
+The complexity function is at least $\log n$.
+
+
 
 
 \begin{figure}[H]
@@ -176,11 +186,7 @@ PATH(startnode, endnode, pathlength) checks if there is a path from startnode to
 
 
 
-
-\color{red} TODO
-\color{black}
-
-\color{violet} Questions:
+\color{violet} Questions: Why does the meaning of $n$ change?
 \color{black}
 
 
@@ -189,7 +195,7 @@ PATH(startnode, endnode, pathlength) checks if there is a path from startnode to
 \subsection*{Analysis}
 imagine the graph \\
 graph can be too large to construct \\
-why does the meaning of $n$ change?
+
 
 
 
