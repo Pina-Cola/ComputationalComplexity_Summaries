@@ -43,10 +43,10 @@
 \newenvironment{CountingDefinition}[2][]{%
    \ifstrempty{#1}%
    {\mdfsetup{%
-      frametitle={{\strut Problem~}}}
+      frametitle={{\strut ~}}}
    }%
    {\mdfsetup{%
-      frametitle={{\strut Problem:~#1}}}%
+      frametitle={{\strut ~#1}}}%
    }%
    \mdfsetup{
       nobreak                   = true,
@@ -121,13 +121,28 @@ There are $d$ choices in every step: $1,...,d$. For each choice the non-determin
 
 
 \ \\
+
+\begin{CountingDefinition}[Configuration of a Turing Machine]{def:validLabelPlacement}
+\textit{Snapshot} of the computation of $M$ with an given input $x$. For a $k$-string Turing Machine $M$ the configuration is a $2k+1$-tuple with the state, the $k$ strigs and the $k$ head positions.
+\end{CountingDefinition}
+
+
 \textbf{Proof for $(3)$:} \\
 This proof involves a method for space-bounded Turing Machines, which is called \textbf{reachability method}.
+
 For this, a multistring non-deterministic Turing Machine $M$ with input and output is given, which decides a lanugage $L$ within space $f(n)$.
-Then things happen and graphs/graph edges are constructed, $M$ empties the tape and puts all the heads to the start and there is only a single node that is accepting.
+
+A determistic method to simulate the nondeterministic computation of $M$ has to be found and it has to be in time $c^{\log n + f(n)}$, where n is the length of the input and $c$ is a constand depending on $M$.
+The amount of configurations for $M$ is at most $c^{\log n + f(n)}$ with $c$ being a constand depending on $M$. 
+
+Then a configuration graph $G(M, x)$ is defined, the nodes are the possible configurations and the edges is the input. If an accepting configuration can be reached with an input, the word is contained. In this way, the problem was reduces to the REACHBILITY problem, which was already prooved to be in polynomial time.
+
+If the graph is too big to construct, ist must be implicit. (An implicit graph representation is a graph edges are not represented as explicit objects in a computer's memory, but rather are determined algorithmically from some other input, for example a computable function. \cite{wiki})
 
 
-\ \\ \\
+
+
+\ \\ \\ \\
 Combining the previous knowledge, it can be concluded:
 \begin{center}
 L $\subseteq$ NL $\subseteq$ P $\subseteq$ NP $\subseteq$ PSPACE
@@ -139,14 +154,14 @@ L $\subset$ PSPACE
 This means, that at least on of the inclusions has to be proper.
 
 \ \\
-\color{violet} Questions: What happens in the reachability method proof?!
+\color{violet} Questions: Why does the meaning of $n$ change?
 \color{black}
 
 
 %-------------------------------------------------------------------
 
 
-\begin{CountingDefinition}[GRAPH REACHABILITY]{def:validLabelPlacement}
+\begin{CountingDefinition}[Problem: GRAPH REACHABILITY]{def:validLabelPlacement}
 Given a graph $G$ and two nodes $n_1, n_2 \in V$, is there  path from $n_1$ to $n_2$?
 
 (A graph $G=(V, E)$ is a finite set $V$ of nodes and a set $E$ of edges (node pairs). )
@@ -184,10 +199,9 @@ The complexity function is at least $\log n$.
 \end{center}
 \end{figure}
 
-If the graph is too big to construct, ist must be implicit. (An implicit graph representation is a graph edges are not represented as explicit objects in a computer's memory, but rather are determined algorithmically from some other input, for example a computable function. \cite{wiki})
 
 
-\color{violet} Questions: Why does the meaning of $n$ change?
+% \color{violet} Questions: 
 \color{black}
 
 
