@@ -1,0 +1,80 @@
+\documentclass[a4]{scrartcl}
+
+% \usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{mathtools}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{geometry}
+\usepackage{scrlayer-scrpage}
+\usepackage{float}
+\pagestyle{scrheadings}
+\clearscrheadfoot
+
+\usepackage[backend=biber, maxbibnames=99]{biblatex}
+\addbibresource{references.bib}
+
+\setlength{\parindent}{0cm}
+
+
+\geometry{
+  paper=a4paper, % Change to letterpaper for US letter
+  top=2cm, % Top margin
+  bottom=1.5cm, % Bottom margin
+  left=2cm, % Left margin
+  right=3cm, % Right margin
+}
+
+\ohead{\\
+Pina Kolling\\
+piko0011}
+
+\begin{document}
+
+\section*{Summary: Lecture 4}
+
+Summary for the chapters \textit{X} and \textit{X}. \cite{book}
+
+\subsection*{Asymmetry of non-deterministic revisited}
+
+to check if formular is non satisfiable \\
+question whether NP $=$ coNP \\
+
+similar isuues is non-deterministic space: \\
+write down $n$ nodes on a ... non-det. will succeed if it is possible \\
+to show that it is impossible to ... in SPACE was unsolved until the 80s \\
+$h$ for function (yes or no or $h$?) \\
+$h$ is yes \\
+everything that fails stops in stae with no \\
+
+
+\section*{Immerman-Szelepscènyi}
+
+how many distinct nodes can be reached in a graph if you start from a graph $x$ \\
+$s(0)$ will contain node 1 and $s(1)$ will contain all neighbours of 1 \\
+we will have actual names \\
+4 nested for loops and algorithm happens in the middle \\
+outer for loop: \\
+computes number of nodes reachable from initial node (for $k$ steps with $k$ as the interative thingy in the for loop) \\
+in each step we override the previous set with the next one because we only have limited space \\
+second loop: \\
+we get how far we got in the previous steps and sum up how far we can get (because we can get previous set size?) \\
+third loop: \\
+the actual magic happens here: checking something \\
+Aux sounds like a port for headphones \\
+return no when all guesses were correct? we remember solution that we were supposed to reach beforehand \\
+
+
+
+
+
+
+
+\newpage
+
+\printbibliography
+
+
+
+
+\end{document}

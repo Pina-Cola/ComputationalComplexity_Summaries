@@ -1,0 +1,15 @@
+[0] Config.pm:311> INFO - This is Biber 2.16
+[0] Config.pm:314> INFO - Logfile is 'summary_template.blg'
+[248] biber-MSWIN64:340> INFO - === 
+[316] Biber.pm:415> INFO - Reading 'summary_template.bcf'
+[494] Biber.pm:952> INFO - Found 1 citekeys in bib section 0
+[512] Biber.pm:4340> INFO - Processing section 0
+[529] Biber.pm:4531> INFO - Looking for bibtex format file 'references.bib' for section 0
+[579] bibtex.pm:1689> INFO - LaTeX decoding ...
+[587] bibtex.pm:1494> INFO - Found BibTeX data source 'references.bib'
+[635] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[635] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[635] Biber.pm:4168> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[635] Biber.pm:4174> INFO - No sort tailoring available for locale 'en-US'
+[637] bbl.pm:654> INFO - Writing 'summary_template.bbl' with encoding 'UTF-8'
+[638] bbl.pm:757> INFO - Output to summary_template.bbl
