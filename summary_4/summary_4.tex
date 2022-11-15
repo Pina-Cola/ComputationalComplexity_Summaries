@@ -152,6 +152,7 @@ Does this lead to the Haltingproblem?
 \textbf{Theorem:} \\
 Given a graph $G$ and a start node $x$, the number of nodes that are reachable from $x$ in $G$ can nondeterministically be computed in space
 $\log n$ (where $n$ is the number of nodes of $G$).
+\ \\
 
 \textbf{Proof concept:}
 \begin{itemize}
@@ -161,27 +162,37 @@ $\log n$ (where $n$ is the number of nodes of $G$).
 \item $S(0)$ will contain node 1
 \item $s(1)$ will contain all neighbours of 1
 \end{itemize}
+
+\item Algorithm consitsts out of 3 nested for-loops:
+
+\begin{itemize}
+\item outer for loop:
+\begin{itemize}
+\item computes number of nodes reachable from initial node (for loop with $k$ steps)
+\item in each stepthe previous set is overwritten with the next one because the space is limited
 \end{itemize}
 
-how many distinct nodes can be reached in a graph if you start from a graph $x$ \\
-$s(0)$ will contain node 1 and $s(1)$ will contain all neighbours of 1 \\
-we will have actual names \\
-4 nested for loops and algorithm happens in the middle \\
-outer for loop: \\
-computes number of nodes reachable from initial node (for $k$ steps with $k$ as the interative thingy in the for loop) \\
-in each step we override the previous set with the next one because we only have limited space \\
-second loop: \\
-we get how far we got in the previous steps and sum up how far we can get (because we can get previous set size?) \\
-third loop: \\
-the actual magic happens here: checking something \\
-Aux sounds like a port for headphones \\
-return no when all guesses were correct? we remember solution that we were supposed to reach beforehand \\
-it requires thinking \\
-we cant even mark nodes (would use linear space) but with determinism we get it into $\log n$ (?) \\
-% U E A I O
+\item second for loop:
+\begin{itemize}
+\item it is computed how far the previous steps got and summed up how far it can get
+\end{itemize}
+
+\item third loop:
+\begin{itemize}
+\item checking if node belongs to $S(i)$
+\item return no when all guesses were correct? 
+% we remember solution that we were supposed to reach beforehand
+\end{itemize}
+\end{itemize}
+
+\item nodes cant be marked (this would use linear space) but with determinism it gets into $\log n$ 
+
+
+\end{itemize}
+
 Algorithm (2) slides seems to be important
 
-\color{red} TODO\\
+\color{red} TODO and TODO with book \\
 \color{black}
 \color{violet} Questions:
 \color{black}
