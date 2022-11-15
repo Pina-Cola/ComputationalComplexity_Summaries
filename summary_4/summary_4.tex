@@ -149,6 +149,20 @@ Does this lead to the Haltingproblem?
 
 \section*{Immerman-Szelepscènyi}
 
+\textbf{Theorem:} \\
+Given a graph $G$ and a start node $x$, the number of nodes that are reachable from $x$ in $G$ can nondeterministically be computed in space
+$\log n$ (where $n$ is the number of nodes of $G$).
+
+\textbf{Proof concept:}
+\begin{itemize}
+\item nodes $1,...,n$ with start node $1$
+\item $S(i)$ is the set of nodes which are reachable from the startnode with a pathlength of $i$
+\begin{itemize}
+\item $S(0)$ will contain node 1
+\item $s(1)$ will contain all neighbours of 1
+\end{itemize}
+\end{itemize}
+
 how many distinct nodes can be reached in a graph if you start from a graph $x$ \\
 $s(0)$ will contain node 1 and $s(1)$ will contain all neighbours of 1 \\
 we will have actual names \\
@@ -183,6 +197,14 @@ little bit of stuff between log n and constand but no interesting stuff \\
 \color{black}
 
 
+
+\section*{NSPACE is closed under complement}
+
+
+\color{red} TODO \\
+\color{black}
+\color{violet} Questions:
+\color{black}
 
 
 
