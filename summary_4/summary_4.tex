@@ -80,7 +80,7 @@ NTMs are for example used in thought experiments. One of the most important prob
 \subsection*{Asymmetry of non-deterministism}
 
 
-Asymmetry of nondeterministic acceptance:
+\textbf{Asymmetry of nondeterministic acceptance:}
 \begin{itemize}
 \item Example: find out if a formula $\varphi$ is satisfiable ($\varphi \in SAT$): 
 \begin{itemize}
@@ -91,19 +91,41 @@ Asymmetry of nondeterministic acceptance:
 \item Question whether NP $=$ coNP is a statement about \textit{all} options
 \end{itemize}
 
+\textbf{Asymmetry of nondeterministic space:}
+\begin{itemize}
+\item Example: REACHABILITY $\in$ NL
+\begin{itemize}
+\item starting at start node 1
+\item algorithm walks through nondeterminstically chosen edges $ \leq n$ times
+\item only current position is remembered ($\log n$ space)
+\item accepts if current node is node $n$
+\end{itemize}
+\item this approach seems to be unpractical so check if node $n$ is \textit{not} reachable from node 1
+\end{itemize}
 
 
-similar isuues is non-deterministic space: \\
-write down $n$ nodes on a ... non-det. will succeed if it is possible \\
-to show that it is impossible to ... in SPACE was unsolved until the 80s \\
-$h$ for function (yes or no or $h$?) \\
-$h$ is yes \\
-everything that fails stops in stae with no \\
+\begin{CountingDefinition}[$\log n$ space]{def:validLabelPlacement}
+A graph algorithm using $O(\log n)$ space stores a fixed number of pointers, independent of $n$, and manipulates them in some way. 
+\cite{unknown}
+\end{CountingDefinition}
+
+%\begin{CountingDefinition}[$\log n$ time]{def:validLabelPlacement}
+%$O(\log N)$: time grows linearly while $n$ grows exponentially. 
+%\end{CountingDefinition}
+
+
+
+
+%to show that it is impossible to ... in SPACE was unsolved until the 80s \\
+%$h$ for function (yes or no or $h$?) \\
+%$h$ is yes \\
+%everything that fails stops in stae with no \\
 
 
 \color{red} TODO \\
 \color{black}
-\color{violet} Questions:
+\color{violet} Questions: \\
+% Why is the current position remembering in $\log n$ space?
 \color{black}
 
 

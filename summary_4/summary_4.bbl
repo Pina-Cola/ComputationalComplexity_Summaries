@@ -44,6 +44,14 @@
       \field{title}{Nondeterministic Turing Machine}
       \field{year}{2016}
     \endentry
+    \entry{unknown}{misc}{}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labeltitlesource}{title}
+      \field{note}{\url{ http://www.cs.toronto.edu/~ashe/logspace_handout.pdf}}
+      \field{title}{Logarithmic Space and NL-Completeness}
+      \field{year}{2020}
+    \endentry
     \entry{book}{book}{}
       \name{author}{1}{}{%
         {{hash=b3b407bb63367a850366076095ee1970}{%
