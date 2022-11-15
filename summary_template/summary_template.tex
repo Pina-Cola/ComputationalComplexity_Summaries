@@ -8,6 +8,7 @@
 \usepackage{geometry}
 \usepackage{scrlayer-scrpage}
 \usepackage{float}
+\usepackage{xcolor}
 \pagestyle{scrheadings}
 \clearscrheadfoot
 
@@ -29,13 +30,48 @@
 Pina Kolling\\
 piko0011}
 
+\usepackage[framemethod=TikZ]{mdframed}
+
+% Style %
+\mdfdefinestyle{enviStyle}{
+   innertopmargin = 10pt,
+  linewidth      = 1pt,
+  frametitlerule = true,
+  roundcorner    = 2pt%
+}
+
+
+\newenvironment{CountingDefinition}[2][]{%
+   \ifstrempty{#1}%
+   {\mdfsetup{%
+      frametitle={{\strut ~}}}
+   }%
+   {\mdfsetup{%
+      frametitle={{\strut ~#1}}}%
+   }%
+   \mdfsetup{
+      nobreak                   = true,
+     linecolor                 = gray,
+    frametitlebackgroundcolor = gray!50,
+    style                     = enviStyle
+   }
+   \begin{mdframed}[]\relax%
+   \label{#2}}{\end{mdframed}}
+
 \begin{document}
 
 \section*{Summary: Lecture X}
 
 Summary for the chapters \textit{X} and \textit{X}. \cite{book}
 
+\begin{CountingDefinition}[Title]
+Content
+\end{CountingDefinition}
 
+\color{red} TODO \\
+\color{black}
+\color{violet} Questions:
+\color{black}
 
 
 \newpage

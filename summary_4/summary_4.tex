@@ -16,6 +16,8 @@
 
 \setlength{\parindent}{0cm}
 
+\usepackage{xcolor}
+
 
 \geometry{
   paper=a4paper, % Change to letterpaper for US letter
@@ -33,9 +35,19 @@ piko0011}
 
 \section*{Summary: Lecture 4}
 
-Summary for the chapters \textit{X} and \textit{X}. \cite{book}
+Summary for the chapter \textit{7.3} from page 150 on. \cite{book}
 
-\subsection*{Asymmetry of non-deterministic revisited}
+\subsection*{Asymmetry of non-deterministism}
+
+Asymmetry of nondeterministic acceptance:
+\begin{itemize}
+\item Example: find out if a formula $\varphi$ is satisfiable:
+\begin{itemize}
+\item choose truth values for the variables nondeterministically
+\item check if they make $\varphi$ become true
+\end{itemize}
+\item seems to be unpractical so check whether $\varphi$ is not satisfiable, because each option would have to be checked then
+\end{itemize}
 
 to check if formular is non satisfiable \\
 question whether NP $=$ coNP \\
@@ -46,6 +58,12 @@ to show that it is impossible to ... in SPACE was unsolved until the 80s \\
 $h$ for function (yes or no or $h$?) \\
 $h$ is yes \\
 everything that fails stops in stae with no \\
+
+
+\color{red} TODO \\
+\color{black}
+\color{violet} Questions:
+\color{black}
 
 
 \section*{Immerman-Szelepscènyi}
@@ -63,7 +81,25 @@ third loop: \\
 the actual magic happens here: checking something \\
 Aux sounds like a port for headphones \\
 return no when all guesses were correct? we remember solution that we were supposed to reach beforehand \\
+it requires thinking \\
+we cant even mark nodes (would use linear space) but with determinism we get it into $\log n$ (?) \\
+% U E A I O
+Algorithm (2) slides seems to be important
 
+\color{red} TODO \\
+\color{black}
+\color{violet} Questions:
+\color{black}
+
+
+\section*{REACHABILITY $\in$ NL}
+NL $=$ nondeterministic logarithmic space \\
+little bit of stuff between log n and constand but no interesting stuff \\
+
+\color{red} TODO \\
+\color{black}
+\color{violet} Questions:
+\color{black}
 
 
 
