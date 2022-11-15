@@ -2345,6 +2345,8 @@
   </bcf:bibdata>
   <bcf:section number="0">
     <bcf:citekey order="1">book</bcf:citekey>
+    <bcf:citekey order="2">JE</bcf:citekey>
+    <bcf:citekey order="2">book</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

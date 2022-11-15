@@ -31,26 +31,67 @@
 Pina Kolling\\
 piko0011}
 
+
+
+\usepackage[framemethod=TikZ]{mdframed}
+
+% Style %
+\mdfdefinestyle{enviStyle}{
+   innertopmargin = 10pt,
+  linewidth      = 1pt,
+  frametitlerule = true,
+  roundcorner    = 2pt%
+}
+
+
+\newenvironment{CountingDefinition}[2][]{%
+   \ifstrempty{#1}%
+   {\mdfsetup{%
+      frametitle={{\strut ~}}}
+   }%
+   {\mdfsetup{%
+      frametitle={{\strut ~#1}}}%
+   }%
+   \mdfsetup{
+      nobreak                   = true,
+     linecolor                 = gray,
+    frametitlebackgroundcolor = gray!50,
+    style                     = enviStyle
+   }
+   \begin{mdframed}[]\relax%
+   \label{#2}}{\end{mdframed}}
+   
+   
+   
+   
+
 \begin{document}
 
 \section*{Summary: Lecture 4}
 
 Summary for the chapter \textit{7.3} from page 150 on. \cite{book}
 
+\begin{CountingDefinition}[Nondeterministic Turing Machine]{def:validLabelPlacement}
+A nondeterministic Turing machine (\textit{NTM}) has states, which have more than one possible next state for an action. The states are not completely determined by its action and the current symbol it sees, (unlike a deterministic Turing Machine).
+
+NTMs are for example used in thought experiments. One of the most important problems in is the P versus NP problem: How difficult it is to simulate nondeterministic computation with a deterministic computer? \cite{JE, book}
+\end{CountingDefinition}
+
 \subsection*{Asymmetry of non-deterministism}
+
 
 Asymmetry of nondeterministic acceptance:
 \begin{itemize}
-\item Example: find out if a formula $\varphi$ is satisfiable:
+\item Example: find out if a formula $\varphi$ is satisfiable ($\varphi \in SAT$): 
 \begin{itemize}
 \item choose truth values for the variables nondeterministically
 \item check if they make $\varphi$ become true
 \end{itemize}
-\item seems to be unpractical so check whether $\varphi$ is not satisfiable, because each option would have to be checked then
+\item this approach seems to be unpractical so check whether $\varphi$ is not satisfiable ($\varphi \in \overline{SAT}$)
+\item Question whether NP $=$ coNP is a statement about \textit{all} options
 \end{itemize}
 
-to check if formular is non satisfiable \\
-question whether NP $=$ coNP \\
+
 
 similar isuues is non-deterministic space: \\
 write down $n$ nodes on a ... non-det. will succeed if it is possible \\
