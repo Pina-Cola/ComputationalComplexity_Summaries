@@ -77,6 +77,7 @@ A nondeterministic Turing machine (\textit{NTM}) has states, which have more tha
 NTMs are for example used in thought experiments. One of the most important problems in is the P versus NP problem: How difficult it is to simulate nondeterministic computation with a deterministic computer? \cite{JE, book}
 \end{CountingDefinition}
 
+
 \subsection*{Asymmetry of non-deterministism}
 
 
@@ -91,6 +92,9 @@ NTMs are for example used in thought experiments. One of the most important prob
 \item Question whether NP $=$ coNP is a statement about \textit{all} options
 \end{itemize}
 
+\color{red} TODO with book \\
+\color{black}
+
 \textbf{Asymmetry of nondeterministic space:}
 \begin{itemize}
 \item Example: REACHABILITY $\in$ NL
@@ -103,6 +107,9 @@ NTMs are for example used in thought experiments. One of the most important prob
 \item this approach seems to be unpractical so check if node $n$ is \textit{not} reachable from node 1
 \end{itemize}
 
+\color{red} TODO with book \\
+\color{black}
+
 
 \begin{CountingDefinition}[$\log n$ space]{def:validLabelPlacement}
 A graph algorithm using $O(\log n)$ space stores a fixed number of pointers, independent of $n$, and manipulates them in some way. 
@@ -114,6 +121,18 @@ A graph algorithm using $O(\log n)$ space stores a fixed number of pointers, ind
 %\end{CountingDefinition}
 
 
+\textbf{Nondeterministically computing functions}
+\begin{itemize}
+\item A nondeterminstic Turing Mashine $M$ computes a function $f$ if the the following hold for every input $x$:
+\begin{itemize}
+\item one of the computations of $M$ stops in the halting state $h$with the corret result $f(x)$ on the output tape
+\item all computations that do not correctly output $f(x)$ stop instead in a \textit{no}-state (this path failed then)
+\end{itemize}
+\end{itemize}
+
+\color{red} TODO with book \\
+\color{black}
+
 
 
 %to show that it is impossible to ... in SPACE was unsolved until the 80s \\
@@ -122,9 +141,8 @@ A graph algorithm using $O(\log n)$ space stores a fixed number of pointers, ind
 %everything that fails stops in stae with no \\
 
 
-\color{red} TODO \\
-\color{black}
 \color{violet} Questions: \\
+Does this lead to the Haltingproblem? 
 % Why is the current position remembering in $\log n$ space?
 \color{black}
 
@@ -149,7 +167,7 @@ we cant even mark nodes (would use linear space) but with determinism we get it 
 % U E A I O
 Algorithm (2) slides seems to be important
 
-\color{red} TODO \\
+\color{red} TODO\\
 \color{black}
 \color{violet} Questions:
 \color{black}
