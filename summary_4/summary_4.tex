@@ -233,9 +233,6 @@ all bounded by $n$
 \end{itemize}
 
 
-\color{violet} Questions:
-\color{black}
-
 
 
 
@@ -266,13 +263,22 @@ Did I understand this right?
 \begin{align*}
 \text{NSPACE}(f(n)) = \text{coNSPACE}(f(n))
 \end{align*}
-for all proper complexity functions $f(n) \geq \log n$.
+for all proper complexity functions $f(n) \geq \log n$. \\
 
+\textbf{Proof idea:}
+\begin{itemize}
+\item Language $L \in $NSPACE$(f(n))$ is decided by an non-deterministic Turing Mashine $M$
+\item $M$ is space bounded in $f(n)$
+\item to show: there is a $f(n)$ space bounded non-deterministic Turing Mashine $\overline{M}$ which decides $\overline{L}$:
+\begin{itemize}
+\item On input $x$ $\overline{M}$ runs the recursive algorithm of the \textit{Savitch-Theorem-proof} (choses internal node on the middle) on the configuration graph of $M$
+\item the algorithm decides if two nodea are connected on the basis of $x$ and the transition function of $M$
+\item if $\overline{M}$ comes to an accepting configuration $U$, it halts and rejects
+\item otherwise (if it is computed and no accepting configuration has been found) $\overline{M}$ accepts
+\end{itemize}
 
-\color{red} TODO \\
-\color{black}
-\color{violet} Questions:
-\color{black}
+\end{itemize}
+
 
 
 
