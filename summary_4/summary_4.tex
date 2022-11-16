@@ -147,12 +147,28 @@ Does this lead to the Haltingproblem?
 \color{black}
 
 
+\begin{CountingDefinition}[Problem: GRAPH REACHABILITY]{def:validLabelPlacement}
+Given a graph $G$ and two nodes $n_1, n_2 \in V$, is there  path from $n_1$ to $n_2$?
+
+A graph $G=(V, E)$ is a finite set $V$ of nodes and a set $E$ of edges as node pairs.
+\ \\
+
+REACHIBILITY can be nondeterministically solved in space $\log n$.
+\end{CountingDefinition}
+
+
 \section*{Immerman-Szelepscènyi}
 
 \textbf{Theorem:} \\
 Given a graph $G$ and a start node $x$, the number of nodes that are reachable from $x$ in $G$ can nondeterministically be computed in space
 $\log n$ (where $n$ is the number of nodes of $G$).
-\ \\
+
+
+
+\begin{itemize}
+\item can be non-deterministically solved
+\item solving as an extension to REACHABILITY
+\end{itemize}
 
 \textbf{Proof concept:}
 \begin{itemize}
@@ -198,9 +214,18 @@ Algorithm (2) slides seems to be important
 \color{black}
 
 
-\section*{REACHABILITY $\in$ NL}
-NL $=$ nondeterministic logarithmic space \\
-little bit of stuff between log n and constant but no interesting stuff \\
+
+
+\section*{$\overline{\text{REACHABILITY}} \in$ NL}
+
+\begin{itemize}
+\item NL $=$ nondeterministic logarithmic space
+\item $\overline{\text{REACHABILITY}} \in$ NL
+\end{itemize}
+
+
+%little bit of stuff between log n and constant but no interesting stuff \\
+
 Proof: Modify the $NTM $in the preceding proof so that it returns \textit{yes} if the innermost subroutine ever reaches the target node $n$, otherwise, return \textit{no}.
 
 \color{red} TODO \\
