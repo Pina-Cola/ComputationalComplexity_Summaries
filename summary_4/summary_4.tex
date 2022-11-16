@@ -172,7 +172,7 @@ $\log n$ (where $n$ is the number of nodes of $G$). \\
 $\rightarrow$ counting problem and its complement are identical
 \end{itemize}
 
-\textbf{Proof concept:}
+\textbf{Algorithm:}
 \begin{itemize}
 \item nodes $1,...,n$ with start node $1$
 \item $S(i)$ is the set of nodes which are reachable from the startnode with a pathlength of $i$
@@ -216,22 +216,23 @@ if $m  < |S(k-1)|$ not all members of $S(k-1)$ have been ecountered: return \tex
 
 \item fourth loop:
 \begin{itemize}
-\item fkds
+\item checking whether $v \in S(k-1)$ with non-determinism (similar to REACHBILITY)
 \end{itemize}
 
 
 
 \end{itemize}
 
-\item nodes cant be marked (this would use linear space) but with determinism it gets into $\log n$ 
+\item nodes can't be marked (this would use linear space) 
+\item runs in space $\log n$ with a Truring Machine $M$
+\item $M$ has seperate strings holding each of the variables: $k, |S(k-1)|, l, u, m, v, p, w_p, w_{p-1}, input, output$ \\
+all of those need only to be compared to each other and incremented by 1 \\
+all bounded by $n$ 
 
 
 \end{itemize}
 
-Algorithm (2) slides seems to be important
 
-\color{red} TODO and TODO with book \\
-\color{black}
 \color{violet} Questions:
 \color{black}
 
@@ -246,13 +247,16 @@ Algorithm (2) slides seems to be important
 \end{itemize}
 
 
-%little bit of stuff between log n and constant but no interesting stuff \\
+Modify the non-deterministic Turing Mashine from above so that it returns \textit{yes} if the innermost subroutine ever reaches the target node $n$, otherwise, return \textit{no}.
 
-Proof: Modify the $NTM $in the preceding proof so that it returns \textit{yes} if the innermost subroutine ever reaches the target node $n$, otherwise, return \textit{no}.
+\begin{itemize}
+\item run previous algorithm
+\item if target node is found, yes is returned
+\item else algorithm continues
+\end{itemize}
 
-\color{red} TODO \\
-\color{black}
-\color{violet} Questions:
+\color{violet} Questions: \\
+Did I understand this right?
 \color{black}
 
 
