@@ -92,8 +92,7 @@ NTMs are for example used in thought experiments. One of the most important prob
 \item Question whether NP $=$ coNP is a statement about \textit{all} options
 \end{itemize}
 
-\color{red} TODO with book \\
-\color{black}
+
 
 \textbf{Asymmetry of nondeterministic space:}
 \begin{itemize}
@@ -107,8 +106,7 @@ NTMs are for example used in thought experiments. One of the most important prob
 \item this approach seems to be unpractical so check if node $n$ is \textit{not} reachable from node 1
 \end{itemize}
 
-\color{red} TODO with book \\
-\color{black}
+
 
 
 \begin{CountingDefinition}[$\log n$ space]{def:validLabelPlacement}
@@ -123,15 +121,14 @@ A graph algorithm using $O(\log n)$ space stores a fixed number of pointers, ind
 
 \textbf{Nondeterministically computing functions}
 \begin{itemize}
-\item A nondeterminstic Turing Mashine $M$ computes a function $f$ if the the following hold for every input $x$:
+\item A nondeterminstic Turing Machine $M$ computes a function $f$ if the the following hold for every input $x$:
 \begin{itemize}
-\item one of the computations of $M$ stops in the halting state $h$with the corret result $f(x)$ on the output tape
+\item one of the computations of $M$ stops in the halting state $h$with the correct result $f(x)$ on the output tape
 \item all computations that do not correctly output $f(x)$ stop instead in a \textit{no}-state (this path failed then)
 \end{itemize}
 \end{itemize}
 
-\color{red} TODO with book \\
-\color{black}
+
 
 
 
@@ -141,10 +138,6 @@ A graph algorithm using $O(\log n)$ space stores a fixed number of pointers, ind
 %everything that fails stops in stae with no \\
 
 
-\color{violet} Questions: \\
-Does this lead to the Haltingproblem? 
-% Why is the current position remembering in $\log n$ space?
-\color{black}
 
 
 \begin{CountingDefinition}[Problem: GRAPH REACHABILITY]{def:validLabelPlacement}
@@ -244,7 +237,7 @@ all bounded by $n$
 \end{itemize}
 
 
-Modify the non-deterministic Turing Mashine from above so that it returns \textit{yes} if the innermost subroutine ever reaches the target node $n$, otherwise, return \textit{no}.
+Modify the non-deterministic Turing Machine from above so that it returns \textit{yes} if the innermost subroutine ever reaches the target node $n$, otherwise, return \textit{no}.
 
 \begin{itemize}
 \item run previous algorithm
@@ -267,9 +260,9 @@ for all proper complexity functions $f(n) \geq \log n$. \\
 
 \textbf{Proof idea:}
 \begin{itemize}
-\item Language $L \in $NSPACE$(f(n))$ is decided by an non-deterministic Turing Mashine $M$
+\item Language $L \in $NSPACE$(f(n))$ is decided by an non-deterministic Turing Machine $M$
 \item $M$ is space bounded in $f(n)$
-\item to show: there is a $f(n)$ space bounded non-deterministic Turing Mashine $\overline{M}$ which decides $\overline{L}$:
+\item to show: there is a $f(n)$ space bounded non-deterministic Turing Machine $\overline{M}$ which decides $\overline{L}$:
 \begin{itemize}
 \item On input $x$ $\overline{M}$ runs the recursive algorithm of the \textit{Savitch-Theorem-proof} (choses internal node on the middle) on the configuration graph of $M$
 \item the algorithm decides if two nodea are connected on the basis of $x$ and the transition function of $M$
