@@ -101,8 +101,11 @@ Summary for the chapters \textit{X} and \textit{X}. \cite{book}
 \begin{itemize}
 \item reduction: a problem is at least as hard as another
 \item problem $A$ is at least as hard as problem $B$ if $B$ reduces to $A$
-\item $B$ reduces to $A$ if there is a transformation $R$ \\
-$\rightarrow$ $R$ produces for every input $x$ of $B$ an equivalent input $R(x)$ of $A$
+\item $B$ reduces to $A$ if there is a transformation $R$
+\begin{itemize}
+\item $R$ produces for every input $x$ of $B$ an equivalent input $R(x)$ of $A$ 
+\item the answer of input $x$ on $B$ and input $R(x)$ on $A$ have to be the same
+\end{itemize}
 \end{itemize}
 
 \begin{CountingDefinition}[Reduction]{def:validLabelPlacement}
