@@ -19,6 +19,13 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
+    \entry{PNPsets}{misc}{}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{labeltitlesource}{title}
+      \field{note}{\url{https://www.techno-science.net/actualite/np-conjecture-000-000-partie-denouee-N21607.html}}
+      \field{title}{Image source: P-NP sets}
+    \endentry
     \entry{book}{book}{}
       \name{author}{1}{}{%
         {{hash=b3b407bb63367a850366076095ee1970}{%
