@@ -117,18 +117,25 @@ Problem $A$ is at least as hard as problem $B$ if $B$ reduces to $A$.
 \begin{itemize}
 \item tranformation function $R$ should not be too hard to compute \\
 $\rightarrow$ $R$ should be limited \\
+\item efficient reduction $R$: $\log n$ space bounded
 \item[] \begin{CountingDefinition}[Transformation function]{def:validLabelPlacement}
-fdhjsk
+A language $L_1$ is reducible to $L_2$ if there is a function $R$ computable by a deterministic Turing Machine in space $O(\log n)$ and
+$x \in L_1 \Leftrightarrow R(x) \in L_2$.
+
+$R$ is called a reduction from $L_1$ to $L_2$.
 \end{CountingDefinition}
 \end{itemize}
 
+\begin{itemize}
+\item A Turing Machine $M$ that computes a reduction $R$ halts for all inputs $x$ after a polynomial number of steps.
+\begin{itemize}
+\item there are $O(n \cdot c^{\log n})$ possible configurtions for $M$ on an input of length $n$
+\item deterministic: no configuration can be repeated
+\item computation of length at most $O(n^k)$
+\end{itemize}
+\end{itemize}
 
 
-
-\color{red} TODO \\
-\color{black}
-\color{violet} Questions:
-\color{black}
 
 
 
