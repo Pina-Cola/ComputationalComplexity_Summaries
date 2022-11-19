@@ -2354,6 +2354,8 @@
     <bcf:citekey order="8">booleanC</bcf:citekey>
     <bcf:citekey order="9">RCV</bcf:citekey>
     <bcf:citekey order="10">RCV</bcf:citekey>
+    <bcf:citekey order="11">booleanC</bcf:citekey>
+    <bcf:citekey order="12">booleanC</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

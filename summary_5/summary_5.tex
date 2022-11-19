@@ -282,10 +282,7 @@ $\rightarrow$ demonstrates REACHABILITY is not significantly harder that CIRCUIT
 \item $g_{i, j, k}$ is an \textit{or} gate with predecessors $g_{i, j, k-1}$ and $h_{i, j, k}$ where $k = 1, 2, ... , n$
 \item $g_{1,n,n}$ is the output gate
 
-
 \item [] \cite{RCV}
-
-
 
 \end{itemize}
 
@@ -314,7 +311,7 @@ The circuit satisfiability problem (CIRCUIT SAT) is the decision problem of dete
 $\rightarrow$ demonstrates CIRCUIT SAT is not significantly harder that SAT
 \item 
 given a circuit C, construct a boolean expression $R(C)$ such that $R(C)$ is satisfiable if and only if $C$ is satisfiable
-\item R(C) will turn out to be a CNF.
+% \item R(C) will turn out to be a CNF.
 \item the variables of $R(C)$ are those of $C$ plus $g$ for each gate $g$ of $C$
 \item clauses of $R(C)$:
 \begin{itemize}
@@ -335,6 +332,28 @@ Add clause $(g)$, meaning: $g$ must be true to make $R(C)$ true
 \end{itemize}
 \item[] \cite{RCV}
 \end{itemize}
+
+\textbf{Example:} \\
+\begin{minipage}{0.4\textwidth}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.6]{booleanC.jpg}
+\end{center}
+\caption{Boolean circuit example \cite{booleanC}}
+\end{figure}
+
+\end{minipage}\begin{minipage}{0.6\textwidth}
+
+\begin{itemize}
+\item $g$ as variable gate: $\ \ \ x_1 \ \ \ \  x_2 \ \ \ \ \ x_3$
+\item $g$ as $\wedge$ gate: $\ \ \ (x_1 \wedge x_2) \ \ \ \ \ (x_2 \wedge x_3)$
+\item $g$ as $\lnot$ gate: $\ \ \ (\lnot x_3) \ \ \ \ \ \lnot (x_1 \wedge x_2)$
+\item $g$ as $\vee$ gate: $\ \ \ (x_2 \wedge x_3) \vee \lnot x_3$
+\item $g$ as $\wedge$ gate: $\ \ \ \lnot(x_1 \wedge x_2) \wedge ((x_2 \wedge x_3) \vee \lnot x_3)$
+\end{itemize}
+
+\end{minipage}
 
 
 
