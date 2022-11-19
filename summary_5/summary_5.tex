@@ -149,7 +149,7 @@ $R$ is called a reduction from $L_1$ to $L_2$.
 \subsection*{Reduction HAMILTONIAN PATH to SATISFIABLE}
 
 \begin{CountingDefinition}[Problem: HAMILTON PATH]{def:validLabelPlacement}
-The Hamiltonian Path problem asks whether there is a route in a directed graph $G$ from a start node to an ending node, visiting each node exactly once. \cite{HAMPATH}
+The Hamiltonian Path problem asks whether there is a route in a directed graph $G$ from a start node to an ending node, visiting each node exactly once. (Is there a path in $G$ that visits each node one?) \cite{HAMPATH}
 \end{CountingDefinition}
 
 \begin{CountingDefinition}[Problem: SAT]{def:validLabelPlacement}
@@ -157,13 +157,37 @@ The SAT (satisfiability) problem is the problem of determining if there exists a
 \end{CountingDefinition}
 
 
-
 \begin{itemize}
-\item instance: Graph $G$ \\
-question: Is there a path in $G$ that visits each node one?
+\item HAMILTON PATH can be reduced to SAT \\
+$\rightarrow$ demonstrates HAMILTON PATH is not significantly harder that SAT
+\item construct a boolean expression $R(G)$ that is satisfiable only if $G$ has a Hamilton path \\
+$\rightarrow$ write a logical formular that only becomes true when HP is true 
+
+\item instance: Graph $G = (V,E)$ with $n$ nodes $(1, 2, ..., n)$ 
+\item $R(G)$ has $n^2$ boolean variables $x_{i,j}$ then
+\item node $j$ is the $i$th node in the HAMILTON PATH
+\item $R(G)$ is in conjuctive normal form (CNF: $(a \vee b) \wedge (\lnot a \vee c)$)
+\item conjuncted clauses of $R(x)$:
+\begin{itemize}
+\item each node $j$ must appear in the path $x_{1,j} \vee x_{2,j} \vee ... \vee x_{n,j}$ -- for every node $j$
+\item no node $j$ appears twice in the path: $\lnot x_{i,j} \vee \lnot x_{k,j}$ for all $i, j, k$ with $i \neq k$
+\item every position $i$ on the path must be occupied -- $x_{i,1} \vee x_{i,2} \vee ... \vee x_{i,n}$ for each $i$
+\item no two nodes $j$ and $k$ occupy the same position in the path -- $\lnot x_{i,j} \vee \lnot x_{i,k}$ for all $i, j, k$ with $j \neq k$
+\item nonadjacent nodes $i$ and $j$ cannot be adjacent in the path -- $\lnot x_{k,i} \vee \lnot x_{k+1,j}$ for all $(i, j) \notin E$ and $k= 1, 2, ..., n-1$
+\end{itemize}
+
+\cite{HPSAT}
+
+
+
+\end{itemize}
+
+
+
+
+\ \\
+\begin{itemize}
 \item $\log$ space reduction from HP to S
-\item demonstrates HP not significantly harder that SAT
-\item write a logical formular that only becomes true when it is HP
 \item 4, 3, 1, 2 as path \\
 $x_{1,4} = T, x_{2,3} = T,x_{3,1} = T,x_{4,2} = T,$
 \item slide is not quite correct
