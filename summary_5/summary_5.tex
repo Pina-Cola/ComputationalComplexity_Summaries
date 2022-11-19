@@ -147,6 +147,17 @@ $R$ is called a reduction from $L_1$ to $L_2$.
 %-------------------------------------------------------------
 
 \subsection*{Reduction HAMILTONIAN PATH to SATISFIABLE}
+
+\begin{CountingDefinition}[Problem: HAMILTON PATH]{def:validLabelPlacement}
+The Hamiltonian Path problem asks whether there is a route in a directed graph $G$ from a start node to an ending node, visiting each node exactly once. \cite{HAMPATH}
+\end{CountingDefinition}
+
+\begin{CountingDefinition}[Problem: SAT]{def:validLabelPlacement}
+The SAT (satisfiability) problem is the problem of determining if there exists an interpretation that satisfies a given Boolean formula. \cite{GTI}
+\end{CountingDefinition}
+
+
+
 \begin{itemize}
 \item instance: Graph $G$ \\
 question: Is there a path in $G$ that visits each node one?
@@ -196,6 +207,20 @@ first index: step, second: node
 \color{black}
 \color{violet} Questions:
 \color{black}
+
+
+
+
+
+%-------------------------------------------------------------
+
+\subsection*{Reduction CIRCUIT SAT PATH to SAT}
+
+\color{red} TODO \\
+\color{black}
+\color{violet} Questions:
+\color{black}
+
 
 
 

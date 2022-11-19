@@ -19,6 +19,46 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
+    \entry{HAMPATH}{article}{}
+      \name{author}{4}{}{%
+        {{hash=f522cf8db4c9427fdf0e3e43b862fe56}{%
+           family={Baumgardner},
+           familyi={B\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=4343c8f86690f7a09a4803a2c737c863}{%
+           family={Acker},
+           familyi={A\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+        {{hash=87123d7a672d6760c81370c2c7992602}{%
+           family={Adefuye},
+           familyi={A\bibinitperiod},
+           given={O.},
+           giveni={O\bibinitperiod}}}%
+        {{hash=38026ba4ee6b102b47bf3ffb41325c8f}{%
+           family={al.},
+           familyi={a\bibinitperiod},
+           prefix={et},
+           prefixi={e\bibinitperiod}}}%
+      }
+      \strng{namehash}{884a9b1c96248893c991c0a204c58d6e}
+      \strng{fullhash}{6394824eaef2a383d84d2bd9bdc53fcf}
+      \strng{bibnamehash}{6394824eaef2a383d84d2bd9bdc53fcf}
+      \strng{authorbibnamehash}{6394824eaef2a383d84d2bd9bdc53fcf}
+      \strng{authornamehash}{884a9b1c96248893c991c0a204c58d6e}
+      \strng{authorfullhash}{6394824eaef2a383d84d2bd9bdc53fcf}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{J Biol Eng}
+      \field{note}{DOI: \url{https://doi.org/10.1186/1754-1611-3-11}}
+      \field{number}{11}
+      \field{title}{Solving a Hamiltonian Path Problem with a bacterial computer}
+      \field{volume}{3}
+      \field{year}{2009}
+    \endentry
     \entry{PNPsets}{misc}{}
       \field{sortinit}{I}
       \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
@@ -49,6 +89,30 @@
       \field{labeltitlesource}{title}
       \field{title}{Computational Complexity}
       \field{year}{1994}
+    \endentry
+    \entry{GTI}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=c4802eccfe4320a166f281b8ed69ed1f}{%
+           family={Schwentick},
+           familyi={S\bibinitperiod},
+           given={Prof.\bibnamedelimi Dr.\bibnamedelimi Thomas},
+           giveni={P\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {TU Dortmund}%
+      }
+      \strng{namehash}{c4802eccfe4320a166f281b8ed69ed1f}
+      \strng{fullhash}{c4802eccfe4320a166f281b8ed69ed1f}
+      \strng{bibnamehash}{c4802eccfe4320a166f281b8ed69ed1f}
+      \strng{authorbibnamehash}{c4802eccfe4320a166f281b8ed69ed1f}
+      \strng{authornamehash}{c4802eccfe4320a166f281b8ed69ed1f}
+      \strng{authorfullhash}{c4802eccfe4320a166f281b8ed69ed1f}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{\url{https://www.cs.tu-dortmund.de/nps/de/Studium/Ordnungen_Handbuecher_Beschluesse/Modulhandbuecher/Archiv/Bachelor_LA_GyGe_Inf_Modellv/_Module/INF-BfP-GTI/index.html}}
+      \field{title}{Lecture notes in Grundbegriffe der theoretischen Informatik}
     \endentry
   \enddatalist
 \endrefsection
