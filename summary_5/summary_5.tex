@@ -188,16 +188,17 @@ $\rightarrow$ write a logical formular that only becomes true when HP is true
 \item $R$ can be computed in space $\log n$
 \end{itemize}
 
-\item 
+\item $R(G)$ contains $O(n^3) clauses$:
+\begin{itemize}
+\item for each node $j$ exists a unique position $i$ ($x_{i,j}$)
+\item for each position $i$ exists a unique node $j$ ($x_{i,j}$)
+\item permutaion $\pi$ of the nodes with $\pi(i)=j$ if $x_{i,j}$
+\item $(\pi(1),\pi(2),...,\pi(n))$ is a hamilton path
+\item the truth assignment $T(x_{i, j}) = true$ if and only if $\pi(i) = j$
+\end{itemize}
 
 \end{itemize}
 
-
-\color{red} TODO \\
-proof \\
-\color{black}
-\color{violet} Questions:
-\color{black}
 
 
 
@@ -231,7 +232,7 @@ Boolean circuits are defined in terms of the logic gates they contain. For examp
 
 %-------------------------------------------------------------
 
-\subsection*{Reduction REACHABILITY PATH to CIRCUIT VALUE}
+\subsection*{Reduction REACHABILITY to CIRCUIT VALUE}
 
 \begin{CountingDefinition}[Problem: GRAPH REACHABILITY]{def:validLabelPlacement}
 Given a graph $G$ and two nodes $n_1, n_2 \in V$, is there  path from $n_1$ to $n_2$?
@@ -287,14 +288,16 @@ $\rightarrow$ demonstrates REACHABILITY is not significantly harder that CIRCUIT
 \end{itemize}
 
 \textbf{Proof idea:}
+\begin{itemize}
+\item prove by induction on $k$ \\
+$\rightarrow$ prove that the gates work as described
+\item claim is true for $k=0$
+\item if claim is true for $k-1$: true for $k$ too \\
+\item $g_{1,n,n}$ is true if and only if there is a path from $1$ to $n$ and there is a path from $1$ to $n$ in $G$
+\item $R$ can be computed in $\log n$ space
+\item circuit $R(G)$ is derived from the Floyd-Warshall algorithm
+\end{itemize}
 
-
-
-\color{red} TODO \\
-proof \\
-\color{black}
-\color{violet} Questions:
-\color{black}
 
 
 
@@ -357,19 +360,9 @@ Add clause $(g)$, meaning: $g$ must be true to make $R(C)$ true
 
 \end{minipage}
 
-\ \\
-\textbf{Proof idea:}
 
 
 
-
-
-
-\color{red} TODO \\
-proof idea \\
-\color{black}
-\color{violet} Questions:
-\color{black}
 
 
 
@@ -405,13 +398,23 @@ The inputs of $A$ are a subset of inputs of $B$ and on those inputs $A$ and $B$ 
 
 %-------------------------------------------------------------
 
-\subsection*{Closedness under Composition}
+\subsection*{Closedness under composition}
+
+\begin{CountingDefinition}[Closedness under composition]{def:validLabelPlacement}
+If $R$ is a reduction from a language $L_1$ to a lanugage $L_2$ and $R'$ is a reduction from $L_2$ to a language $L_3$, then the composition $R \cdot R'$ is a reduction from $L_1$ to $L_3$.
+
+$x \in L_1 \equiv R'(R(c)) \in L_3$
+\end{CountingDefinition}
 
 
-\color{red} TODO \\
-\color{black}
-\color{violet} Questions:
-\color{black}
+\textbf{Proof idea:}
+\begin{itemize}
+\item $R \cdot R'$ can be computed in space $\log n$
+\item compose two Turing Machines $M$ and $M'$
+\item simulate the machine for $R$ by keeping on a counter which
+tape position $i$ is
+\item when $M'$  is about to do the $i$th write, jump back to the simulation of $R$ and use this value
+\end{itemize}
 
 
 
