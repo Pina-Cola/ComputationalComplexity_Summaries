@@ -188,11 +188,13 @@ $\rightarrow$ write a logical formular that only becomes true when HP is true
 \item $R$ can be computed in space $\log n$
 \end{itemize}
 
+\item 
 
 \end{itemize}
 
 
 \color{red} TODO \\
+proof \\
 \color{black}
 \color{violet} Questions:
 \color{black}
@@ -205,13 +207,20 @@ $\rightarrow$ write a logical formular that only becomes true when HP is true
 
 %-------------------------------------------------------------
 
-\subsection*{Boolean Circuits}
+\begin{CountingDefinition}[Boolean Circuit]{def:validLabelPlacement}
+A Boolean circuit is a mathematical tree model for logic formulas. 
 
+Boolean circuits are defined in terms of the logic gates they contain. For example, a circuit might contain binary AND and OR gates and unary NOT gates, or be entirely described by binary NAND gates.
 
-\color{red} TODO \\
-\color{black}
-\color{violet} Questions:
-\color{black}
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.6]{booleanC.jpg}
+\end{center}
+\caption{Boolean circuit example \cite{booleanC}}
+\end{figure}
+
+\end{CountingDefinition}
+
 
 
 
@@ -224,6 +233,29 @@ $\rightarrow$ write a logical formular that only becomes true when HP is true
 
 \subsection*{Reduction REACHABILITY PATH to CIRCUIT VALUE}
 
+\begin{CountingDefinition}[Problem: GRAPH REACHABILITY]{def:validLabelPlacement}
+Given a graph $G$ and two nodes $n_1, n_2 \in V$, is there  path from $n_1$ to $n_2$?
+
+A graph $G=(V, E)$ is a finite set $V$ of nodes and a set $E$ of edges as node pairs.
+\ \\
+
+REACHIBILITY can be nondeterministically solved in space $\log n$.
+\end{CountingDefinition}
+
+
+
+
+\begin{CountingDefinition}[Problem: CIRCUIT VALUE]{def:validLabelPlacement}
+The CIRCUIT VALUE Problem is the problem of computing the output of a given Boolean circuit on a given input.
+
+In terms of time complexity, it can be solved in linear time (topological sort).
+
+
+The problem is closely related to the SAT (Boolean Satisfiability) problem which is complete for NP and its complement, which is complete for co-NP.
+\end{CountingDefinition}
+
+
+
 \color{red} TODO \\
 \color{black}
 \color{violet} Questions:
@@ -235,7 +267,7 @@ $\rightarrow$ write a logical formular that only becomes true when HP is true
 
 %-------------------------------------------------------------
 
-\subsection*{Reduction CIRCUIT SAT PATH to SAT}
+\subsection*{Reduction CIRCUIT SAT to SAT}
 
 \color{red} TODO \\
 \color{black}

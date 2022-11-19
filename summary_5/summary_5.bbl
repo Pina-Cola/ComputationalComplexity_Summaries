@@ -59,6 +59,13 @@
       \field{volume}{3}
       \field{year}{2009}
     \endentry
+    \entry{booleanC}{misc}{}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{labeltitlesource}{title}
+      \field{note}{\url{https://upload.wikimedia.org/wikipedia/en/thumb/d/df/Three_input_Boolean_circuit.jpg/300px-Three_input_Boolean_circuit.jpg}}
+      \field{title}{Image source: Boolean Circuit}
+    \endentry
     \entry{PNPsets}{misc}{}
       \field{sortinit}{I}
       \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
