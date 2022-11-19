@@ -122,7 +122,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{\url{https://www.csie.ntu.edu.tw/~lyuu/complexity/2004/c_20041020.pdf}}
-      \field{title}{Lecture slides on Reduction of reachability to circuit value}
+      \field{title}{Lecture slides on Reductions}
       \field{year}{2004}
     \endentry
     \entry{book}{book}{}

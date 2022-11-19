@@ -316,25 +316,26 @@ $\rightarrow$ demonstrates CIRCUIT SAT is not significantly harder that SAT
 given a circuit C, construct a boolean expression $R(C)$ such that $R(C)$ is satisfiable if and only if $C$ is satisfiable
 \item R(C) will turn out to be a CNF.
 \item the variables of $R(C)$ are those of $C$ plus $g$ for each gate $g$ of $C$
+\item clauses of $R(C)$:
+\begin{itemize}
+\item $g$ is a variable gate $x$: \\
+Add clauses $(\lnot g \vee x)$ and $(g \vee \lnot x) \equiv g \Leftrightarrow x$
+\item $g$ is a \textit{true} gate: \\
+Add clause $(g)$ $\rightarrow$ $g$ must be true to make $R(C)$ true
+\item $g$ is a \textit{false} gate: \\
+Add clause $(\lnot g)$ $\rightarrow$ $g$ must be false to make $R(C)$ true
+\item $g$ is a $\lnot$ gate with predecessor gate $h$: \\
+Add clauses $(\lnot g \vee \lnot h)$ and $(g \vee h) \equiv g \Leftrightarrow \lnot h$
+\end{itemize}
+\item[] \cite{RCV}
 \end{itemize}
 
 
 
-%The Clauses of R(C)
-%g is a variable gate x: Add clauses (¬g ∨ x) and (g ∨ ¬x).
-%• Meaning: g ⇔ x.
-%g is a true gate: Add clause (g).
-%• Meaning: g must be true to make R(C) true.
-%g is a false gate: Add clause (¬g).
-%• Meaning: g must be false to make R(C) true.
-%g is a ¬ gate with predecessor gate h: Add clauses
-%(¬g ∨ ¬h) and (g ∨ h).
-%• Meaning: g ⇔ ¬h.
-
 
 
 \color{red} TODO \\
-construction of reduction \\
+example \\
 proof idea \\
 \color{black}
 \color{violet} Questions:
