@@ -177,23 +177,20 @@ $\rightarrow$ write a logical formular that only becomes true when HP is true
 \end{itemize}
 
 \cite{HPSAT}
-
-
-
 \end{itemize}
 
+\textbf{Proof idea:}
 
-
-
-\ \\
 \begin{itemize}
-\item $\log$ space reduction from HP to S
-\item 4, 3, 1, 2 as path \\
-$x_{1,4} = T, x_{2,3} = T,x_{3,1} = T,x_{4,2} = T,$
-\item slide is not quite correct
-\item $(not x_{1,1} or not x_{2,1}) and (not x_{1,1} or not x_{3,1}) \\ and (not x_{1,1} or not x_{4,1}) and (not x_{2,1} or not x_{3,1}) \\ and (not x_{2,1} or not x_{4,1}) and (not x_{3,1} or not x_{4,1}) and ...$ \\
-first index: step, second: node
+\item to show:
+\begin{itemize}
+\item for any graph $G$, $R(G)$ has a satisfying truth assignment only if and only if $G$ has a Hamilton path
+\item $R$ can be computed in space $\log n$
 \end{itemize}
+
+
+\end{itemize}
+
 
 \color{red} TODO \\
 \color{black}
