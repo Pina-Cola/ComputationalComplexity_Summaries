@@ -1,15 +1,15 @@
 [0] Config.pm:311> INFO - This is Biber 2.16
-[0] Config.pm:314> INFO - Logfile is 'summary_5.blg'
-[178] biber-MSWIN64:340> INFO - === 
-[229] Biber.pm:415> INFO - Reading 'summary_5.bcf'
-[384] Biber.pm:952> INFO - Found 7 citekeys in bib section 0
-[403] Biber.pm:4340> INFO - Processing section 0
-[419] Biber.pm:4531> INFO - Looking for bibtex format file 'references.bib' for section 0
-[484] bibtex.pm:1689> INFO - LaTeX decoding ...
-[497] bibtex.pm:1494> INFO - Found BibTeX data source 'references.bib'
-[565] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[566] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[566] Biber.pm:4168> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
-[566] Biber.pm:4174> INFO - No sort tailoring available for locale 'en-US'
-[574] bbl.pm:654> INFO - Writing 'summary_5.bbl' with encoding 'UTF-8'
-[577] bbl.pm:757> INFO - Output to summary_5.bbl
+[1] Config.pm:314> INFO - Logfile is 'summary_5.blg'
+[208] biber-MSWIN64:340> INFO - === 
+[277] Biber.pm:415> INFO - Reading 'summary_5.bcf'
+[453] Biber.pm:952> INFO - Found 7 citekeys in bib section 0
+[473] Biber.pm:4340> INFO - Processing section 0
+[490] Biber.pm:4531> INFO - Looking for bibtex format file 'references.bib' for section 0
+[555] bibtex.pm:1689> INFO - LaTeX decoding ...
+[572] bibtex.pm:1494> INFO - Found BibTeX data source 'references.bib'
+[657] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[657] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[657] Biber.pm:4168> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[657] Biber.pm:4174> INFO - No sort tailoring available for locale 'en-US'
+[665] bbl.pm:654> INFO - Writing 'summary_5.bbl' with encoding 'UTF-8'
+[669] bbl.pm:757> INFO - Output to summary_5.bbl

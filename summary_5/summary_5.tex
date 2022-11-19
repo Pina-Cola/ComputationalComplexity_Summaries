@@ -286,6 +286,8 @@ $\rightarrow$ demonstrates REACHABILITY is not significantly harder that CIRCUIT
 
 \end{itemize}
 
+\textbf{Proof idea:}
+
 
 
 \color{red} TODO \\
@@ -355,7 +357,8 @@ Add clause $(g)$, meaning: $g$ must be true to make $R(C)$ true
 
 \end{minipage}
 
-
+\ \\
+\textbf{Proof idea:}
 
 
 
@@ -363,7 +366,6 @@ Add clause $(g)$, meaning: $g$ must be true to make $R(C)$ true
 
 
 \color{red} TODO \\
-example \\
 proof idea \\
 \color{black}
 \color{violet} Questions:
@@ -378,12 +380,22 @@ proof idea \\
 
 %-------------------------------------------------------------
 
-\subsection*{Further examples}
+\subsection*{Generalization}
 
-\color{red} TODO \\
-\color{black}
-\color{violet} Questions:
-\color{black}
+\begin{itemize}
+\item generalizations are a special form of reductions 
+\item problem $A$ is a generalization of problem $B$ if every instance of $B$ is also an instance of $A$
+$\rightarrow$ $B$ can be reduced to $A$
+\item inputs of $A$ are a subset of inputs of $B$ and on those inputs $A$ and $B$ have the same answers
+\end{itemize}
+
+\begin{CountingDefinition}[Generalization]{def:validLabelPlacement}
+Problem $A$ is a generalization of problem $B$ if every instance of $B$ is also an instance of $A$. This implies $B$ can be reduced to $A$.
+
+The inputs of $A$ are a subset of inputs of $B$ and on those inputs $A$ and $B$ have the same answers.
+\end{CountingDefinition}
+
+
 
 
 
