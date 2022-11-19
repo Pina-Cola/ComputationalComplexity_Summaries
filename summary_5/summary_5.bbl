@@ -90,13 +90,40 @@
       \strng{authorbibnamehash}{a9bb5173a0f16b364512964e7a4b026c}
       \strng{authornamehash}{a9bb5173a0f16b364512964e7a4b026c}
       \strng{authorfullhash}{a9bb5173a0f16b364512964e7a4b026c}
+      \field{extraname}{1}
       \field{sortinit}{L}
       \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{\url{https://www.csie.ntu.edu.tw/~lyuu/complexity/2011/20111018.pdf}}
-      \field{title}{Lecture slides}
+      \field{title}{Lecture slides on Reduction of hamiltonian path to sat}
       \field{year}{2011}
+    \endentry
+    \entry{RCV}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=a9bb5173a0f16b364512964e7a4b026c}{%
+           family={Lyuu},
+           familyi={L\bibinitperiod},
+           given={Prof.\bibnamedelimi Yuh-Dauh},
+           giveni={P\bibinitperiod\bibinitdelim Y\bibinithyphendelim D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {National Taiwan University}%
+      }
+      \strng{namehash}{a9bb5173a0f16b364512964e7a4b026c}
+      \strng{fullhash}{a9bb5173a0f16b364512964e7a4b026c}
+      \strng{bibnamehash}{a9bb5173a0f16b364512964e7a4b026c}
+      \strng{authorbibnamehash}{a9bb5173a0f16b364512964e7a4b026c}
+      \strng{authornamehash}{a9bb5173a0f16b364512964e7a4b026c}
+      \strng{authorfullhash}{a9bb5173a0f16b364512964e7a4b026c}
+      \field{extraname}{2}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{\url{https://www.csie.ntu.edu.tw/~lyuu/complexity/2004/c_20041020.pdf}}
+      \field{title}{Lecture slides on Reduction of reachability to circuit value}
+      \field{year}{2004}
     \endentry
     \entry{book}{book}{}
       \name{author}{1}{}{%

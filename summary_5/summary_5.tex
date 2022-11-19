@@ -255,8 +255,62 @@ The problem is closely related to the SAT (Boolean Satisfiability) problem which
 \end{CountingDefinition}
 
 
+\begin{itemize}
+\item REACHABILITY can be reduced to CIRCUIT VALUE \\
+$\rightarrow$ demonstrates REACHABILITY is not significantly harder that CIRCUIT VALUE
+\item construct a variable-free circuit $R(G)$ that has \textit{true} as output only if $G$ has a path from the start node to node $n$ 
+\item (both problema are in P)
+\item instance: Graph $G = (V, E)$ with $n$ nodes $(1,2,...,n)$
+
+
+
+
+\item 
+
+\cite{RCV}
+
+%• The output of R(G) is true if and only if there is a path
+%from node 1 to node n in G.
+%• Idea: the Floyd-Warshall algorithm
+
+%The Construction
+%• hijk is an and gate with predecessors gi,k,k−1 and
+%gk,j,k−1, where k = 1, 2, . . . , n.
+%• gijk is an or gate with predecessors gi,j,k−1 and hi,j,k,
+%where k = 1, 2, . . . , n.
+%• g1nn is the output gate.
+%• Interestingly, R(G) uses no ¬ gates: It is a monotone
+%circuit.
+
+%The Gates
+%• The gates are – gijk with 1 ≤ i, j ≤ n and 0 ≤ k ≤ n. – hijk with 1 ≤ i, j, k ≤ n.
+%• gijk: There is a path from node i to node j without
+%passing through a node bigger than k.
+%• hijk: There is a path from node i to node j passing
+%through k but not any node bigger than k.
+%• Input gate gij0 = true if and only if i = j or (i, j) ∈ E
+
+
+%Reduction of circuit sat to sat
+%• Given a circuit C, we shall construct a boolean
+%expression R(C) such that R(C) is satisfiable if and only
+%if C is satisfiable. – R(C) will turn out to be a CNF.
+%• The variables of R(C) are those of C plus g for each
+%gate g of C.
+%• Each gate of C will be turned into equivalent clauses of
+%R(C).
+%• Recall that clauses are ∧-ed together.
+
+
+
+
+\end{itemize}
+
+
 
 \color{red} TODO \\
+construct reduction \\
+proof \\
 \color{black}
 \color{violet} Questions:
 \color{black}
@@ -269,7 +323,15 @@ The problem is closely related to the SAT (Boolean Satisfiability) problem which
 
 \subsection*{Reduction CIRCUIT SAT to SAT}
 
+\begin{CountingDefinition}[Problem: CIRCUIT SAT]{def:validLabelPlacement}
+The circuit satisfiability problem (CIRCUIT SAT) is the decision problem of determining whether a given Boolean circuit has an assignment of its inputs that makes the output true.
+\end{CountingDefinition}
+
+
+
 \color{red} TODO \\
+construction of reduction \\
+proof idea \\
 \color{black}
 \color{violet} Questions:
 \color{black}
