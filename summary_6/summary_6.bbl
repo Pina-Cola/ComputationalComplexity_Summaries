@@ -47,6 +47,14 @@
       \field{note}{\url{https://www.javatpoint.com/automata-chomskys-normal-form}, opened on 26.09.2022}
       \field{title}{Chomsky's Normal Form (CNF)}
     \endentry
+    \entry{wiki}{misc}{}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Website}
+      \field{note}{\url{https://en.wikipedia.org/wiki/Circuit_satisfiability_problem}, opened on 25.11.2022}
+      \field{title}{Circuit satisfiability problem -- Proof of NP-Completeness}
+    \endentry
     \entry{classesPic}{misc}{}
       \field{sortinit}{C}
       \field{sortinithash}{4d103a86280481745c9c897c925753c0}

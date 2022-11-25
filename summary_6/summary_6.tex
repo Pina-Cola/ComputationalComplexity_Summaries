@@ -90,10 +90,12 @@ Which problems can be reduced to a formal language?
 \begin{itemize}
 \item[] \color{black}
 \textsc{Sat} can be expressed as formal language. \cite{lang} \\
-$\Rightarrow$ \textsc{Sat} can be reduced to a formal language. (?)
+$\Rightarrow$ \textsc{Sat} can be reduced to a formal language. (?) \\
+\textsc{Sat} is in NP. \cite{book}
 \ \\
 
 Because \textsc{Circuit Sat} can be reduced to \textsc{Sat}: \textsc{Circuit Sat} can be reduced to a formal language. (?)
+\textsc{Circuit Sat} is NP-complete. \cite{wiki}
 \ \\
 
 \begin{CountingDefinition}[Formal language]{def:validLabelPlacement}
@@ -111,7 +113,10 @@ A formal language $L$ over an alphabet $\Sigma$ is a subset of the Kleene star o
 Where to set the line between lanuguage decisions and other problems? Can every problem be contrcuted as a formal language?
 \ \\
 
-Is everything that is reducable to \textsc{Sat} reducable to a formal language?
+Is everything that is reducable to \textsc{Sat} reducable to a formal language because of the transitivity?
+\ \\
+
+I assume it does not have an influence on the complexity of a problem if it can be expressed as a formal language? Are formal languages part of specific complexity classes?
 
 \end{itemize}
 
@@ -161,6 +166,12 @@ If a complete problem in $C$ belongs in a class $C' \subseteq C$, $C = C'$.
 
 \end{itemize}
 
+%\subsection*{Table method -- time complexity}
+
+%\begin{itemize}
+%\item table method to understand time complexity
+%\end{itemize}
+
 
 
 
@@ -175,15 +186,19 @@ In terms of time complexity, it can be solved in linear time (topological sort).
 
 \begin{itemize}
 \item \textsc{P}-complete
-\item limit of power of reductions
-\item got a little tired and zoned out
+\end{itemize}
+
+\textbf{Proof idea:}
+
+\begin{itemize}
+\item \textsc{Circuit Value} is in P (prerequisite for being P-complete)
+\item show: any language $L \in $ P can be reduced to \textsc{Circuit Value}
+
 \end{itemize}
 
 
 
 \color{red} TODO \\
-\color{black}
-\color{violet} Questions:
 \color{black}
 
 
