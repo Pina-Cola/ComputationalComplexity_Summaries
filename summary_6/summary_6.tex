@@ -194,7 +194,16 @@ In terms of time complexity, it can be solved in linear time (topological sort).
 \begin{itemize}
 \item \textsc{CircuitValue} is in P (prerequisite for being P-complete)
 \item show: any language $L \in $ P can be reduced to \textsc{CircuitValue}
-
+\item $L$ is decided by Turing Machine $M$ in polynomial time $(n^k)$
+\item show: there is a reduction $R$ and an input $x$ to $M$ \\
+$R$ puts out a circuit $C$ without variable gates, whose value is true
+only if $M$ accepts $x$
+\item computation table $T$ of $M$
+\begin{itemize}
+\item table method to understand time complexity
+\item rows $i$ are the steps and columns $j$ are the string positions
+\end{itemize}
+\item if $i=0$ or $j=0$ or $j=|x|^k-1$: value of $T_{ij}$ is known
 \end{itemize}
 
 
@@ -210,7 +219,7 @@ proof! \\
 
 
 
-\subsection*{\textsc{CicuitSat} is \textsc{NP}-complete}
+\subsection*{\textsc{CircuitSat} is \textsc{NP}-complete}
 
 \begin{CountingDefinition}[Problem: \textsc{CircuitSat}]{def:validLabelPlacement}
 The circuit satisfiability problem (\textsc{CircuitSat}) is the decision problem of determining whether a given Boolean circuit has an assignment of its inputs that makes the output true.
@@ -223,11 +232,13 @@ Question: Is there a truth assignment which makes $C$ output the value true?
 \end{CountingDefinition}
 
 \begin{itemize}
-\item cook's theorem: \textsc{CircuitSat} is \textsc{NP}-complete
+\item cook's theorem: \textsc{Sat} is \textsc{NP}-complete
 \end{itemize} 
 \textbf{Proof idea:}
 \begin{itemize}
-\item circuit decides nondeterministically (?)
+\item \textsc{CircuitSat} reduces to \textsc{SAT}
+\item Turing Machine decides circuit nondeterministically
+\item describe a reduction $R$
 \item a variable is added in the nondeterministic Turing Machine
 \item check if one of the variables is tue: use this choice (?)
 \item problem: can we set thiese variables such that the Turing Machine accepts?

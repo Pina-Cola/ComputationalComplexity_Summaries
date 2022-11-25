@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.10.14)  25 NOV 2022 18:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.10.14)  25 NOV 2022 19:52
 entering extended mode
 **./summary_6.tex
 (summary_6.tex
@@ -1298,48 +1298,48 @@ Underfull \hbox (badness 10000) in paragraph at lines 182--184
 LaTeX Font Warning: Font shape `OT1/cmr/bx/sc' undefined
 (Font)              using `OT1/cmr/bx/n' instead on input line 186.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 216--218
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 216--218
+[2 <./PNP.jpg> <./classes.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 225--227
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 219--221
+Underfull \hbox (badness 10000) in paragraph at lines 225--227
 
  []
 
-[2 <./PNP.jpg> <./classes.png>] [3]
-<NP_complete.png, id=28, 447.92343pt x 534.87328pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 228--230
+
+ []
+
+[3]
+<NP_complete.png, id=29, 447.92343pt x 534.87328pt>
 File: NP_complete.png Graphic file (type png)
 <use NP_complete.png>
-Package pdftex.def Info: NP_complete.png  used on input line 258.
+Package pdftex.def Info: NP_complete.png  used on input line 269.
 (pdftex.def)             Requested size: 268.75612pt x 320.92644pt.
  [4 <./NP_complete.png>] [5]
-Underfull \hbox (badness 10000) in paragraph at lines 374--376
+Underfull \hbox (badness 10000) in paragraph at lines 385--387
 
  []
 
 [6]
-Overfull \hbox (4.71591pt too wide) in paragraph at lines 401--401
+Overfull \hbox (4.71591pt too wide) in paragraph at lines 412--412
 []\OT1/cmr/m/it/10.95 Circuit sat-is-fi-a-bil-ity prob-lem -- Proof of NP-Compl
 eteness\OT1/cmr/m/n/10.95 . Web-site. $\OT1/cmtt/m/n/10.95 https : / / en . wik
 ipedia .
  []
 
 
-Overfull \hbox (0.44962pt too wide) in paragraph at lines 401--401
+Overfull \hbox (0.44962pt too wide) in paragraph at lines 412--412
 []\OT1/cmr/m/it/10.95 Complexity classes di-a-gram im-age source\OT1/cmr/m/n/10
 .95 . $\OT1/cmtt/m/n/10.95 https : / / en . wikipedia . org / wiki / Complexity
  _
  []
 
 
-Overfull \hbox (5.09384pt too wide) in paragraph at lines 401--401
+Overfull \hbox (5.09384pt too wide) in paragraph at lines 412--412
 []\OT1/cmr/m/it/10.95 Image source: P-NP sets\OT1/cmr/m/n/10.95 . $\OT1/cmtt/m/
 n/10.95 https : / / www . techno -[] science . net / actualite / np -[] conject
 ure -[]
@@ -1369,18 +1369,19 @@ Here is how much of TeX's memory you used:
 ts/cm/cmbx10.pfb><C:/Users/pinak/AppData/Local/Programs/MiKTeX/fonts/type1/publ
 ic/amsfonts/cm/cmcsc10.pfb><C:/Users/pinak/AppData/Local/Programs/MiKTeX/fonts/
 type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/pinak/AppData/Local/Programs/MiKT
-eX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/pinak/AppData/Local/Progr
-ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/pinak/AppData/Loca
-l/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/Users/pinak/App
-Data/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/User
-s/pinak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb
-><C:/Users/pinak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/c
-msy8.pfb><C:/Users/pinak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
-nts/cm/cmti10.pfb><C:/Users/pinak/AppData/Local/Programs/MiKTeX/fonts/type1/pub
-lic/amsfonts/cm/cmtt10.pfb>
-Output written on summary_6.pdf (7 pages, 514047 bytes).
+eX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/pinak/AppData/Local/Progr
+ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/pinak/AppData/Loc
+al/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/pinak/AppD
+ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/Users/p
+inak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb>
+<C:/Users/pinak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cm
+sy10.pfb><C:/Users/pinak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
+nts/cm/cmsy8.pfb><C:/Users/pinak/AppData/Local/Programs/MiKTeX/fonts/type1/publ
+ic/amsfonts/cm/cmti10.pfb><C:/Users/pinak/AppData/Local/Programs/MiKTeX/fonts/t
+ype1/public/amsfonts/cm/cmtt10.pfb>
+Output written on summary_6.pdf (7 pages, 525316 bytes).
 PDF statistics:
- 95 PDF objects out of 1000 (max. 8388607)
+ 100 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  28 words of extra memory for PDF output out of 10000 (max. 10000000)
 
