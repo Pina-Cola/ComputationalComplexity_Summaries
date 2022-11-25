@@ -39,6 +39,32 @@
       \field{labeltitlesource}{title}
       \field{title}{Lecture notes in Computational Complexity}
     \endentry
+    \entry{lang}{article}{}
+      \name{author}{1}{}{%
+        {{hash=671ee632ae8e16a00033e0b08ce101de}{%
+           family={Lange},
+           familyi={L\bibinitperiod},
+           given={klaus-joern},
+           giveni={k\bibinithyphendelim j\bibinitperiod}}}%
+      }
+      \strng{namehash}{671ee632ae8e16a00033e0b08ce101de}
+      \strng{fullhash}{671ee632ae8e16a00033e0b08ce101de}
+      \strng{bibnamehash}{671ee632ae8e16a00033e0b08ce101de}
+      \strng{authorbibnamehash}{671ee632ae8e16a00033e0b08ce101de}
+      \strng{authornamehash}{671ee632ae8e16a00033e0b08ce101de}
+      \strng{authorfullhash}{671ee632ae8e16a00033e0b08ce101de}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-3-642-31643-2}
+      \field{month}{01}
+      \field{title}{The Boolean Formula Value Problem as Formal Language}
+      \field{year}{2012}
+      \verb{doi}
+      \verb 10.1007/978-3-642-31644-9_9
+      \endverb
+    \endentry
     \entry{book}{book}{}
       \name{author}{1}{}{%
         {{hash=b3b407bb63367a850366076095ee1970}{%

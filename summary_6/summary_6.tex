@@ -62,17 +62,48 @@ piko0011}
 
 \section*{Summary: Lecture 6}
 
-Summary for the chapter \textit{8.2}. \cite{book, CC}
+Summary for the chapter \textit{8.2}. \cite{CC, book}
 
-\begin{CountingDefinition}[Title]{def:validLabelPlacement}
-Content
-\end{CountingDefinition}
 
 \subsection*{Completeness}
 
+
+\begin{CountingDefinition}[]{def:validLabelPlacement}
+Let $C$ be a complexity class and let $L$ be a language in $C$. $L$ is called $C$\textit{-complete} if any language $L' \in C$ can be reduced to $L$.
+\ \\
+
+(Every language of a complexity class can be reduced to $L$.)
+\end{CountingDefinition}
+
+
+
 \begin{itemize}
-\item every language of a complexity class can be reduced to $L$ $\rightarrow$ you only need what $L$ describes
+\item reducitbility is transitive $\rightarrow$ problems are ordered by difficulty
+\item 
 \end{itemize}
+
+
+\color{red} TODO \\
+\color{black}
+\color{violet} Questions: 
+\\
+Which problems can be reduced to a formal language? \\
+
+
+\color{gray}
+\textsc{Sat} can be expressed as formal language. \cite{lang}
+\ \\
+
+Because \textsc{Cirquit Sat} can be reduced to \textsc{Sat}: \textsc{Cirquit Sat} can be reduced to a formal language. (?)
+\ \\
+
+Where to set the line between lanuguage decisions and other problems? 
+
+
+\color{black}
+
+
+
 
 \subsection*{What does completeness do for us?}
 
@@ -85,29 +116,49 @@ L' \in P \ \ \ \ \ \ \ & A \\
 L \rightarrow L' \ \ \ \ \ \ \  & R
 \end{align*}
 
-\item drawing set circle inclusion thing (P and NP)
+\item drawing set circle inclusion thing (\textsc{P} and \textsc{NP})
 
 \end{itemize}
 
-\subsection*{P-completeness of CIRCUIT VALUE}
 
-\begin{CountingDefinition}[Problem: CIRCUIT VALUE]{def:validLabelPlacement}
-The CIRCUIT VALUE Problem is the problem of computing the output of a given Boolean circuit on a given input.
+\color{red} TODO \\
+\color{black}
+\color{violet} Questions:
+\color{black}
+
+
+
+
+\subsection*{\textsc{P}-completeness of \textsc{CIRCUIT VALUE}}
+
+\begin{CountingDefinition}[Problem: \textsc{Circuit Value}]{def:validLabelPlacement}
+The \textsc{Circuit Value} Problem is the problem of computing the output of a given Boolean circuit on a given input.
+\ \\
 
 In terms of time complexity, it can be solved in linear time (topological sort).
 \end{CountingDefinition}
 
 \begin{itemize}
-\item P-complete
+\item \textsc{P}-complete
 \item limit of power of reductions
 \item got a little tired and zoned out
 \end{itemize}
 
+
+
+\color{red} TODO \\
+\color{black}
+\color{violet} Questions:
+\color{black}
+
+
+
+
+
 \subsection*{The reduction (?)}
 
-
-\begin{CountingDefinition}[Problem: CIRCUIT SAT]{def:validLabelPlacement}
-The circuit satisfiability problem (CIRCUIT SAT) is the decision problem of determining whether a given Boolean circuit has an assignment of its inputs that makes the output true.
+\begin{CountingDefinition}[Problem: \textsc{Circuit Sat}]{def:validLabelPlacement}
+The circuit satisfiability problem (\textsc{Circuit Sat}) is the decision problem of determining whether a given Boolean circuit has an assignment of its inputs that makes the output true.
 \ \\
 
 Input: a Boolean circuit $C$ 
@@ -116,7 +167,11 @@ Input: a Boolean circuit $C$
 Question: Is there a truth assignment which makes $C$ output the value true?
 \end{CountingDefinition}
 
-\subsection*{CIRCUIT SAT is NP-complete}
+
+
+
+
+\subsection*{\textsc{CIRCUIT SAT} is \textsc{NP}-complete}
 
 \begin{itemize}
 \item circuit decides nondeterministically (?)
@@ -125,14 +180,14 @@ Question: Is there a truth assignment which makes $C$ output the value true?
 \item problem: can we set thiese variables such that the Turing Machine accepts?
 \item answer corresponds direct to \textit{is there a choice of nd decisions such that the turing machine accepts?}
 \item extremely direct reduction
+\item cooks theorem :) 
+\item \textsc{SAT} is \textsc{NP}-complete
 \end{itemize}
 
 
 
 
 \color{red} TODO \\
-font for caps lock \\
-\color{black}
 \color{violet} Questions:
 \color{black}
 
