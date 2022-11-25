@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.10.14)  25 NOV 2022 13:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.10.14)  25 NOV 2022 14:36
 entering extended mode
 **./summary_6.tex
 (summary_6.tex
@@ -1041,6 +1041,9 @@ LaTeX Warning: Label `def:validLabelPlacement' multiply defined.
 
 LaTeX Warning: Label `def:validLabelPlacement' multiply defined.
 
+
+LaTeX Warning: Label `def:validLabelPlacement' multiply defined.
+
 )
 \openout1 = `summary_6.aux'.
 
@@ -1166,12 +1169,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 72--74
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 86--90
+Underfull \hbox (badness 10000) in paragraph at lines 90--93
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 94--97
+Underfull \hbox (badness 10000) in paragraph at lines 94--96
 
  []
 
@@ -1181,12 +1184,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 98--100
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 102--104
+Underfull \hbox (badness 10000) in paragraph at lines 101--104
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 105--108
+Underfull \hbox (badness 10000) in paragraph at lines 109--111
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 136--138
 
  []
 
@@ -1199,7 +1207,7 @@ Package scrlayer-scrpage Warning: \headheight to low.
 (scrlayer-scrpage)                e.g., setting geometry's option
 (scrlayer-scrpage)                `head=40.8pt'.
 (scrlayer-scrpage)                I'll also decrease \topmargin on input line 1
-35.
+41.
 
 
 Overfull \vbox (23.8pt too high) has occurred while \output is active []
@@ -1207,35 +1215,48 @@ Overfull \vbox (23.8pt too high) has occurred while \output is active []
  [1{C:/Users/pinak/AppData/Local/MiKTeX/pdftex/config/pdftex.map}
 
 ]
+<PNP.jpg, id=18, 927.465pt x 528.47438pt>
+File: PNP.jpg Graphic file (type jpg)
+<use PNP.jpg>
+Package pdftex.def Info: PNP.jpg  used on input line 146.
+(pdftex.def)             Requested size: 185.48972pt x 105.693pt.
+
 
 LaTeX Font Warning: Font shape `OT1/cmss/bx/sc' undefined
-(Font)              using `OT1/cmss/bx/n' instead on input line 146.
+(Font)              using `OT1/cmss/bx/n' instead on input line 168.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 149--151
+Underfull \hbox (badness 10000) in paragraph at lines 171--173
 
  []
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/bx/sc' undefined
-(Font)              using `OT1/cmr/bx/n' instead on input line 153.
+(Font)              using `OT1/cmr/bx/n' instead on input line 175.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 175--177
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 175--177
+Underfull \hbox (badness 10000) in paragraph at lines 197--199
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 178--180
+Underfull \hbox (badness 10000) in paragraph at lines 197--199
 
  []
 
-[2] [3] (summary_6.aux)
+
+Underfull \hbox (badness 10000) in paragraph at lines 200--202
+
+ []
+
+[2 <./PNP.jpg>] [3]
+Overfull \hbox (5.09384pt too wide) in paragraph at lines 234--234
+[]\OT1/cmr/m/it/10.95 Image source: P-NP sets\OT1/cmr/m/n/10.95 . $\OT1/cmtt/m/
+n/10.95 https : / / www . techno -[] science . net / actualite / np -[] conject
+ure -[]
+ []
+
+[4] (summary_6.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -1247,10 +1268,10 @@ Package logreq Info: Writing requests to 'summary_6.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 26833 strings out of 478927
- 566580 string characters out of 2852534
- 1420375 words of memory out of 3000000
- 44300 multiletter control sequences out of 15000+600000
+ 26847 strings out of 478927
+ 566811 string characters out of 2852534
+ 1420465 words of memory out of 3000000
+ 44312 multiletter control sequences out of 15000+600000
  411082 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  130i,19n,130p,10606b,1414s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1267,9 +1288,9 @@ ers/pinak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pf
 b><C:/Users/pinak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
 cmti10.pfb><C:/Users/pinak/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
 fonts/cm/cmtt10.pfb>
-Output written on summary_6.pdf (3 pages, 144757 bytes).
+Output written on summary_6.pdf (4 pages, 302867 bytes).
 PDF statistics:
- 70 PDF objects out of 1000 (max. 8388607)
+ 74 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 18 words of extra memory for PDF output out of 10000 (max. 10000000)
 

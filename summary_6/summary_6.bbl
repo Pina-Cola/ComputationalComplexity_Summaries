@@ -47,6 +47,13 @@
       \field{note}{\url{https://www.javatpoint.com/automata-chomskys-normal-form}, opened on 26.09.2022}
       \field{title}{Chomsky's Normal Form (CNF)}
     \endentry
+    \entry{PNPsets}{misc}{}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{labeltitlesource}{title}
+      \field{note}{\url{https://www.techno-science.net/actualite/np-conjecture-000-000-partie-denouee-N21607.html}}
+      \field{title}{Image source: P-NP sets}
+    \endentry
     \entry{lang}{article}{}
       \name{author}{1}{}{%
         {{hash=671ee632ae8e16a00033e0b08ce101de}{%

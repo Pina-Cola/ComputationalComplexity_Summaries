@@ -79,14 +79,10 @@ Let $C$ be a complexity class and let $L$ be a language in $C$. $L$ is called $C
 
 \begin{itemize}
 \item reducitbility is transitive $\rightarrow$ problems are ordered by difficulty
-\item 
 \end{itemize}
 
 
-\color{red} TODO \\
-\color{black}
-\color{violet} Questions: 
-\ \\
+\color{violet} \textbf{Question: }
 
 Which problems can be reduced to a formal language? 
 \begin{itemize}
@@ -111,24 +107,50 @@ A formal language $L$ over an alphabet $\Sigma$ is a subset of the Kleene star o
 \end{CountingDefinition}
 
 Where to set the line between lanuguage decisions and other problems? Can every problem be contrcuted as a formal language?
+\ \\
+
+Is everything that is reducable to \textsc{Sat} reducable to a formal language?
 
 \end{itemize}
 
 \color{black}
 
 
+\begin{itemize}
+% \item a reduction definition is usefull because the complexity classe are closed under reduction
+\item complete problems can capture the difficulty of a class
+\item problem is seen as cpmpletely understood if the problem is complete
+\end{itemize}
 
 
-\subsection*{What does completeness do for us?}
+\begin{CountingDefinition}[Closed under reduction]{def:validLabelPlacement}
+The following complexity classes are all closed under reductions:
+\begin{itemize}
+\item[] \textsc{P} \ \ \  \textsc{NP} \ \ \ \textsc{coNP}
+\ \ \ \textsc{L}
+\ \ \  \textsc{NL}
+\ \ \  \textsc{PSPACE}
+\ \ \ \textsc{EXP}
+\end{itemize}
+
+A class $C$ is closed under reductions if whenever $L$ is reducible to $L'$ and $L' \in C'$, then $L \ in C'$.
+\ \\
+
+If a complete problem in $C$ belongs in a class $C' \subseteq C$, $C = C'$.
+
+\end{CountingDefinition}
+
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.2]{PNP.jpg}
+\end{center}
+\caption{P and NP sets \cite{PNPsets}}
+\end{figure}
+
+
 
 \begin{itemize}
-\item a reduction definition is usefull because the complexity classe are closed under reduction
-\item examples look helpfull
-\item $L$ and $R$ seem to be important:
-\begin{align*}
-L' \in P \ \ \ \ \ \ \ & A \\
-L \rightarrow L' \ \ \ \ \ \ \  & R
-\end{align*}
 
 \item drawing set circle inclusion thing (\textsc{P} and \textsc{NP})
 
