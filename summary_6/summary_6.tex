@@ -246,8 +246,8 @@ proof! \\
 
 
 
-\begin{CountingDefinition}[]{def:validLabelPlacement}
-Rangfolge der Klassen
+\begin{CountingDefinition}[Relation between complexity classes]{def:validLabelPlacement}
+$N \subseteq NL \subseteq NC \subseteq P \subseteq NP \subseteq PSPACE$
 \end{CountingDefinition}
 
 \color{red} TODO \\
@@ -269,66 +269,59 @@ Rangfolge der Klassen
 \end{itemize}
 
 \begin{CountingDefinition}[\textsc{Circuit-SAT}]{def:validLabelPlacement}
-
+The circuit satisfiability problem (\textsc{Circuit-SAT}) is the decision problem of determining whether a given Boolean circuit has an assignment of its inputs that makes the output true.
 \end{CountingDefinition}
 
 
 \begin{CountingDefinition}[\textsc{SAT}]{def:validLabelPlacement}
-
+The \textsc{SAT} (satisfiability) problem is the problem of determining if there exists an interpretation that satisfies a given Boolean formula. \cite{GTI}
 \end{CountingDefinition}
 
 
 \begin{CountingDefinition}[\textsc{3-SAT}]{def:validLabelPlacement}
-
+Like the \textsc{SAT} problem, \textsc{3-SAT} is determining the satisfiability of a formula in CNF where each clause is limited to at most three literals.
 \end{CountingDefinition}
 
 
 \begin{CountingDefinition}[\textsc{Clique}]{def:validLabelPlacement}
-
+The \textsc{Clique} problem is the problem of finding cliques (subsets of vertices, all adjacent to each other, also called complete subgraphs) in a graph.
 \end{CountingDefinition}
 
 
 \begin{CountingDefinition}[\textsc{VertexCover}]{def:validLabelPlacement}
-
+In graph theory, a \textsc{VertexCover} (sometimes \textsc{NodeCover}) of a graph is a set of vertices that includes at least one endpoint of every edge of the grap
 \end{CountingDefinition}
 
 
-\begin{CountingDefinition}[\textsc{HammiltonCykle}]{def:validLabelPlacement}
-
+\begin{CountingDefinition}[\textsc{HamiltonCycle}]{def:validLabelPlacement}
+A \textsc{HamiltonCycle} is a graph cycle (i.e., closed loop) through a graph that visits each node exactly once.
 \end{CountingDefinition}
 
 
 \begin{CountingDefinition}[\textsc{TravellingSalesman}]{def:validLabelPlacement}
-
+\textit{Given a list of cities and the distances between each pair of cities, what is the shortest possible route that visits each city exactly once and returns to the origin city?}
 \end{CountingDefinition}
 
 
 \begin{CountingDefinition}[\textsc{GraphColoring}]{def:validLabelPlacement}
-
+In graph theory, graph coloring is a special case of graph labeling. It is an assignment of colors to elements of a graph subject to certain constraints.
 \end{CountingDefinition}
 
 
 \begin{CountingDefinition}[\textsc{ExactCover}]{def:validLabelPlacement}
-
+Given a collection $S$ of subsets of set $X$, an exact cover is the subset $S^*$ of $S$ such that each element of $X$ is contained is exactly one subset of $S^*$.
 \end{CountingDefinition}
 
 
 \begin{CountingDefinition}[\textsc{Knapsack}]{def:validLabelPlacement}
-
+\textit{Given a set of items, each with a weight and a value, determine the number of each item to include in a collection so that the total weight is less than or equal to a given limit and the total value is as large as possible.}
 \end{CountingDefinition}
 
 
 \begin{CountingDefinition}[\textsc{SubsetSum}]{def:validLabelPlacement}
-
+The \textsc{SubsetSum} problem involves determining whether or not a subset from a list of integers can sum to a target value. For example, consider the list of $nums = [1, 2, 3, 4]$ . If the target is 7 , there are two subsets that achieve this sum: $\{ 3, 4 \}$ and $\{ 1, 2, 4\}$.
 \end{CountingDefinition}
 
-
-
-
-
-
-\color{red} TODO \\
-\color{black}
 
 
 
@@ -342,7 +335,12 @@ Rangfolge der Klassen
 \end{itemize}
 
 \begin{CountingDefinition}[\textsc{CircuitValue}]{def:validLabelPlacement}
+The \textsc{CircuitValue} Problem is the problem of computing the output of a given Boolean circuit on a given input.
 
+In terms of time complexity, it can be solved in linear time (topological sort).
+
+
+The problem is closely related to the \textsc{Sat} (Boolean Satisfiability) problem which is complete for NP and its complement, which is complete for co-NP.
 \end{CountingDefinition}
 
 
@@ -374,7 +372,12 @@ Rangfolge der Klassen
 
 
 \begin{CountingDefinition}[\textsc{Reachability}]{def:validLabelPlacement}
+Given a graph $G$ and two nodes $n_1, n_2 \in V$, is there  path from $n_1$ to $n_2$?
 
+A graph $G=(V, E)$ is a finite set $V$ of nodes and a set $E$ of edges as node pairs.
+\ \\
+
+\textsc{Reachability} can be nondeterministically solved in space $\log n$.
 \end{CountingDefinition}
 
 \color{red} TODO \\
