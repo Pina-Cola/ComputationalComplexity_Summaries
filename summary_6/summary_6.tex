@@ -95,7 +95,8 @@ $\Rightarrow$ \textsc{Sat} can be reduced to a formal language. (?) \\
 \ \\
 
 Because \textsc{Circuit Sat} can be reduced to \textsc{Sat}: \textsc{Circuit Sat} can be reduced to a formal language. (?)
-\textsc{Circuit Sat} is NP-complete. \cite{wiki}
+\textsc{Circuit Sat} is NP-complete. \cite{wiki} \\
+Any formal language $L \in$ NP can be reduced to \textsc{Circuit Sat}? OR the other way around?
 \ \\
 
 \begin{CountingDefinition}[Formal language]{def:validLabelPlacement}
@@ -175,10 +176,10 @@ If a complete problem in $C$ belongs in a class $C' \subseteq C$, $C = C'$.
 
 
 
-\subsection*{\textsc{P}-completeness of \textsc{CIRCUIT VALUE}}
+\subsection*{\textsc{P}-completeness of \textsc{CircuitValue}}
 
-\begin{CountingDefinition}[Problem: \textsc{Circuit Value}]{def:validLabelPlacement}
-The \textsc{Circuit Value} Problem is the problem of computing the output of a given Boolean circuit on a given input.
+\begin{CountingDefinition}[Problem: \textsc{CircuitValue}]{def:validLabelPlacement}
+The \textsc{CircuitValue} Problem is the problem of computing the output of a given Boolean circuit on a given input.
 \ \\
 
 In terms of time complexity, it can be solved in linear time (topological sort).
@@ -191,24 +192,28 @@ In terms of time complexity, it can be solved in linear time (topological sort).
 \textbf{Proof idea:}
 
 \begin{itemize}
-\item \textsc{Circuit Value} is in P (prerequisite for being P-complete)
-\item show: any language $L \in $ P can be reduced to \textsc{Circuit Value}
+\item \textsc{CircuitValue} is in P (prerequisite for being P-complete)
+\item show: any language $L \in $ P can be reduced to \textsc{CircuitValue}
 
 \end{itemize}
 
 
 
 \color{red} TODO \\
+proof! \\
+\color{black}
+\color{violet} Questions:
 \color{black}
 
 
 
 
 
-\subsection*{The reduction (?)}
 
-\begin{CountingDefinition}[Problem: \textsc{Circuit Sat}]{def:validLabelPlacement}
-The circuit satisfiability problem (\textsc{Circuit Sat}) is the decision problem of determining whether a given Boolean circuit has an assignment of its inputs that makes the output true.
+\subsection*{\textsc{CicuitSat} is \textsc{NP}-complete}
+
+\begin{CountingDefinition}[Problem: \textsc{CircuitSat}]{def:validLabelPlacement}
+The circuit satisfiability problem (\textsc{CircuitSat}) is the decision problem of determining whether a given Boolean circuit has an assignment of its inputs that makes the output true.
 \ \\
 
 Input: a Boolean circuit $C$ 
@@ -217,20 +222,17 @@ Input: a Boolean circuit $C$
 Question: Is there a truth assignment which makes $C$ output the value true?
 \end{CountingDefinition}
 
-
-
-
-
-\subsection*{\textsc{CIRCUIT SAT} is \textsc{NP}-complete}
-
+\begin{itemize}
+\item cook's theorem: \textsc{CircuitSat} is \textsc{NP}-complete
+\end{itemize} 
+\textbf{Proof idea:}
 \begin{itemize}
 \item circuit decides nondeterministically (?)
-\item a variable is added n the nondeterministic Turing Machine
+\item a variable is added in the nondeterministic Turing Machine
 \item check if one of the variables is tue: use this choice (?)
 \item problem: can we set thiese variables such that the Turing Machine accepts?
 \item answer corresponds direct to \textit{is there a choice of nd decisions such that the turing machine accepts?}
 \item extremely direct reduction
-\item cooks theorem :) 
 \item \textsc{SAT} is \textsc{NP}-complete
 \end{itemize}
 
@@ -238,8 +240,163 @@ Question: Is there a truth assignment which makes $C$ output the value true?
 
 
 \color{red} TODO \\
+proof! \\
 \color{violet} Questions:
 \color{black}
+
+
+
+\begin{CountingDefinition}[]{def:validLabelPlacement}
+
+\end{CountingDefinition}
+
+
+
+
+\subsection*{NP-complete problems}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.6]{NP_complete.png}
+\end{center}
+\caption{NP-complete problems in relation}
+\end{figure}
+
+
+\begin{itemize}
+\item $k$-\textsc{SAT} for $k \geq 3$ is NP-complete
+\end{itemize}
+
+\begin{CountingDefinition}[\textsc{Circuit-SAT}]{def:validLabelPlacement}
+
+\end{CountingDefinition}
+
+
+\begin{CountingDefinition}[]{def:validLabelPlacement}
+
+\end{CountingDefinition}
+
+
+\begin{CountingDefinition}[]{def:validLabelPlacement}
+
+\end{CountingDefinition}
+
+
+\begin{CountingDefinition}[]{def:validLabelPlacement}
+
+\end{CountingDefinition}
+
+
+\begin{CountingDefinition}[]{def:validLabelPlacement}
+
+\end{CountingDefinition}
+
+
+\begin{CountingDefinition}[]{def:validLabelPlacement}
+
+\end{CountingDefinition}
+
+
+\begin{CountingDefinition}[]{def:validLabelPlacement}
+
+\end{CountingDefinition}
+
+
+\begin{CountingDefinition}[]{def:validLabelPlacement}
+
+\end{CountingDefinition}
+
+
+\begin{CountingDefinition}[]{def:validLabelPlacement}
+
+\end{CountingDefinition}
+
+
+\begin{CountingDefinition}[]{def:validLabelPlacement}
+
+\end{CountingDefinition}
+
+
+\begin{CountingDefinition}[]{def:validLabelPlacement}
+
+\end{CountingDefinition}
+
+
+
+
+
+
+\color{red} TODO \\
+\color{black}
+
+
+
+
+\subsection*{P-complete problems}
+
+\begin{itemize}
+\item \textsc{CircuitValue}
+\item \textsc{LinearProgramming}
+\item \textsc{HornSAT}
+\end{itemize}
+
+\begin{CountingDefinition}[]{def:validLabelPlacement}
+
+\end{CountingDefinition}
+
+
+\begin{CountingDefinition}[]{def:validLabelPlacement}
+
+\end{CountingDefinition}
+
+
+\begin{CountingDefinition}[]{def:validLabelPlacement}
+
+\end{CountingDefinition}
+
+\color{red} TODO \\
+\color{black}
+
+
+
+\subsection*{NL problems}
+
+\begin{itemize}
+\item 2\textsc{Sat}
+\item \textsc{Reachability}
+\end{itemize}
+
+
+\begin{CountingDefinition}[]{def:validLabelPlacement}
+
+\end{CountingDefinition}
+
+
+\begin{CountingDefinition}[]{def:validLabelPlacement}
+
+\end{CountingDefinition}
+
+\color{red} TODO \\
+\color{black}
+
+
+
+\subsection*{L problems}
+
+\begin{itemize}
+\item 1\textsc{Sat}
+\end{itemize}
+
+
+\begin{CountingDefinition}[]{def:validLabelPlacement}
+
+\end{CountingDefinition}
+
+
+\color{red} TODO \\
+\color{black}
+
+
 
 
 \newpage
