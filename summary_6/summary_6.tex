@@ -1,0 +1,112 @@
+\documentclass[a4]{scrartcl}
+
+% \usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{mathtools}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{geometry}
+\usepackage{scrlayer-scrpage}
+\usepackage{float}
+\usepackage{xcolor}
+\pagestyle{scrheadings}
+\clearscrheadfoot
+
+\usepackage[backend=biber, maxbibnames=99]{biblatex}
+\addbibresource{references.bib}
+
+\setlength{\parindent}{0cm}
+
+
+\geometry{
+  paper=a4paper, % Change to letterpaper for US letter
+  top=2cm, % Top margin
+  bottom=1.5cm, % Bottom margin
+  left=2cm, % Left margin
+  right=3cm, % Right margin
+}
+
+\ohead{\\
+Pina Kolling\\
+piko0011}
+
+\usepackage[framemethod=TikZ]{mdframed}
+
+% Style %
+\mdfdefinestyle{enviStyle}{
+   innertopmargin = 10pt,
+  linewidth      = 1pt,
+  frametitlerule = true,
+  roundcorner    = 2pt%
+}
+
+
+\newenvironment{CountingDefinition}[2][]{%
+   \ifstrempty{#1}%
+   {\mdfsetup{%
+      frametitle={{\strut ~}}}
+   }%
+   {\mdfsetup{%
+      frametitle={{\strut ~#1}}}%
+   }%
+   \mdfsetup{
+      nobreak                   = true,
+     linecolor                 = gray,
+    frametitlebackgroundcolor = gray!50,
+    style                     = enviStyle
+   }
+   \begin{mdframed}[]\relax%
+   \label{#2}}{\end{mdframed}}
+
+\begin{document}
+
+\section*{Summary: Lecture 6}
+
+Summary for the chapter \textit{8.2}. \cite{book, CC}
+
+\begin{CountingDefinition}[Title]{def:validLabelPlacement}
+Content
+\end{CountingDefinition}
+
+\subsection*{Completeness}
+
+\begin{itemize}
+\item every language of a complexity class can be reduced to $L$ -> you only need what $L$ describes
+\end{itemize}
+
+\subsection*{a}
+
+\subsection*{a}
+
+\subsection*{a}
+
+\subsection*{a}
+
+
+\subsection*{a}
+
+
+\subsection*{a}
+
+\subsection*{a}
+
+
+\subsection*{a}
+
+\subsection*{a}
+
+
+\color{red} TODO \\
+\color{black}
+\color{violet} Questions:
+\color{black}
+
+
+\newpage
+
+\printbibliography
+
+
+
+
+\end{document}
