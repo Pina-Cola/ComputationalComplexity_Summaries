@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.10.14)  25 NOV 2022 09:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.10.14)  25 NOV 2022 10:14
 entering extended mode
 **./summary_6.tex
 (summary_6.tex
@@ -1031,7 +1031,14 @@ Package zref Info: New property: mdf@pagevalue on input line 895.
 LaTeX Warning: Unused global option(s):
     [a4].
 
-(summary_6.aux)
+(summary_6.aux
+
+LaTeX Warning: Label `def:validLabelPlacement' multiply defined.
+
+
+LaTeX Warning: Label `def:validLabelPlacement' multiply defined.
+
+)
 \openout1 = `summary_6.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 61.
@@ -1151,6 +1158,15 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 74.
 (C:\Users\pinak\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
+Underfull \hbox (badness 10000) in paragraph at lines 110--112
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 113--115
+
+ []
+
 
 Package scrlayer-scrpage Warning: \headheight to low.
 (scrlayer-scrpage)                At least 40.8pt needed,
@@ -1160,23 +1176,26 @@ Package scrlayer-scrpage Warning: \headheight to low.
 (scrlayer-scrpage)                e.g., setting geometry's option
 (scrlayer-scrpage)                `head=40.8pt'.
 (scrlayer-scrpage)                I'll also decrease \topmargin on input line 1
-05.
+27.
 
 
 Overfull \vbox (23.8pt too high) has occurred while \output is active []
 
  [1{C:/Users/pinak/AppData/Local/MiKTeX/pdftex/config/pdftex.map}
 
-] [2] (summary_6.aux)
+] [2] [3] (summary_6.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package logreq Info: Writing requests to 'summary_6.run.xml'.
 \openout1 = `summary_6.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 26809 strings out of 478927
- 566040 string characters out of 2852534
- 1411078 words of memory out of 3000000
- 44278 multiletter control sequences out of 15000+600000
+ 26817 strings out of 478927
+ 566226 string characters out of 2852534
+ 1422209 words of memory out of 3000000
+ 44286 multiletter control sequences out of 15000+600000
  410613 words of font info for 53 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  130i,19n,130p,10606b,1171s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1187,10 +1206,13 @@ ic/amsfonts/cm/cmmi10.pfb><C:/Users/pinak/AppData/Local/Programs/MiKTeX/fonts/t
 ype1/public/amsfonts/cm/cmr10.pfb><C:/Users/pinak/AppData/Local/Programs/MiKTeX
 /fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/Users/pinak/AppData/Local/Progra
 ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Users/pinak/AppData/L
-ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on summary_6.pdf (2 pages, 78632 bytes).
+ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/pinak/
+AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/User
+s/pinak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb
+>
+Output written on summary_6.pdf (3 pages, 108558 bytes).
 PDF statistics:
- 47 PDF objects out of 1000 (max. 8388607)
+ 60 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

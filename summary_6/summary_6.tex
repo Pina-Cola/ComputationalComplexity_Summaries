@@ -71,32 +71,67 @@ Content
 \subsection*{Completeness}
 
 \begin{itemize}
-\item every language of a complexity class can be reduced to $L$ -> you only need what $L$ describes
+\item every language of a complexity class can be reduced to $L$ $\rightarrow$ you only need what $L$ describes
 \end{itemize}
 
-\subsection*{a}
+\subsection*{What does completeness do for us?}
 
-\subsection*{a}
+\begin{itemize}
+\item a reduction definition is usefull because the complexity classe are closed under reduction
+\item examples look helpfull
+\item $L$ and $R$ seem to be important:
+\begin{align*}
+L' \in P \ \ \ \ \ \ \ & A \\
+L \rightarrow L' \ \ \ \ \ \ \  & R
+\end{align*}
 
-\subsection*{a}
+\item drawing set circle inclusion thing (P and NP)
 
-\subsection*{a}
+\end{itemize}
+
+\subsection*{P-completeness of CIRCUIT VALUE}
+
+\begin{CountingDefinition}[Problem: CIRCUIT VALUE]{def:validLabelPlacement}
+The CIRCUIT VALUE Problem is the problem of computing the output of a given Boolean circuit on a given input.
+
+In terms of time complexity, it can be solved in linear time (topological sort).
+\end{CountingDefinition}
+
+\begin{itemize}
+\item P-complete
+\item limit of power of reductions
+\item got a little tired and zoned out
+\end{itemize}
+
+\subsection*{The reduction (?)}
 
 
-\subsection*{a}
+\begin{CountingDefinition}[Problem: CIRCUIT SAT]{def:validLabelPlacement}
+The circuit satisfiability problem (CIRCUIT SAT) is the decision problem of determining whether a given Boolean circuit has an assignment of its inputs that makes the output true.
+\ \\
+
+Input: a Boolean circuit $C$ 
+\ \\
+
+Question: Is there a truth assignment which makes $C$ output the value true?
+\end{CountingDefinition}
+
+\subsection*{CIRCUIT SAT is NP-complete}
+
+\begin{itemize}
+\item circuit decides nondeterministically (?)
+\item a variable is added n the nondeterministic Turing Machine
+\item check if one of the variables is tue: use this choice (?)
+\item problem: can we set thiese variables such that the Turing Machine accepts?
+\item answer corresponds direct to \textit{is there a choice of nd decisions such that the turing machine accepts?}
+\item extremely direct reduction
+\end{itemize}
 
 
-\subsection*{a}
-
-\subsection*{a}
-
-
-\subsection*{a}
-
-\subsection*{a}
 
 
 \color{red} TODO \\
+font for caps lock \\
 \color{black}
 \color{violet} Questions:
 \color{black}
