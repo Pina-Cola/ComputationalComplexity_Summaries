@@ -2347,6 +2347,8 @@
     <bcf:citekey order="1">CC</bcf:citekey>
     <bcf:citekey order="1">book</bcf:citekey>
     <bcf:citekey order="2">lang</bcf:citekey>
+    <bcf:citekey order="3">CNF</bcf:citekey>
+    <bcf:citekey order="3">language</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

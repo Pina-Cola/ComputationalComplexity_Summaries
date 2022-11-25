@@ -86,19 +86,33 @@ Let $C$ be a complexity class and let $L$ be a language in $C$. $L$ is called $C
 \color{red} TODO \\
 \color{black}
 \color{violet} Questions: 
-\\
-Which problems can be reduced to a formal language? \\
+\ \\
 
-
-\color{gray}
-\textsc{Sat} can be expressed as formal language. \cite{lang}
+Which problems can be reduced to a formal language? 
+\begin{itemize}
+\item[] \color{black}
+\textsc{Sat} can be expressed as formal language. \cite{lang} \\
+$\Rightarrow$ \textsc{Sat} can be reduced to a formal language. (?)
 \ \\
 
 Because \textsc{Cirquit Sat} can be reduced to \textsc{Sat}: \textsc{Cirquit Sat} can be reduced to a formal language. (?)
 \ \\
 
-Where to set the line between lanuguage decisions and other problems? 
+\begin{CountingDefinition}[Formal language]{def:validLabelPlacement}
+Formal languages are abstract languages, which define the syntax of the words that get accepted by that language. It is a set of words that get accepted by the language and has a set of symbols that is called alphabet, which contains all the possible characters of the words. Those characters are called nonterminal symbols. \cite{CNF, language}
+\ \\
 
+\textbf{Kleene star} \\
+The Kleene star $\Sigma^*$ of an alphabet $\Sigma$ is the set of all words that can be created through concatenation of the symbols of the alphabet $\Sigma$. The empty word $\epsilon$ is included. 
+\ \\
+
+\textbf{Formal language}\\
+A formal language $L$ over an alphabet $\Sigma$ is a subset of the Kleene star of the alphabet: $L \subseteq \Sigma^*$
+\end{CountingDefinition}
+
+Where to set the line between lanuguage decisions and other problems? Can every problem be contrcuted as a formal language?
+
+\end{itemize}
 
 \color{black}
 

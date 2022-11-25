@@ -39,6 +39,14 @@
       \field{labeltitlesource}{title}
       \field{title}{Lecture notes in Computational Complexity}
     \endentry
+    \entry{CNF}{misc}{}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Website}
+      \field{note}{\url{https://www.javatpoint.com/automata-chomskys-normal-form}, opened on 26.09.2022}
+      \field{title}{Chomsky's Normal Form (CNF)}
+    \endentry
     \entry{lang}{article}{}
       \name{author}{1}{}{%
         {{hash=671ee632ae8e16a00033e0b08ce101de}{%
@@ -88,6 +96,32 @@
       \field{labeltitlesource}{title}
       \field{title}{Computational Complexity}
       \field{year}{1994}
+    \endentry
+    \entry{language}{book}{}
+      \name{author}{1}{}{%
+        {{hash=abf7d53b5e28666a13323708c37cb6e3}{%
+           family={Robert\bibnamedelimb N.\bibnamedelimi Moll},
+           familyi={R\bibinitperiod\bibinitdelim N\bibinitperiod\bibinitdelim M\bibinitperiod},
+           given={A.J.\bibnamedelimi Kfoury},
+           giveni={A\bibinitperiod\bibinitdelim K\bibinitperiod},
+           suffix={Michael\bibnamedelimb A.\bibnamedelimi Arbib},
+           suffixi={M\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer-Verlag}%
+      }
+      \strng{namehash}{abf7d53b5e28666a13323708c37cb6e3}
+      \strng{fullhash}{abf7d53b5e28666a13323708c37cb6e3}
+      \strng{bibnamehash}{abf7d53b5e28666a13323708c37cb6e3}
+      \strng{authorbibnamehash}{abf7d53b5e28666a13323708c37cb6e3}
+      \strng{authornamehash}{abf7d53b5e28666a13323708c37cb6e3}
+      \strng{authorfullhash}{abf7d53b5e28666a13323708c37cb6e3}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{An Introduction to Formal Language Theory}
+      \field{year}{1988}
     \endentry
   \enddatalist
 \endrefsection
