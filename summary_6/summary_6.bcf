@@ -2350,7 +2350,9 @@
     <bcf:citekey order="3">CNF</bcf:citekey>
     <bcf:citekey order="3">language</bcf:citekey>
     <bcf:citekey order="4">PNPsets</bcf:citekey>
-    <bcf:citekey order="5">PNPsets</bcf:citekey>
+    <bcf:citekey order="5">classesPic</bcf:citekey>
+    <bcf:citekey order="6">PNPsets</bcf:citekey>
+    <bcf:citekey order="7">classesPic</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

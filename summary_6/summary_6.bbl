@@ -47,6 +47,13 @@
       \field{note}{\url{https://www.javatpoint.com/automata-chomskys-normal-form}, opened on 26.09.2022}
       \field{title}{Chomsky's Normal Form (CNF)}
     \endentry
+    \entry{classesPic}{misc}{}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labeltitlesource}{title}
+      \field{note}{\url{https://en.wikipedia.org/wiki/Complexity_class}}
+      \field{title}{Complexity classes diagram image source}
+    \endentry
     \entry{PNPsets}{misc}{}
       \field{sortinit}{I}
       \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}

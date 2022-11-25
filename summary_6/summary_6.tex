@@ -79,6 +79,8 @@ Let $C$ be a complexity class and let $L$ be a language in $C$. $L$ is called $C
 
 \begin{itemize}
 \item reducitbility is transitive $\rightarrow$ problems are ordered by difficulty
+\item complete problems can capture the difficulty of a class
+\item problem is seen as cpmpletely understood if the problem is complete
 \end{itemize}
 
 
@@ -91,7 +93,7 @@ Which problems can be reduced to a formal language?
 $\Rightarrow$ \textsc{Sat} can be reduced to a formal language. (?)
 \ \\
 
-Because \textsc{Cirquit Sat} can be reduced to \textsc{Sat}: \textsc{Cirquit Sat} can be reduced to a formal language. (?)
+Because \textsc{Circuit Sat} can be reduced to \textsc{Sat}: \textsc{Circuit Sat} can be reduced to a formal language. (?)
 \ \\
 
 \begin{CountingDefinition}[Formal language]{def:validLabelPlacement}
@@ -116,12 +118,6 @@ Is everything that is reducable to \textsc{Sat} reducable to a formal language?
 \color{black}
 
 
-\begin{itemize}
-% \item a reduction definition is usefull because the complexity classe are closed under reduction
-\item complete problems can capture the difficulty of a class
-\item problem is seen as cpmpletely understood if the problem is complete
-\end{itemize}
-
 
 \begin{CountingDefinition}[Closed under reduction]{def:validLabelPlacement}
 The following complexity classes are all closed under reductions:
@@ -144,23 +140,26 @@ If a complete problem in $C$ belongs in a class $C' \subseteq C$, $C = C'$.
 \begin{figure}[H]
 \begin{center}
 \includegraphics[scale=0.2]{PNP.jpg}
+\hspace*{5em}
+\includegraphics[scale=0.15]{classes.png}
 \end{center}
-\caption{P and NP sets \cite{PNPsets}}
+\caption{P and NP sets \cite{PNPsets} and complexity classes \cite{classesPic}}
 \end{figure}
+
 
 
 
 \begin{itemize}
 
-\item drawing set circle inclusion thing (\textsc{P} and \textsc{NP})
-
+\item examples: 
+\begin{itemize}
+\item if an NP-complete language is in P, then NP = P 
+\item if a P-complete language is in L, then P = L
+\item if a P-complete language is in NL, then P = NL
+\item no EXP-complete language can be in P
 \end{itemize}
 
-
-\color{red} TODO \\
-\color{black}
-\color{violet} Questions:
-\color{black}
+\end{itemize}
 
 
 
