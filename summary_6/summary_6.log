@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.10.14)  26 NOV 2022 13:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.10.14)  26 NOV 2022 14:17
 entering extended mode
 **./summary_6.tex
 (summary_6.tex
@@ -1338,47 +1338,52 @@ File: depends.jpg Graphic file (type jpg)
 Package pdftex.def Info: depends.jpg  used on input line 271.
 (pdftex.def)             Requested size: 138.89497pt x 67.0761pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 291--293
+Underfull \hbox (badness 10000) in paragraph at lines 275--276
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 291--293
+Underfull \hbox (badness 10000) in paragraph at lines 300--302
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 294--296
+Underfull \hbox (badness 10000) in paragraph at lines 300--302
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 303--305
 
  []
 
 [5 <./rowsmarked.png> <./depends.jpg>] [6]
-<NP_complete.png, id=46, 447.92343pt x 534.87328pt>
+<NP_complete.png, id=47, 447.92343pt x 534.87328pt>
 File: NP_complete.png Graphic file (type png)
 <use NP_complete.png>
-Package pdftex.def Info: NP_complete.png  used on input line 335.
+Package pdftex.def Info: NP_complete.png  used on input line 344.
 (pdftex.def)             Requested size: 268.75612pt x 320.92644pt.
  [7 <./NP_complete.png>] [8]
-Underfull \hbox (badness 10000) in paragraph at lines 451--453
+Underfull \hbox (badness 10000) in paragraph at lines 460--462
 
  []
 
 [9]
-Overfull \hbox (4.71591pt too wide) in paragraph at lines 478--478
+Overfull \hbox (4.71591pt too wide) in paragraph at lines 487--487
 []\OT1/cmr/m/it/10.95 Circuit sat-is-fi-a-bil-ity prob-lem -- Proof of NP-Compl
 eteness\OT1/cmr/m/n/10.95 . Web-site. $\OT1/cmtt/m/n/10.95 https : / / en . wik
 ipedia .
  []
 
 
-Overfull \hbox (0.44962pt too wide) in paragraph at lines 478--478
+Overfull \hbox (0.44962pt too wide) in paragraph at lines 487--487
 []\OT1/cmr/m/it/10.95 Complexity classes di-a-gram im-age source\OT1/cmr/m/n/10
 .95 . $\OT1/cmtt/m/n/10.95 https : / / en . wikipedia . org / wiki / Complexity
  _
  []
 
 
-Overfull \hbox (5.09384pt too wide) in paragraph at lines 478--478
+Overfull \hbox (5.09384pt too wide) in paragraph at lines 487--487
 []\OT1/cmr/m/it/10.95 Image source: P-NP sets\OT1/cmr/m/n/10.95 . $\OT1/cmtt/m/
 n/10.95 https : / / www . techno -[] science . net / actualite / np -[] conject
 ure -[]
@@ -1398,7 +1403,7 @@ Package logreq Info: Writing requests to 'summary_6.run.xml'.
 Here is how much of TeX's memory you used:
  26945 strings out of 478927
  568905 string characters out of 2852534
- 1434424 words of memory out of 3000000
+ 1434426 words of memory out of 3000000
  44402 multiletter control sequences out of 15000+600000
  411082 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1415,12 +1420,13 @@ ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/Users/p
 inak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb>
 <C:/Users/pinak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cm
 sy10.pfb><C:/Users/pinak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
-nts/cm/cmsy8.pfb><C:/Users/pinak/AppData/Local/Programs/MiKTeX/fonts/type1/publ
-ic/amsfonts/cm/cmti10.pfb><C:/Users/pinak/AppData/Local/Programs/MiKTeX/fonts/t
-ype1/public/amsfonts/cm/cmtt10.pfb>
-Output written on summary_6.pdf (10 pages, 1375272 bytes).
+nts/cm/cmsy6.pfb><C:/Users/pinak/AppData/Local/Programs/MiKTeX/fonts/type1/publ
+ic/amsfonts/cm/cmsy8.pfb><C:/Users/pinak/AppData/Local/Programs/MiKTeX/fonts/ty
+pe1/public/amsfonts/cm/cmti10.pfb><C:/Users/pinak/AppData/Local/Programs/MiKTeX
+/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on summary_6.pdf (10 pages, 1385907 bytes).
 PDF statistics:
- 116 PDF objects out of 1000 (max. 8388607)
+ 121 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  53 words of extra memory for PDF output out of 10000 (max. 10000000)
 

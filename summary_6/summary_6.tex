@@ -251,9 +251,9 @@ In terms of time complexity, it can be solved in linear time (topological sort).
 $R$ puts out a circuit $C$ without variable gates, whose value is true
 only if $M$ accepts $x$
 \item computation table $T$ of $M$
-\item if $i=0$: value of $T_{ij}$ is the $j$th symbol of $x$ or a $\sqcup$
-\item if $j=0$: value of $T_{ij}$ is a $\triangleright$
-\item if $j=|x|^k-1$: value of $T_{ij}$ is a $\sqcup$
+\item if $i=0$: value of $T_{i,j}$ is the $j$th symbol of $x$ or a $\sqcup$
+\item if $j=0$: value of $T_{i,j}$ is a $\triangleright$
+\item if $j=|x|^k-1$: value of $T_{i,j}$ is a $\sqcup$
 \end{itemize}
 
 \begin{figure}[H]
@@ -272,6 +272,15 @@ only if $M$ accepts $x$
 \end{center}
 \caption{Value of $T_{i,j}$ depends on values of $T_{i-1,j-1}, T_{i-1,j}, T_{i-1,j+1}$}
 \end{figure}
+\item $T_{i-1,j-1}, T_{i-1,j}, T_{i-1,j+1} \in \Sigma \Rightarrow$ cursor not at position $j-1, j, j+1$, this concludes to $T_{i,j}=T_{i-1,j}$ \\
+\item set $\Gamma$ contains all symbols that can appear on the table (symbols from $\Sigma$ or symbol state combinations)
+\item encode each symbol $\sigma \in \Sigma$ as a vector $s=(s_1,...,s_m)$ 
+\begin{itemize}
+\item the entries of the vector ($s_1,...,s_m$) are either 0 or 1
+\item the vector hast $m=\log |\Gamma|$ entries
+\end{itemize}
+\item computation table can now be constructed as a table $S_{i,j,l}$ with binary entries (and $0 \leq i \leq n^k -1$ and $0 \leq j \leq n^k -1$ and $1 \leq l \leq m$)
+\item each binary entry $S_{ijl}$ depends on previous entries $S_{i-1,j-1,l'}, S_{i-1,j,l'}, S_{i-1,j+1,l'}$, where $l'$ ranges over 1 to $m$
 \end{itemize}
 
 \color{red} TODO \\
