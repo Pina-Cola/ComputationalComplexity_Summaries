@@ -167,11 +167,22 @@ If a complete problem in $C$ belongs in a class $C' \subseteq C$, $C = C'$.
 
 \end{itemize}
 
-%\subsection*{Table method -- time complexity}
+\subsection*{Table method -- time complexity}
 
-%\begin{itemize}
-%\item table method to understand time complexity
-%\end{itemize}
+\begin{itemize}
+\item table method to understand time complexity
+\item Turing Machine $M$ decides language $L$ on an input $x$
+\item computation on input $x$ as $|x|^k \times |x|^k$ computation table
+\item[\ $\rightarrow$] $|x|^k$ is the time bound
+\item rows $i$ are the steps and columns $j$ are the string positions
+\item 
+\end{itemize}
+
+\color{red} TODO \\
+proof! \\
+\color{black}
+\color{violet} Questions:
+\color{black}
 
 
 
@@ -199,10 +210,6 @@ In terms of time complexity, it can be solved in linear time (topological sort).
 $R$ puts out a circuit $C$ without variable gates, whose value is true
 only if $M$ accepts $x$
 \item computation table $T$ of $M$
-\begin{itemize}
-\item table method to understand time complexity
-\item rows $i$ are the steps and columns $j$ are the string positions
-\end{itemize}
 \item if $i=0$ or $j=0$ or $j=|x|^k-1$: value of $T_{ij}$ is known
 \end{itemize}
 
