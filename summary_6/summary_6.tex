@@ -192,10 +192,35 @@ If a complete problem in $C$ belongs in a class $C' \subseteq C$, $C = C'$.
 \caption{Binary palindrome Turing Machine $M$ contructed from the definition in example 2.3 in the book \cite{book}}
 \end{figure}
 
+\begin{itemize}
+\item edges of the Turing machine: \\
+(input symbol $\sigma$, symbol to replace input symbol on tape with, direction in which the head moves)
+\end{itemize}
 
-\color{red} TODO \\
-proof! \\
-\color{black}
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.5]{palindrome.jpg}
+\end{center}
+\caption{Definition of binary palindrome Turing Machine $M$ in example 2.3 in the book \cite{book}}
+\end{figure}
+
+\newpage
+On input $x=0110$ it results in the following computaion table:
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.5]{computation_table.jpg}
+\end{center}
+\caption{Computation table of binary palindrome Turing Machine $M$ on input $x=0110$ in the book \cite{book}}
+\end{figure}
+
+\begin{itemize}
+\item $\sigma$ is the current input symbol
+\item $q$ is the current state
+\item $\sqcup$ is the clank symbol
+\item $\triangleright$ is the first symbol
+\end{itemize}
+
 \color{violet} Questions: \\
 Is the Turing Macheine constructed correctly? Does the \textit{no}-state need a double circle, because it halts or does only the accepting state get a double circle?
 \color{black}
