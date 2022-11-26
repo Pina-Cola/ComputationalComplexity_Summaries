@@ -251,10 +251,28 @@ In terms of time complexity, it can be solved in linear time (topological sort).
 $R$ puts out a circuit $C$ without variable gates, whose value is true
 only if $M$ accepts $x$
 \item computation table $T$ of $M$
-\item if $i=0$ or $j=0$ or $j=|x|^k-1$: value of $T_{ij}$ is known
+\item if $i=0$: value of $T_{ij}$ is the $j$th symbol of $x$ or a $\sqcup$
+\item if $j=0$: value of $T_{ij}$ is a $\triangleright$
+\item if $j=|x|^k-1$: value of $T_{ij}$ is a $\sqcup$
 \end{itemize}
 
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.3]{rowsmarked.png}
+\end{center}
+\caption{Initial rows marked on previous palindrome example table}
+\end{figure}
 
+\begin{itemize}
+\item value of $T_{i,j}$ is the content of position $j$ of the string on time $i$
+\item[$\rightarrow$] depends on the same position and neighbor position in the previous steo $i-1$: $T_{i-1,j-1}, T_{i-1,j}, T_{i-1,j+1}$
+\item[] \begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.3]{depends.jpg}
+\end{center}
+\caption{Value of $T_{i,j}$ depends on values of $T_{i-1,j-1}, T_{i-1,j}, T_{i-1,j+1}$}
+\end{figure}
+\end{itemize}
 
 \color{red} TODO \\
 proof! \\
