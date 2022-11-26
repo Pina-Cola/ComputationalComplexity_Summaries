@@ -1,18 +1,18 @@
 [0] Config.pm:311> INFO - This is Biber 2.16
 [0] Config.pm:314> INFO - Logfile is 'summary_6.blg'
-[192] biber-MSWIN64:340> INFO - === 
-[240] Biber.pm:415> INFO - Reading 'summary_6.bcf'
-[371] Biber.pm:952> INFO - Found 9 citekeys in bib section 0
-[389] Biber.pm:4340> INFO - Processing section 0
-[404] Biber.pm:4531> INFO - Looking for bibtex format file 'references.bib' for section 0
-[475] bibtex.pm:1689> INFO - LaTeX decoding ...
-[495] bibtex.pm:1494> INFO - Found BibTeX data source 'references.bib'
-[496] Utils.pm:395> WARN - Duplicate entry key: 'classesPic' in file 'references.bib', skipping ...
-[496] Utils.pm:395> WARN - Duplicate entry key: 'GTI' in file 'references.bib', skipping ...
-[576] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[576] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[576] Biber.pm:4168> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
-[576] Biber.pm:4174> INFO - No sort tailoring available for locale 'en-US'
-[584] bbl.pm:654> INFO - Writing 'summary_6.bbl' with encoding 'UTF-8'
-[587] bbl.pm:757> INFO - Output to summary_6.bbl
-[588] Biber.pm:128> INFO - WARNINGS: 2
+[148] biber-MSWIN64:340> INFO - === 
+[199] Biber.pm:415> INFO - Reading 'summary_6.bcf'
+[343] Biber.pm:952> INFO - Found 9 citekeys in bib section 0
+[361] Biber.pm:4340> INFO - Processing section 0
+[377] Biber.pm:4531> INFO - Looking for bibtex format file 'references.bib' for section 0
+[431] bibtex.pm:1689> INFO - LaTeX decoding ...
+[445] bibtex.pm:1494> INFO - Found BibTeX data source 'references.bib'
+[446] Utils.pm:395> WARN - Duplicate entry key: 'classesPic' in file 'references.bib', skipping ...
+[446] Utils.pm:395> WARN - Duplicate entry key: 'GTI' in file 'references.bib', skipping ...
+[528] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[528] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[528] Biber.pm:4168> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[528] Biber.pm:4174> INFO - No sort tailoring available for locale 'en-US'
+[536] bbl.pm:654> INFO - Writing 'summary_6.bbl' with encoding 'UTF-8'
+[540] bbl.pm:757> INFO - Output to summary_6.bbl
+[540] Biber.pm:128> INFO - WARNINGS: 2

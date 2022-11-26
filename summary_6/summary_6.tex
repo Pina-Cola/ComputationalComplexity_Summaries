@@ -336,24 +336,34 @@ Question: Is there a truth assignment which makes $C$ output the value true?
 \end{itemize} 
 \textbf{Proof idea:}
 \begin{itemize}
-\item \textsc{CircuitSat} reduces to \textsc{SAT}
-\item Turing Machine decides circuit nondeterministically
-\item describe a reduction $R$
-\item a variable is added in the nondeterministic Turing Machine
-\item check if one of the variables is tue: use this choice (?)
-\item problem: can we set thiese variables such that the Turing Machine accepts?
-\item answer corresponds direct to \textit{is there a choice of nd decisions such that the turing machine accepts?}
-\item extremely direct reduction
-\item \textsc{SAT} is \textsc{NP}-complete
+\item \textsc{CircuitSat} $\in$ NP
+\item \textsc{CircuitSat} reduces to \textsc{Sat}
+\item to show: all languages in NP can be reduced to \textsc{CircuitSat}
+\item let $L \in$ NP
+\item describe a reduction $R(x)$ which constructs a circuit for each input string $x$ such that $x \in L$ only if $R(x)$ is satisfiable
+\item Turing Machine $M$ which decides $L$ nondeterministically in time $n^k$ exists becaus $L \in$ NP
+\item $M$ accepst $x$ only if $x \in L$ 
+\item reminder: Boolean circuits are build like binary trees with only two children to each node
+\item tranfer $M$ into the structure of a binary tree with adding more states:
+\item[] \begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.5]{tmt.jpg}
+\end{center}
+\caption{Transformation of $M$ \cite{book}}
+\end{figure}
+\item computation table not really possible because computation in nondeterministic machine happens in parallel paths \\
+$\rightarrow$ fix a sequence of chioces $c$
+\item define computation table $T(M, x, c)$
+\item top row and first and last column rentries are known
+\item other entries $T_{i,j}$ depend on entries in $T_{i-1,j-1}, T_{i-1,j}, T_{i-1,j+1}$ and chice $c$ of previous step
+\item circuit $C$ has $3m+1$ instead of $3m$ entries because on entry is the nondeterministic choice
+\item value of circuit $R(x)$ is only true if $x \in L$ because of equivalence of table structure
+\item $R(x)$ is in $\log n$ space
+
 \end{itemize}
 
 
 
-
-\color{red} TODO \\
-proof! \\
-\color{violet} Questions:
-\color{black}
 
 \newpage
 

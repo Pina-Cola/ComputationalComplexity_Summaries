@@ -2361,7 +2361,9 @@
     <bcf:citekey order="13">book</bcf:citekey>
     <bcf:citekey order="14">book</bcf:citekey>
     <bcf:citekey order="15">book</bcf:citekey>
-    <bcf:citekey order="16">GTI</bcf:citekey>
+    <bcf:citekey order="16">book</bcf:citekey>
+    <bcf:citekey order="17">book</bcf:citekey>
+    <bcf:citekey order="18">GTI</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">
