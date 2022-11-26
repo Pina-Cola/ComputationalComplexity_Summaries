@@ -281,6 +281,23 @@ only if $M$ accepts $x$
 \end{itemize}
 \item computation table can now be constructed as a table $S_{i,j,l}$ with binary entries (and $0 \leq i \leq n^k -1$ and $0 \leq j \leq n^k -1$ and $1 \leq l \leq m$)
 \item each binary entry $S_{ijl}$ depends on previous entries $S_{i-1,j-1,l'}, S_{i-1,j,l'}, S_{i-1,j+1,l'}$, where $l'$ ranges over 1 to $m$
+\item there are $m$ Boolean functions $F_1,...,F_m$ such that
+\begin{align*}
+S_{i,j,l}=F_l(S_{i-1,j-1,1},..., S_{i-1,j-1,m}, S_{i-1,j+1,1},...,S_{i-1,j+1,m})
+\end{align*}
+\item every boolean function can be renderes as a boolean circuit
+\item[$\rightarrow$] there is a boolean circuit $C$ with $3m$ inputs and $m$ outputs that computes $T_{i,j}$ with given $T_{i-1,j-1}, T_{i-1,j}, T_{i-1,j+1}$ \\
+
+\item reduction $R$ from $L$ to \textsc{CircuitValue}
+\item for each input $x$, $R(x)$ consists of $(|x|^k-1) \cdot (|x|^k-2)$ copies of the circuit $C$ \\
+$\rightarrow$ one for each entry in $T_{i,j}$
+\item call $C_{i,j}$ the $(i,j)$th copy of $C$
+\item $C_{i,j}$ depends on $C_{i-1,j-1}, C_{i-1,j}, C_{i-1,j+1}$ (if $i \geq 0$)
+\item first row and first and last column known
+\item other entries based on these entries
+\item output circuit of $R(x)$ is $C_{|x|^k-1,1}$ \\
+(final step and string position 1, assuming that string position 1 contains \textit{yes} or \textit{no})
+
 \end{itemize}
 
 \color{red} TODO \\
