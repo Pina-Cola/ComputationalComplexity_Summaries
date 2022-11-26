@@ -179,6 +179,7 @@ If a complete problem in $C$ belongs in a class $C' \subseteq C$, $C = C'$.
 \item $T_{ij}$ represents the content of position $j$ of the string of $M$ at time $i$ (after $i$ steps)
 \end{itemize}
 
+\newpage 
 \textbf{Example:}
 
 \begin{itemize}
@@ -199,7 +200,7 @@ If a complete problem in $C$ belongs in a class $C' \subseteq C$, $C = C'$.
 
 \begin{figure}[H]
 \begin{center}
-\includegraphics[scale=0.5]{palindrome.jpg}
+\includegraphics[scale=0.4]{palindrome.jpg}
 \end{center}
 \caption{Definition of binary palindrome Turing Machine $M$ in example 2.3 in the book \cite{book}}
 \end{figure}
@@ -296,15 +297,22 @@ $\rightarrow$ one for each entry in $T_{i,j}$
 \item first row and first and last column known
 \item other entries based on these entries
 \item output circuit of $R(x)$ is $C_{|x|^k-1,1}$ \\
-(final step and string position 1, assuming that string position 1 contains \textit{yes} or \textit{no})
+(final step and string position 1, assuming that string position 1 contains \textit{yes} or \textit{no}) \\
+
+\item value of circuit $R(x)$ is only true if $x \in L$ because of equivalence of table structure
+\item $R(x)$ is in $\log n$ space
 
 \end{itemize}
 
-\color{red} TODO \\
-proof! \\
-\color{black}
-\color{violet} Questions:
-\color{black}
+\textsc{CircuitValue} without NOT remains P-complete:
+\begin{itemize}
+\item AND, OR, NOT gate in circuit
+\item monotone circuit: does not have NOT gates
+\item move NOT downwards with DeMorgan's law (put negation into bracktes and exchange operator) until inputs are changed
+\end{itemize}
+
+\textsc{MonotoneCircuitValue} is P-complete.
+
 
 
 
