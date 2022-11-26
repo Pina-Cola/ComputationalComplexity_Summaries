@@ -173,15 +173,31 @@ If a complete problem in $C$ belongs in a class $C' \subseteq C$, $C = C'$.
 \item table method to understand time complexity
 \item Turing Machine $M$ decides language $L$ on an input $x$
 \item computation on input $x$ as $|x|^k \times |x|^k$ computation table
-\item[\ $\rightarrow$] $|x|^k$ is the time bound
-\item rows $i$ are the steps and columns $j$ are the string positions
-\item 
+\item[$\rightarrow$] $|x|^k$ is the time bound
+\item rows $i$ are the time steps (from $0$ to $|x|^k-1$)
+\item columns $j$ are the string positions
+\item $T_{ij}$ represents the content of position $j$ of the string of $M$ at time $i$ (after $i$ steps)
 \end{itemize}
+
+\textbf{Example:}
+
+\begin{itemize}
+\item Turing Machine $M$ deciding palindromes in time $n^2$
+\end{itemize}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.8]{palindrometm.png}
+\end{center}
+\caption{Binary palindrome Turing Machine $M$ contructed from the definition in example 2.3 in the book \cite{book}}
+\end{figure}
+
 
 \color{red} TODO \\
 proof! \\
 \color{black}
-\color{violet} Questions:
+\color{violet} Questions: \\
+Is the Turing Macheine constructed correctly? Does the \textit{no}-state need a double circle, because it halts or does only the accepting state get a double circle?
 \color{black}
 
 

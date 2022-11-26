@@ -2355,7 +2355,9 @@
     <bcf:citekey order="7">classesPic</bcf:citekey>
     <bcf:citekey order="8">PNPsets</bcf:citekey>
     <bcf:citekey order="9">classesPic</bcf:citekey>
-    <bcf:citekey order="10">GTI</bcf:citekey>
+    <bcf:citekey order="10">book</bcf:citekey>
+    <bcf:citekey order="11">book</bcf:citekey>
+    <bcf:citekey order="12">GTI</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">
