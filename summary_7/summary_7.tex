@@ -68,6 +68,8 @@ Summary for the chapters \textit{9.1} and \textit{9.2}. \cite{book}
 
 \begin{CountingDefinition}[NP]{def:validLabelPlacement}
 Class of lanugages decided by nonderteministic Turing machines in polynomial time.
+
+Most problems are in NP.
 \end{CountingDefinition}
 
 \textbf{NP-completeness:}
@@ -100,19 +102,43 @@ $\rightarrow$ length of the second component is bounded by a polynomial in the l
 \item then the relation $R$ (not the language $L$) is polynomially balanced
 \end{itemize}
 
+\begin{CountingDefinition}[NP]{def:validLabelPlacement}
+The language $L \subseteq \Sigma^*$ is in NP only if there is a polynomially decidable and polynomially balanced relation $R$ such that  $L= \{ x: (x,y) \in R \textit{ for some } y \}$.
+\end{CountingDefinition}
 
+For example: Is there a satisfying assignment ($y$) for a formular ($x$)?
+\color{violet} \\
+Why is $R \subseteq \Sigma^* \times \Sigma^*$? Is the input formula and the truth assignment $\in \Sigma^*$?
+\color{black}
+
+\ \\ \ \\
 
 \color{red} TODO \\
+proof \\
 \color{black}
-\color{violet} Questions:
+\color{violet} Questions: \\
 \color{black}
+
+\subsection*{Succinct certificate (for NP-complete problems)}
+
+\begin{itemize}
+\item \textit{yes} instance of $x$ has a polynomial witness $y$ (certificate)
+\item \textit{no} instances don't have such a certificate
+\item Examples:
+\begin{itemize}
+\item \textsc{Sat}: certificate is the truth assignment
+\item \textsc{HamiltonPath}: certificate is the hamilton path of a graph
+\end{itemize}
+\end{itemize}
 
 
 \subsection*{Typical problems in NP}
 
-\begin{CountingDefinition}[Title]{def:validLabelPlacement}
-Content
-\end{CountingDefinition}
+\begin{itemize}
+\item sometimes the optimum needs to be found
+\item sometimes any object that fits the specification is enough
+\item constraints can be added to optimization problems
+\end{itemize}
 
 \color{red} TODO \\
 \color{black}
