@@ -62,7 +62,7 @@ piko0011}
 
 \section*{Summary: Lecture 7}
 
-Summary for the chapters \textit{9.1} and \textit{9.2}. \cite{book}
+Summary for the chapters \textit{9.1} and \textit{9.2}. \cite{book, CC}
 
 \subsection*{NP-Completeness}
 
@@ -78,6 +78,7 @@ Most problems are in NP.
 \item if P$\neq$NP can be proven: exact border of efficient solvability is found
 \item best bet for proving P$=$NP: show that some NP-complete problem is $P$
 \item Until then, the NP-complete problems are the least likely ones in NP to be efficiently solved
+\item Where is the line between P and NP?
 \end{itemize}
 
 
@@ -140,17 +141,37 @@ proof \\
 \item constraints can be added to optimization problems
 \end{itemize}
 
-\color{red} TODO \\
-\color{black}
-\color{violet} Questions:
-\color{black}
 
 
 \subsection*{\textsc{3Sat} is NP-complete}
 
-\begin{CountingDefinition}[Title]{def:validLabelPlacement}
-Content
+
+\begin{CountingDefinition}[\textsc{SAT}]{def:validLabelPlacement}
+The \textsc{SAT} (satisfiability) problem is the problem of determining if there exists an interpretation that satisfies a given Boolean formula. \cite{GTI}
 \end{CountingDefinition}
+
+
+\begin{CountingDefinition}[\textsc{3SAT}]{def:validLabelPlacement}
+Like the \textsc{Sat} problem, \textsc{3Sat} is determining the satisfiability of a formula in CNF where each clause is limited to at most three literals.
+\end{CountingDefinition}
+
+\begin{itemize}
+\item $k$\textsc{Sat} with $k \geq 1$ is a special case of \textsc{Sat}
+\end{itemize}
+
+\textbf{Reduction from} \textsc{Sat} \textbf{to} \textsc{3Sat}: \cite{sat}
+\begin{itemize}
+\item the reduction replaces each clause with a set of clauses, each having exactly three literals
+\item rewrite the clauses of of the input
+\item example:
+\begin{align*}
+\ & (x_1) \land (x_1 \lor \bar{x_2}) \land (x_2 \lor x_3 \lor x_5) \land (x_1 \lor x_4 \lor \bar{x_6} \lor \bar{x_7}) \land (x_1 \land x_2 \land \bar{x_3} \lor x_5 \lor x_7) \\
+\equiv \  & (x_1 \lor x_1 \lor x_1) \land (x_2 \lor x_3 \lor x_5)
+\end{align*}
+\end{itemize}
+
+\subsection*{\textsc{3Sat} with more retrictions}
+
 
 \color{red} TODO \\
 \color{black}

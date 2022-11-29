@@ -1,15 +1,15 @@
 [0] Config.pm:311> INFO - This is Biber 2.16
 [0] Config.pm:314> INFO - Logfile is 'summary_7.blg'
-[142] biber-MSWIN64:340> INFO - === 
-[189] Biber.pm:415> INFO - Reading 'summary_7.bcf'
-[316] Biber.pm:952> INFO - Found 1 citekeys in bib section 0
-[338] Biber.pm:4340> INFO - Processing section 0
-[354] Biber.pm:4531> INFO - Looking for bibtex format file 'references.bib' for section 0
-[412] bibtex.pm:1689> INFO - LaTeX decoding ...
-[419] bibtex.pm:1494> INFO - Found BibTeX data source 'references.bib'
-[460] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[461] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[461] Biber.pm:4168> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
-[461] Biber.pm:4174> INFO - No sort tailoring available for locale 'en-US'
-[463] bbl.pm:654> INFO - Writing 'summary_7.bbl' with encoding 'UTF-8'
-[463] bbl.pm:757> INFO - Output to summary_7.bbl
+[125] biber-MSWIN64:340> INFO - === 
+[169] Biber.pm:415> INFO - Reading 'summary_7.bcf'
+[613] Biber.pm:952> INFO - Found 4 citekeys in bib section 0
+[635] Biber.pm:4340> INFO - Processing section 0
+[651] Biber.pm:4531> INFO - Looking for bibtex format file 'references.bib' for section 0
+[705] bibtex.pm:1689> INFO - LaTeX decoding ...
+[712] bibtex.pm:1494> INFO - Found BibTeX data source 'references.bib'
+[770] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[770] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[770] Biber.pm:4168> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[771] Biber.pm:4174> INFO - No sort tailoring available for locale 'en-US'
+[775] bbl.pm:654> INFO - Writing 'summary_7.bbl' with encoding 'UTF-8'
+[777] bbl.pm:757> INFO - Output to summary_7.bbl
