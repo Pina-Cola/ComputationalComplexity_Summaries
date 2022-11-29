@@ -66,25 +66,38 @@ Summary for the chapters \textit{9.1} and \textit{9.2}. \cite{book}
 
 \subsection*{NP-Completeness}
 
+\begin{CountingDefinition}[NP]{def:validLabelPlacement}
+Class of lanugages decided by nonderteministic Turing machines in polynomial time.
+\end{CountingDefinition}
+
+\textbf{NP-completeness:}
+\begin{itemize}
+\item easiest problems among those we do not know how to solve efficiently
+\item if P$\neq$NP can be proven: exact border of efficient solvability is found
+\item best bet for proving P$=$NP: show that some NP-complete problem is $P$
+\item Until then, the NP-complete problems are the least likely ones in NP to be efficiently solved
+\end{itemize}
+
+
+
 \begin{CountingDefinition}[Lanugage $L$]{def:validLabelPlacement}
 $L= \{ x: (x,y) \in R \textit{ for some } y \}$ \ 
 \\
 $L$ gets an input $x$ and finds a $y$ with $((x,y) \in R$ and the relation $R \subseteq \Sigma^* \times \Sigma^*$.
 \end{CountingDefinition}
 
-\begin{CountingDefinition}[NP]{def:validLabelPlacement}
-Class of lanugages decided by nonderteministic Turing machines in polynomial time.
-\end{CountingDefinition}
 
 \textbf{Polynomially decidable:}
 \begin{itemize}
 \item $R$ is polynomially decidable if there is da deterministic Turing machine deciding the language $L$ in polynomial time
-\item the relation $R$ (not the language $L$) is polynomially decidable
+\item then the relation $R$ (not the language $L$) is polynomially decidable
 \end{itemize}
 
 \textbf{Polynomially balanced:}
 \begin{itemize}
-\item
+\item $R$ is polynomially balanced if $(x,y) \in R$ implies $|y| \leq |x|^k$ for some $k \geq 1$ \\
+$\rightarrow$ length of the second component is bounded by a polynomial in the length of the first
+\item then the relation $R$ (not the language $L$) is polynomially balanced
 \end{itemize}
 
 
