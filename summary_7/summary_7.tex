@@ -270,7 +270,39 @@ leads to clause $\neg x \rightarrow x \equiv \neg \neg x \lor x \equiv x \lor x 
 $(x)(y)(z)(w)$\\
 $(\neg x \lor \neg y)(\neg y \lor \neg z)(\neg z \lor \neg x)$ \\
 $(x \lor \neg w)(y \lor \neg w)(z \lor \neg w)$
+
+\ \\
+
+\begin{small}
+\begin{tabular}{|c |c |c |c |c |c |c |c |c |c |c|} 
+\hline
+ x & y & z & w & $(\neg x \lor \neg y)$ & $(\neg y \lor \neg z)$ & $(\neg z \lor \neg x)$ & $(x \lor \neg w)$ & $(y \lor \neg w)$ & $(z \lor \neg w)$ & \\
+ \hline
+  \hline
+ 0 & 0 & 0 & 0 & 1 & 1 & 1 & 1 & 1 & 1 & 6 \\ 
+ 0 & 0 & 0 & 1 & 1 & 1 & 1 & 0 & 0 & 0 & 4 \\
+ 0 & 0 & 1 & 0 & 1 & 1 & 1 & 1 & 1 & 1 & 7 \\ 
+ 0 & 0 & 1 & 1 & 1 & 1 & 1 & 0 & 0 & 1 & 6 \\
+  \hline
+ 0 & 1 & 0 & 0 & 1 & 1 & 1 & 1 & 1 & 1 & 7 \\ 
+ 0 & 1 & 0 & 1 & 1 & 1 & 1 & 0 & 1 & 0 & 6 \\
+ 0 & 1 & 1 & 0 & 1 & 0 & 1 & 1 & 1 & 1 & 7 \\ 
+ 0 & 1 & 1 & 1 & 1 & 0 & 1 & 0 & 1 & 1 & 7 \\
+  \hline
+ 1 & 0 & 0 & 0 & 1 & 1 & 1 & 1 & 1 & 1 & 7 \\ 
+ 1 & 0 & 0 & 1 & 1 & 1 & 1 & 1 & 0 & 0 & 6 \\
+ 1 & 0 & 1 & 0 & 1 & 1 & 0 & 1 & 1 & 1 & 7 \\
+ 1 & 0 & 1 & 1 & 1 & 1 & 0 & 1 & 0 & 1 & 7 \\ 
+  \hline
+ 1 & 1 & 0 & 0 & 0 & 1 & 1 & 1 & 1 & 1 & 7 \\
+ 1 & 1 & 0 & 1 & 0 & 1 & 1 & 1 & 1 & 0 & 7 \\ 
+ 1 & 1 & 1 & 0 & 0 & 0 & 0 & 1 & 1 & 1 & 6 \\
+ 1 & 1 & 1 & 1 & 0 & 0 & 0 & 1 & 1 & 1 & 7 \\  
+ \hline
+\end{tabular}
+\end{small}
 \end{center}
+
 
 \begin{itemize}
 \item not all clauses can be satisfied
@@ -301,10 +333,75 @@ proof \\
 Like \textsc{SAT}, \textsc{NaeSat} consists of a collection of Boolean variables and clauses. \textsc{NaeSat} requires that the values in each clause are not all equal to each other (in other words, at least one is true, and at least one is false). \cite{moore}
 \end{CountingDefinition}
 
+
+\textsc{Max2Sat} is NP-complete.
+\ \\
+\textbf{Proof idea:}
+\begin{itemize}
+\item reduction from \textsc{CircuitSat} to \textsc{Max2Sat} \\
+$\rightarrow$ similar to reduction from \textsc{CircuitSat} to \textsc{Sat}
+\end{itemize}
+
 \color{red} TODO \\
 \color{black}
 \color{violet} Questions:
 \color{black}
+
+\subsection*{Reduction CIRCUIT SAT to SAT}
+
+\begin{CountingDefinition}[Problem: CIRCUIT SAT]{def:validLabelPlacement}
+The circuit satisfiability problem (CIRCUIT SAT) is the decision problem of determining whether a given Boolean circuit has an assignment of its inputs that makes the output true.
+\end{CountingDefinition}
+
+\begin{itemize}
+\item CIRCUIT SAT can be reduced to SAT \\
+$\rightarrow$ demonstrates CIRCUIT SAT is not significantly harder that SAT
+\item 
+given a circuit C, construct a boolean expression $R(C)$ such that $R(C)$ is satisfiable if and only if $C$ is satisfiable
+% \item R(C) will turn out to be a CNF.
+\item the variables of $R(C)$ are those of $C$ plus $g$ for each gate $g$ of $C$
+\item clauses of $R(C)$:
+\begin{itemize}
+\item $g$ is a variable gate $x$: \\
+Add clauses $(\lnot g \vee x)$ and $(g \vee \lnot x) \equiv g \Leftrightarrow x$
+\item $g$ is a \textit{true} gate: \\
+Add clause $(g)$ $\rightarrow$ $g$ must be true to make $R(C)$ true
+\item $g$ is a \textit{false} gate: \\
+Add clause $(\lnot g)$ $\rightarrow$ $g$ must be false to make $R(C)$ true
+\item $g$ is a $\lnot$ gate with predecessor gate $h$: \\
+Add clauses $(\lnot g \vee \lnot h)$ and $(g \vee h) \equiv g \Leftrightarrow \lnot h$ \\
+\item $g$ is a $\vee$ gate with predecessor gates $h$ and $h'$: \\
+Add clauses $(\lnot h \vee g)$, $(\lnot h' \vee g)$ and $(h \vee h' \vee \lnot g)$, meaning: $g \Leftrightarrow (h \vee h')$
+\item $g$ is a $\wedge$ gate with predecessor gates $h$ and $h'$: \\
+Add clauses $(\lnot g \vee h)$, $(\lnot g \vee h')$, and $(\lnot h \vee \lnot h' \vee g)$, meaning: $g \Leftrightarrow (h \wedge h')$
+\item $g$ is the output gate: \\
+Add clause $(g)$, meaning: $g$ must be true to make $R(C)$ true
+\end{itemize}
+\item[] \cite{RCV}
+\end{itemize}
+
+\textbf{Example:} \\
+\begin{minipage}{0.4\textwidth}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.6]{booleanC.jpg}
+\end{center}
+\caption{Boolean circuit example \cite{booleanC}}
+\end{figure}
+
+\end{minipage}\begin{minipage}{0.6\textwidth}
+
+\begin{itemize}
+\item $g$ as variable gate: $\ \ \ x_1 \ \ \ \  x_2 \ \ \ \ \ x_3$
+\item $g$ as $\wedge$ gate: $\ \ \ (x_1 \wedge x_2) \ \ \ \ \ (x_2 \wedge x_3)$
+\item $g$ as $\lnot$ gate: $\ \ \ (\lnot x_3) \ \ \ \ \ \lnot (x_1 \wedge x_2)$
+\item $g$ as $\vee$ gate: $\ \ \ (x_2 \wedge x_3) \vee \lnot x_3$
+\item $g$ as $\wedge$ gate: $\ \ \ \lnot(x_1 \wedge x_2) \wedge ((x_2 \wedge x_3) \vee \lnot x_3)$
+\end{itemize}
+
+\end{minipage}
+
 
 
 

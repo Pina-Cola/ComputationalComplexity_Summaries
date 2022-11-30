@@ -2349,6 +2349,9 @@
     <bcf:citekey order="2">GTI</bcf:citekey>
     <bcf:citekey order="3">sat</bcf:citekey>
     <bcf:citekey order="4">moore</bcf:citekey>
+    <bcf:citekey order="5">RCV</bcf:citekey>
+    <bcf:citekey order="6">booleanC</bcf:citekey>
+    <bcf:citekey order="7">booleanC</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">
