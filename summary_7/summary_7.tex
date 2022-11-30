@@ -112,6 +112,12 @@ For example: Is there a satisfying assignment ($y$) for a formular ($x$)?
 Why is $R \subseteq \Sigma^* \times \Sigma^*$? Is the input formula and the truth assignment $\in \Sigma^*$?
 \color{black}
 
+\ \\
+\textbf{Proof idea:}
+\begin{itemize}
+\item
+\end{itemize}
+
 \ \\ \ \\
 
 \color{red} TODO \\
@@ -172,17 +178,35 @@ Like the \textsc{Sat} problem, \textsc{3Sat} is determining the satisfiability o
 
 \subsection*{\textsc{3Sat} with more retrictions}
 
+\textsc{3Sat} remains NP-complete even for expressions in which each variable is restricted to appear at most three times and each literal at most twice.
+
+\ \\
+\textbf{Proof idea:}
+\begin{itemize}
+\item if a variable appears more often than twice: \\
+introduce new variables and make sure (with the introduction of new clauses) that they have the same truthvalue as the original variable
+\end{itemize}
+
 
 \color{red} TODO \\
+bipartie graph or whatever ? \\
 \color{black}
 \color{violet} Questions:
 \color{black}
 
 \subsection*{\textsc{2Sat} in P (graph construction)}
 
-\begin{CountingDefinition}[Title]{def:validLabelPlacement}
-Content
+\begin{CountingDefinition}[\textsc{2-Sat}]{def:validLabelPlacement}
+Like the \textsc{SAT} and \textsc{3-SAT} problem, \textsc{2-SAT} is determining the satisfiability of a formula in CNF where each clause is limited to at most two literals.
 \end{CountingDefinition}
+
+\begin{itemize}
+\item let $\psi$ be an instance of \textsc{2Sat} (clauses with two literals each)
+\item construct formular $\psi$ as graph
+\item the nodes are the variables (node for $a$ and $\neg a$)
+\item for clauses $(\neg a or b) \equiv a \rightarrow b$: edge from the node $a$ to the node $b$
+\item paths in $G$ are implications (implication is transitiv)
+\end{itemize}
 
 \color{red} TODO \\
 \color{black}

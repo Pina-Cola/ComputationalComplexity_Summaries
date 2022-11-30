@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.10.14)  29 NOV 2022 17:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.10.14)  30 NOV 2022 13:16
 entering extended mode
 **./summary_7.tex
 (summary_7.tex
@@ -1176,12 +1176,12 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 78.
 (C:\Users\pinak\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 10000) in paragraph at lines 115--116
+Underfull \hbox (badness 10000) in paragraph at lines 121--122
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 115--116
+Underfull \hbox (badness 10000) in paragraph at lines 121--122
 
  []
 
@@ -1194,7 +1194,7 @@ Package scrlayer-scrpage Warning: \headheight to low.
 (scrlayer-scrpage)                e.g., setting geometry's option
 (scrlayer-scrpage)                `head=40.8pt'.
 (scrlayer-scrpage)                I'll also decrease \topmargin on input line 1
-28.
+33.
 
 
 Overfull \vbox (23.8pt too high) has occurred while \output is active []
@@ -1204,11 +1204,11 @@ Overfull \vbox (23.8pt too high) has occurred while \output is active []
 ]
 
 LaTeX Font Warning: Font shape `OT1/cmss/bx/sc' undefined
-(Font)              using `OT1/cmss/bx/n' instead on input line 146.
+(Font)              using `OT1/cmss/bx/n' instead on input line 152.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/bx/sc' undefined
-(Font)              using `OT1/cmr/bx/n' instead on input line 151.
+(Font)              using `OT1/cmr/bx/n' instead on input line 157.
 
 [2] [3] [4] (summary_7.aux)
 
@@ -1224,7 +1224,7 @@ Package logreq Info: Writing requests to 'summary_7.run.xml'.
 Here is how much of TeX's memory you used:
  26844 strings out of 478927
  566732 string characters out of 2852534
- 1425561 words of memory out of 3000000
+ 1423563 words of memory out of 3000000
  44309 multiletter control sequences out of 15000+600000
  411783 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1244,7 +1244,7 @@ sy10.pfb><C:/Users/pinak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
 nts/cm/cmsy8.pfb><C:/Users/pinak/AppData/Local/Programs/MiKTeX/fonts/type1/publ
 ic/amsfonts/cm/cmti10.pfb><C:/Users/pinak/AppData/Local/Programs/MiKTeX/fonts/t
 ype1/public/amsfonts/cm/cmtt10.pfb>
-Output written on summary_7.pdf (4 pages, 169183 bytes).
+Output written on summary_7.pdf (4 pages, 172318 bytes).
 PDF statistics:
  83 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
