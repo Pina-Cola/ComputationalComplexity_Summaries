@@ -314,15 +314,24 @@ $(x \lor \neg w)(y \lor \neg w)(z \lor \neg w)$
 \item reduction from \textsc{3Sat} to \textsc{MaxSat} because $x \lor y \lor z$ needs to be satisfied
 \item instance $\psi$ of \textsc{3Sat}
 \item instance $R(\psi)$ of \textsc{MaxSat}
-\item group clauses of $R(\psi)$ which are corresponding to a clause of $\psi$
-\item set constraint of 7 satisfied clauses
+\item for each clause $C_i={\alpha \lor \beta \lor \gamma}$ of $\psi$: add the original clauses to $R(\psi)$ ($x, y, z ,w$ are replaced by $\alpha, \beta, \gamma, w_i$)
+\item clauses of $R(\psi)$ which are corresponding to a clause of $\psi$ are called a group
+\item if $\psi$ has $m$ clauses, $R(\psi)$ has $10m$ clauses
+\item set constraint $K= 7$ satisfied clauses \\
+
+\item goal can be achieved in $R(\psi)$ only if $\psi$ is satisfiable
+\item suppose $7m$ clauses can be satisfied in $R(\psi)$: 
+\begin{itemize}
+\item each group can satisfy at most seven clauses
+\item there are $m$ groups
+\item[$\rightarrow$] seven clauses must be satisfied in each group \\
+
 \end{itemize}
 
-\color{red} TODO \\
-proof \\
-\color{black}
-\color{violet} Questions:
-\color{black}
+\item any assignment that satisfies all clauses in $\psi$ can be turned into one that satisfies $7m$ clauses in $R(\psi)$ (by defining the truth value of $w_i$)
+
+\end{itemize}
+
 
 
 \subsection*{\textsc{NaeSat} is NP-complete}
@@ -338,12 +347,12 @@ Like \textsc{SAT}, \textsc{NaeSat} consists of a collection of Boolean variables
 \begin{itemize}
 \item reduction from \textsc{CircuitSat} to \textsc{Max2Sat} \\
 $\rightarrow$ similar to reduction from \textsc{CircuitSat} to \textsc{Sat}
+\item add literal $z$ to all clauses that have one or two literals
+\item if a truth assignment $T$ follows the \textsc{NaeSat}-conditions, its complement $\bar{T}$ does it too
+\item in one of the truth assignments: $z$ has the value false
+\item because of the definition of the gates: true and false included in following clauses
 \end{itemize}
 
-\color{red} TODO \\
-\color{black}
-\color{violet} Questions:
-\color{black}
 
 \subsection*{Reduction CIRCUIT SAT to SAT}
 
