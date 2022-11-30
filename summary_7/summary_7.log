@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.10.14)  30 NOV 2022 13:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.10.14)  30 NOV 2022 14:37
 entering extended mode
 **./summary_7.tex
 (summary_7.tex
@@ -1053,9 +1053,6 @@ LaTeX Warning: Label `def:validLabelPlacement' multiply defined.
 
 LaTeX Warning: Label `def:validLabelPlacement' multiply defined.
 
-
-LaTeX Warning: Label `def:validLabelPlacement' multiply defined.
-
 )
 \openout1 = `summary_7.aux'.
 
@@ -1176,12 +1173,12 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 78.
 (C:\Users\pinak\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 10000) in paragraph at lines 121--122
+Underfull \hbox (badness 10000) in paragraph at lines 119--120
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 121--122
+Underfull \hbox (badness 10000) in paragraph at lines 119--120
 
  []
 
@@ -1194,7 +1191,7 @@ Package scrlayer-scrpage Warning: \headheight to low.
 (scrlayer-scrpage)                e.g., setting geometry's option
 (scrlayer-scrpage)                `head=40.8pt'.
 (scrlayer-scrpage)                I'll also decrease \topmargin on input line 1
-33.
+30.
 
 
 Overfull \vbox (23.8pt too high) has occurred while \output is active []
@@ -1204,13 +1201,33 @@ Overfull \vbox (23.8pt too high) has occurred while \output is active []
 ]
 
 LaTeX Font Warning: Font shape `OT1/cmss/bx/sc' undefined
-(Font)              using `OT1/cmss/bx/n' instead on input line 152.
+(Font)              using `OT1/cmss/bx/n' instead on input line 149.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/bx/sc' undefined
-(Font)              using `OT1/cmr/bx/n' instead on input line 157.
+(Font)              using `OT1/cmr/bx/n' instead on input line 154.
 
-[2] [3] [4] (summary_7.aux)
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 213--214
+
+ []
+
+<graph_2.png, id=23, 272.01625pt x 90.3375pt>
+File: graph_2.png Graphic file (type png)
+<use graph_2.png>
+Package pdftex.def Info: graph_2.png  used on input line 219.
+(pdftex.def)             Requested size: 108.80457pt x 36.13435pt.
+<graph_1.png, id=25, 272.01625pt x 90.3375pt>
+File: graph_1.png Graphic file (type png)
+<use graph_1.png>
+Package pdftex.def Info: graph_1.png  used on input line 226.
+(pdftex.def)             Requested size: 108.80457pt x 36.13435pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 230--232
+
+ []
+
+[3 <./graph_2.png> <./graph_1.png>] [4] [5] (summary_7.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -1222,10 +1239,10 @@ Package logreq Info: Writing requests to 'summary_7.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 26844 strings out of 478927
- 566732 string characters out of 2852534
- 1423563 words of memory out of 3000000
- 44309 multiletter control sequences out of 15000+600000
+ 26857 strings out of 478927
+ 566909 string characters out of 2852534
+ 1424516 words of memory out of 3000000
+ 44319 multiletter control sequences out of 15000+600000
  411783 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  130i,19n,130p,10606b,1317s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1244,9 +1261,9 @@ sy10.pfb><C:/Users/pinak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
 nts/cm/cmsy8.pfb><C:/Users/pinak/AppData/Local/Programs/MiKTeX/fonts/type1/publ
 ic/amsfonts/cm/cmti10.pfb><C:/Users/pinak/AppData/Local/Programs/MiKTeX/fonts/t
 ype1/public/amsfonts/cm/cmtt10.pfb>
-Output written on summary_7.pdf (4 pages, 172318 bytes).
+Output written on summary_7.pdf (5 pages, 178298 bytes).
 PDF statistics:
- 83 PDF objects out of 1000 (max. 8388607)
+ 91 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 23 words of extra memory for PDF output out of 10000 (max. 10000000)
 

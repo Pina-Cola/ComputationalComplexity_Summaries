@@ -108,9 +108,7 @@ The language $L \subseteq \Sigma^*$ is in NP only if there is a polynomially dec
 \end{CountingDefinition}
 
 For example: Is there a satisfying assignment ($y$) for a formular ($x$)?
-\color{violet} \\
-Why is $R \subseteq \Sigma^* \times \Sigma^*$? Is the input formula and the truth assignment $\in \Sigma^*$?
-\color{black}
+
 
 \ \\
 \textbf{Proof idea:}
@@ -123,8 +121,7 @@ Why is $R \subseteq \Sigma^* \times \Sigma^*$? Is the input formula and the trut
 \color{red} TODO \\
 proof \\
 \color{black}
-\color{violet} Questions: \\
-\color{black}
+
 
 \subsection*{Succinct certificate (for NP-complete problems)}
 
@@ -191,8 +188,7 @@ introduce new variables and make sure (with the introduction of new clauses) tha
 \color{red} TODO \\
 bipartie graph or whatever ? \\
 \color{black}
-\color{violet} Questions:
-\color{black}
+
 
 \subsection*{\textsc{2Sat} in P (graph construction)}
 
@@ -204,25 +200,59 @@ Like the \textsc{SAT} and \textsc{3-SAT} problem, \textsc{2-SAT} is determining 
 \item let $\psi$ be an instance of \textsc{2Sat} (clauses with two literals each)
 \item construct formular $\psi$ as graph
 \item the nodes are the variables (node for $a$ and $\neg a$)
-\item for clauses $(\neg a or b) \equiv a \rightarrow b$: edge from the node $a$ to the node $b$
+\item for clauses $(\neg a \lor b) \equiv a \rightarrow b$: edge from the node $a$ to the node $b$
 \item paths in $G$ are implications (implication is transitiv)
+\item $\psi$ is unsatisfiable only if there is a variable $x$ such that there are paths from $x$ to $\neg x$ and from $\neg x$ to $x$ in $G$
 \end{itemize}
 
-\color{red} TODO \\
-\color{black}
-\color{violet} Questions:
-\color{black}
+
+\ \\
+\textbf{Proof idea:}
+\begin{itemize}
+\item the transitivity of the implication is proven
+\item $\psi$ is unsatisfiable only if there is a variable $x$ such that there are paths from $x$ to $\neg x$ and from $\neg x$ to $x$ in $G$ \\
+
+\item there are paths from $x$ to $\neg x$ and from $\neg x$ to $x$
+\item path from $x$ to $\neg x$:
+\begin{itemize}
+\item transitivity of implication
+\item[] \includegraphics[scale=0.4]{graph_2.png}  \\
+leads to clause $x \rightarrow \neg x \equiv \neg x \lor \neg x \equiv \neg x$
+\end{itemize}
+
+\item path from $\neg x$ to $x$
+\begin{itemize}
+\item transitivity of implication
+\item[] \includegraphics[scale=0.4]{graph_1.png}  \\
+leads to clause $\neg x \rightarrow x \equiv \neg \neg x \lor x \equiv x \lor x \equiv x$
+\end{itemize}
+
+\item the two clauses are connected with an logic and (because formula is in CNF) which leads to $\neg x \land x$ which is unsatisfiable
+\\
+
+\item there are no paths from any $x$ to $\neg x$ and back $x$: no edge is changing from true to false or the other way around
+\item whenever a node is assigned to a value, all the successors are assigned to the same value and there can be no edge from true to false or from false to true
+
+\end{itemize}
+
+
+
+
+
+
 
 \subsection*{\textsc{2Sat} in NL}
 
-\begin{CountingDefinition}[Title]{def:validLabelPlacement}
-Content
-\end{CountingDefinition}
+\textsc{2Sat} in NL
 
-\color{red} TODO \\
-\color{black}
-\color{violet} Questions:
-\color{black}
+\ \\
+\textbf{Proof idea:}
+\begin{itemize}
+\item NL is closed under complement
+\item show: unsatisfiable expressions can be recognized in NL
+\item nondeterministically guessing a variable $x$ and check for paths between $x$ and $\neg x$ and back
+\end{itemize}
+
 
 \subsection*{\textsc{MaxSat} is NP-complete}
 
