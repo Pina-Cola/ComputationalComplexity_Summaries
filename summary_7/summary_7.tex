@@ -243,7 +243,7 @@ leads to clause $\neg x \rightarrow x \equiv \neg \neg x \lor x \equiv x \lor x 
 
 \subsection*{\textsc{2Sat} in NL}
 
-\textsc{2Sat} in NL
+\textsc{2Sat} is in NL.
 
 \ \\
 \textbf{Proof idea:}
@@ -256,9 +256,32 @@ leads to clause $\neg x \rightarrow x \equiv \neg \neg x \lor x \equiv x \lor x 
 
 \subsection*{\textsc{MaxSat} is NP-complete}
 
-\begin{CountingDefinition}[Title]{def:validLabelPlacement}
-Content
+\begin{CountingDefinition}[\textsc{Max2Sat}]{def:validLabelPlacement}
+\textsc{Max2Sat} is the problem of determining the maximum number of clauses, of a given Boolean formula in CNF, that can be made true by an assignment of truth values to the variables of the formula. 
+
+\textsc{Max2Sat} is an optimization problem.
 \end{CountingDefinition}
+
+\textsc{Max2Sat} is NP-complete.
+
+\ \\
+\textbf{Example:}
+\begin{center}
+$(x)(y)(z)(w)$\\
+$(\neg x \lor \neg y)(\neg y \lor \neg z)(\neg z \lor \neg x)$ \\
+$(x \lor \neg w)(y \lor \neg w)(z \lor \neg w)$
+\end{center}
+
+\begin{itemize}
+\item not all clauses can be satisfied
+\end{itemize}
+
+\ \\
+\textbf{Proof idea:}
+\begin{itemize}
+\item any truth assignment that satisfies $x \lor y \lor z$ satisfies 6 or 7 clauses
+\item the remaining truth assignments ($\neg x \land \neg y \land \neg z$)
+\end{itemize}
 
 \color{red} TODO \\
 \color{black}
@@ -268,8 +291,8 @@ Content
 
 \subsection*{\textsc{NaeSat} is NP-complete}
 
-\begin{CountingDefinition}[Title]{def:validLabelPlacement}
-Content
+\begin{CountingDefinition}[\textsc{NaeSat}]{def:validLabelPlacement}
+Like \textsc{SAT}, \textsc{NaeSat} consists of a collection of Boolean variables and clauses. \textsc{NaeSat} requires that the values in each clause are not all equal to each other (in other words, at least one is true, and at least one is false). \cite{moore}
 \end{CountingDefinition}
 
 \color{red} TODO \\

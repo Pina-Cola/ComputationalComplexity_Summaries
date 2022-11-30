@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.10.14)  30 NOV 2022 14:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.10.14)  30 NOV 2022 15:09
 entering extended mode
 **./summary_7.tex
 (summary_7.tex
@@ -1239,13 +1239,13 @@ Package logreq Info: Writing requests to 'summary_7.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 26857 strings out of 478927
- 566909 string characters out of 2852534
- 1424516 words of memory out of 3000000
- 44319 multiletter control sequences out of 15000+600000
+ 26863 strings out of 478927
+ 567088 string characters out of 2852534
+ 1424555 words of memory out of 3000000
+ 44325 multiletter control sequences out of 15000+600000
  411783 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 130i,19n,130p,10606b,1317s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 130i,19n,130p,10606b,1319s stack positions out of 5000i,500n,10000p,200000b,80000s
  <C:\Users\pinak\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
 1095.pk><C:/Users/pinak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
 ts/cm/cmbx10.pfb><C:/Users/pinak/AppData/Local/Programs/MiKTeX/fonts/type1/publ
@@ -1261,7 +1261,7 @@ sy10.pfb><C:/Users/pinak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
 nts/cm/cmsy8.pfb><C:/Users/pinak/AppData/Local/Programs/MiKTeX/fonts/type1/publ
 ic/amsfonts/cm/cmti10.pfb><C:/Users/pinak/AppData/Local/Programs/MiKTeX/fonts/t
 ype1/public/amsfonts/cm/cmtt10.pfb>
-Output written on summary_7.pdf (5 pages, 178298 bytes).
+Output written on summary_7.pdf (5 pages, 182627 bytes).
 PDF statistics:
  91 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

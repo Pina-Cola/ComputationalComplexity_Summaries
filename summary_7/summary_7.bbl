@@ -39,6 +39,35 @@
       \field{labeltitlesource}{title}
       \field{title}{Lecture notes in Computational Complexity}
     \endentry
+    \entry{moore}{book}{}
+      \name{author}{2}{}{%
+        {{hash=204e08828e2dc50ada9b8e498f43a1e2}{%
+           family={Moore},
+           familyi={M\bibinitperiod},
+           given={Cristopher},
+           giveni={C\bibinitperiod}}}%
+        {{hash=6ea76002db81929f2423ca6b92db7103}{%
+           family={Mertens},
+           familyi={M\bibinitperiod},
+           given={Stephan},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {OUP Oxford}%
+      }
+      \strng{namehash}{9ccae25c75a739cbbacf31f58a798a0b}
+      \strng{fullhash}{9ccae25c75a739cbbacf31f58a798a0b}
+      \strng{bibnamehash}{9ccae25c75a739cbbacf31f58a798a0b}
+      \strng{authorbibnamehash}{9ccae25c75a739cbbacf31f58a798a0b}
+      \strng{authornamehash}{9ccae25c75a739cbbacf31f58a798a0b}
+      \strng{authorfullhash}{9ccae25c75a739cbbacf31f58a798a0b}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The nature of computation}
+      \field{year}{2011}
+    \endentry
     \entry{book}{book}{}
       \name{author}{1}{}{%
         {{hash=b3b407bb63367a850366076095ee1970}{%
