@@ -89,6 +89,8 @@ $L= \{ x: (x,y) \in R \textit{ for some } y \}$ \
 $L$ gets an input $x$ and finds a $y$ with $((x,y) \in R$ and the relation $R \subseteq \Sigma^* \times \Sigma^*$.
 \end{CountingDefinition}
 
+For example: Is there a satisfying assignment ($y$) for a formular ($x$)?
+
 
 \textbf{Polynomially decidable:}
 \begin{itemize}
@@ -107,20 +109,20 @@ $\rightarrow$ length of the second component is bounded by a polynomial in the l
 The language $L \subseteq \Sigma^*$ is in NP only if there is a polynomially decidable and polynomially balanced relation $R$ such that  $L= \{ x: (x,y) \in R \textit{ for some } y \}$.
 \end{CountingDefinition}
 
-For example: Is there a satisfying assignment ($y$) for a formular ($x$)?
+
 
 
 \ \\
 \textbf{Proof idea:}
 \begin{itemize}
-\item
+\item $L$ is decided by a nondeterministic Turing Machine $M$
+\item $M$ guesses a $y$ for an input $x$ ($y$ is of length at most $|x|^k$) \\
+$\rightarrow$ polynomially balanced
+\item $M$ decides whether $y$ encodes an accepting computation on $x$ in linear time \\
+$\rightarrow$ polynomially decidable
 \end{itemize}
 
-\ \\ \ \\
 
-\color{red} TODO \\
-proof \\
-\color{black}
 
 
 \subsection*{Succinct certificate (for NP-complete problems)}
@@ -184,10 +186,6 @@ Like the \textsc{Sat} problem, \textsc{3Sat} is determining the satisfiability o
 introduce new variables and make sure (with the introduction of new clauses) that they have the same truthvalue as the original variable
 \end{itemize}
 
-
-\color{red} TODO \\
-bipartie graph or whatever ? \\
-\color{black}
 
 
 \subsection*{\textsc{2Sat} in P (graph construction)}

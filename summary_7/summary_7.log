@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.10.14)  30 NOV 2022 15:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.10.14)  30 NOV 2022 17:55
 entering extended mode
 **./summary_7.tex
 (summary_7.tex
@@ -1176,15 +1176,6 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 78.
 (C:\Users\pinak\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 10000) in paragraph at lines 119--120
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 119--120
-
- []
-
 
 Package scrlayer-scrpage Warning: \headheight to low.
 (scrlayer-scrpage)                At least 40.8pt needed,
@@ -1194,7 +1185,7 @@ Package scrlayer-scrpage Warning: \headheight to low.
 (scrlayer-scrpage)                e.g., setting geometry's option
 (scrlayer-scrpage)                `head=40.8pt'.
 (scrlayer-scrpage)                I'll also decrease \topmargin on input line 1
-30.
+33.
 
 
 Overfull \vbox (23.8pt too high) has occurred while \output is active []
@@ -1204,41 +1195,41 @@ Overfull \vbox (23.8pt too high) has occurred while \output is active []
 ]
 
 LaTeX Font Warning: Font shape `OT1/cmss/bx/sc' undefined
-(Font)              using `OT1/cmss/bx/n' instead on input line 149.
+(Font)              using `OT1/cmss/bx/n' instead on input line 151.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/bx/sc' undefined
-(Font)              using `OT1/cmr/bx/n' instead on input line 154.
+(Font)              using `OT1/cmr/bx/n' instead on input line 156.
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 213--214
+Underfull \hbox (badness 10000) in paragraph at lines 211--212
 
  []
 
 <graph_2.png, id=23, 272.01625pt x 90.3375pt>
 File: graph_2.png Graphic file (type png)
 <use graph_2.png>
-Package pdftex.def Info: graph_2.png  used on input line 219.
+Package pdftex.def Info: graph_2.png  used on input line 217.
 (pdftex.def)             Requested size: 108.80457pt x 36.13435pt.
 <graph_1.png, id=25, 272.01625pt x 90.3375pt>
 File: graph_1.png Graphic file (type png)
 <use graph_1.png>
-Package pdftex.def Info: graph_1.png  used on input line 226.
+Package pdftex.def Info: graph_1.png  used on input line 224.
 (pdftex.def)             Requested size: 108.80457pt x 36.13435pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 230--232
+Underfull \hbox (badness 10000) in paragraph at lines 228--230
 
  []
 
 [3 <./graph_2.png> <./graph_1.png>] [4]
-Underfull \hbox (badness 10000) in paragraph at lines 371--373
+Underfull \hbox (badness 10000) in paragraph at lines 369--371
 
  []
 
 <booleanC.jpg, id=34, 301.125pt x 266.9975pt>
 File: booleanC.jpg Graphic file (type jpg)
 <use booleanC.jpg>
-Package pdftex.def Info: booleanC.jpg  used on input line 388.
+Package pdftex.def Info: booleanC.jpg  used on input line 386.
 (pdftex.def)             Requested size: 180.67638pt x 160.19972pt.
 [5] [6 <./booleanC.jpg>] [7] (summary_7.aux)
 
@@ -1274,7 +1265,7 @@ sy10.pfb><C:/Users/pinak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
 nts/cm/cmsy8.pfb><C:/Users/pinak/AppData/Local/Programs/MiKTeX/fonts/type1/publ
 ic/amsfonts/cm/cmti10.pfb><C:/Users/pinak/AppData/Local/Programs/MiKTeX/fonts/t
 ype1/public/amsfonts/cm/cmtt10.pfb>
-Output written on summary_7.pdf (7 pages, 203246 bytes).
+Output written on summary_7.pdf (7 pages, 203734 bytes).
 PDF statistics:
  100 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
