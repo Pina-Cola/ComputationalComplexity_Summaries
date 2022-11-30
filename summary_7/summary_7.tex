@@ -257,7 +257,7 @@ leads to clause $\neg x \rightarrow x \equiv \neg \neg x \lor x \equiv x \lor x 
 \subsection*{\textsc{MaxSat} is NP-complete}
 
 \begin{CountingDefinition}[\textsc{Max2Sat}]{def:validLabelPlacement}
-\textsc{Max2Sat} is the problem of determining the maximum number of clauses, of a given Boolean formula in CNF, that can be made true by an assignment of truth values to the variables of the formula. 
+\textsc{Max2Sat} is the problem of determining the maximum number of clauses, of a given Boolean formula in CNF with a maximum of 2 variables per clause, that can be made true by an assignment of truth values to the variables of the formula. 
 
 \textsc{Max2Sat} is an optimization problem.
 \end{CountingDefinition}
@@ -280,10 +280,16 @@ $(x \lor \neg w)(y \lor \neg w)(z \lor \neg w)$
 \textbf{Proof idea:}
 \begin{itemize}
 \item any truth assignment that satisfies $x \lor y \lor z$ satisfies 6 or 7 clauses
-\item the remaining truth assignments ($\neg x \land \neg y \land \neg z$)
+\item the remaining truth assignments ($\neg x \land \neg y \land \neg z$) satisfy 4 or 6 clauses
+\item reduction from \textsc{3Sat} to \textsc{MaxSat} because $x \lor y \lor z$ needs to be satisfied
+\item instance $\psi$ of \textsc{3Sat}
+\item instance $R(\psi)$ of \textsc{MaxSat}
+\item group clauses of $R(\psi)$ which are corresponding to a clause of $\psi$
+\item set constraint of 7 satisfied clauses
 \end{itemize}
 
 \color{red} TODO \\
+proof \\
 \color{black}
 \color{violet} Questions:
 \color{black}
