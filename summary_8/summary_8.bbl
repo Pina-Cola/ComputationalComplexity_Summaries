@@ -19,6 +19,26 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
+    \entry{CC}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=2c63120ec0e3550707d1ff8da6f9b51f}{%
+           family={Berglund},
+           familyi={B\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{2c63120ec0e3550707d1ff8da6f9b51f}
+      \strng{fullhash}{2c63120ec0e3550707d1ff8da6f9b51f}
+      \strng{bibnamehash}{2c63120ec0e3550707d1ff8da6f9b51f}
+      \strng{authorbibnamehash}{2c63120ec0e3550707d1ff8da6f9b51f}
+      \strng{authornamehash}{2c63120ec0e3550707d1ff8da6f9b51f}
+      \strng{authorfullhash}{2c63120ec0e3550707d1ff8da6f9b51f}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Lecture notes in Computational Complexity}
+    \endentry
     \entry{book}{book}{}
       \name{author}{1}{}{%
         {{hash=b3b407bb63367a850366076095ee1970}{%

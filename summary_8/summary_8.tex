@@ -62,7 +62,7 @@ piko0011}
 
 \section*{Summary: Lecture 8}
 
-Summary for the chapters \textit{9.3} and \textit{9.4}. \cite{book}
+Summary for the chapters \textit{9.3} and \textit{9.4}. \cite{book, CC}
 
 \begin{CountingDefinition}[Title]{def:validLabelPlacement}
 
@@ -102,9 +102,26 @@ Question: Is there a set of $k$ nodes with no edges in between? (\textsc{Indepen
 
 \end{itemize}
 
-\subsection*{•}
+\subsection*{\textsc{TSP(D)}}
 
-\subsection*{•}
+\begin{CountingDefinition}[\textsc{TSP(D)}]{def:validLabelPlacement}
+
+\textsc{TSP(D)} is a decision version of \textsc{TSP}.
+\ \\
+Input: A $n \times n$ distance matrix and a bound $B \in \mathbb{N}$
+\ \\
+Question: Is there a round tour of length $\leq B$ that visits all \textit{cities}?
+\end{CountingDefinition}
+
+\textsc{TSP(D)} is NP-complete.
+
+\ \\
+\textbf{Proof idea:}
+\begin{itemize}
+\item budget of nodes is $B = |V| + 1$
+\end{itemize}
+
+\subsection*{\textsc{Knapsack}}
 
 \subsection*{•}
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.10.14)  1 DEC 2022 14:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.10.14)  1 DEC 2022 14:42
 entering extended mode
 **./summary_8.tex
 (summary_8.tex
@@ -1035,6 +1035,9 @@ LaTeX Warning: Unused global option(s):
 
 LaTeX Warning: Label `def:validLabelPlacement' multiply defined.
 
+
+LaTeX Warning: Label `def:validLabelPlacement' multiply defined.
+
 )
 \openout1 = `summary_8.aux'.
 
@@ -1164,7 +1167,7 @@ LaTeX Font Warning: Font shape `OT1/cmr/bx/sc' undefined
 (Font)              using `OT1/cmr/bx/n' instead on input line 83.
 
 LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 
-105.
+126.
 (C:\Users\pinak\AppData\Local\Programs\MiKTeX\tex/latex/base\ts1cmss.fd
 File: ts1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
@@ -1177,7 +1180,7 @@ Package scrlayer-scrpage Warning: \headheight to low.
 (scrlayer-scrpage)                e.g., setting geometry's option
 (scrlayer-scrpage)                `head=40.8pt'.
 (scrlayer-scrpage)                I'll also decrease \topmargin on input line 1
-23.
+40.
 
 
 Overfull \vbox (23.8pt too high) has occurred while \output is active []
@@ -1196,13 +1199,13 @@ Package logreq Info: Writing requests to 'summary_8.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 26836 strings out of 478927
- 566771 string characters out of 2852534
- 1414131 words of memory out of 3000000
- 44300 multiletter control sequences out of 15000+600000
+ 26841 strings out of 478927
+ 566896 string characters out of 2852534
+ 1419211 words of memory out of 3000000
+ 44305 multiletter control sequences out of 15000+600000
  411257 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 130i,19n,130p,10606b,1135s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 130i,19n,130p,10606b,1171s stack positions out of 5000i,500n,10000p,200000b,80000s
  <C:\Users\pinak\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcsx
 1200.pk> <C:\Users\pinak\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
 0\tcrm1095.pk><C:/Users/pinak/AppData/Local/Programs/MiKTeX/fonts/type1/public/
@@ -1212,11 +1215,13 @@ fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/pinak/AppData/Local/Program
 s/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/pinak/AppData/Local
 /Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/Users/pinak/AppD
 ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Users
-/pinak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-
-Output written on summary_8.pdf (2 pages, 94591 bytes).
+/pinak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+<C:/Users/pinak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cm
+ti10.pfb><C:/Users/pinak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
+nts/symbols/msbm10.pfb>
+Output written on summary_8.pdf (2 pages, 113701 bytes).
 PDF statistics:
- 57 PDF objects out of 1000 (max. 8388607)
+ 67 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
