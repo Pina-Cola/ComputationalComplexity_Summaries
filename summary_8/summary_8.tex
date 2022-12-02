@@ -205,6 +205,14 @@ A \textsc{HamiltonPath} is a path in a graph that visits each node exactly once.
 \end{figure}
 \end{itemize}
 
+\item clauses:
+\begin{itemize}
+\item triangles for clause construction
+\item one side for each literal
+\item if literal is false: hamilton path traveres triangle side
+\item at least one literal need to be true: else all three edges of triangle will be traversed and this is not a hamilton path 
+\end{itemize}
+
 
 \end{itemize}
 
