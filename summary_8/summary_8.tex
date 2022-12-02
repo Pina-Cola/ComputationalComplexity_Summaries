@@ -123,6 +123,16 @@ $\rightarrow$ independent set can contain at moast $m$ nodes (one from each tria
 \item edges between nodes in different triangles if they correspond to the same literal (negated)
 \item $K = m$ ($m$ clauses) 
 \end{itemize}
+
+\item given: instance $\phi$ of \textsc{3Sat} with $m$ clauses $C_1,...,C_m$
+\item each clause $C_i=(\alpha_{i1} \lor \alpha_{i2} \lor \alpha_{i3})$ (with $\alpha$ as boolean variables or negation of those)
+\item reduction $R$ constructs a graph: $R(\phi) = (G, K)$ where $K=m$ and $G=(V,E)$
+\item nodes $V = \{ v_{ij}: \ i = 1, ..., m; j = 1, 2, 3 \}$ \\
+nodes for each of the $m$ clauses ($i$) for each of the 3 literals ($j$)
+\item edges $E = \{ [ v_{ij}, v_{ik}  ] : \ i = 1, ..., m; j \neq k \} \cup \{ [ v_{ij}, v_{lk}  ] : \ i  \neq l, \alpha{ij} = \neg \alpha_{lk} \}$ \\
+edges between the nodes in one clause (triangle edges) \\
+edges between nodes with the same corresponding literal, but negated
+
 \end{itemize}
 
 
