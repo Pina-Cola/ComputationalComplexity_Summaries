@@ -94,11 +94,13 @@ An undirected graph $G$ is a pair of sets $(V, E)$ where $V$ is the finite set o
 
 \begin{CountingDefinition}[\textsc{IndependentSet}]{def:validLabelPlacement}
 
-\textsc{IndependentSet}
-\ \\
 Input: An undirected Graph $G = (V, E)$ and a number $k$.
 \ \\
 Question: Is there a set $I \subseteq V$ of $k = |I|$ nodes with no edges in between? (\textsc{IndependentSet})
+\end{CountingDefinition}
+
+\begin{CountingDefinition}[\textsc{3SAT}]{def:validLabelPlacement}
+Like the \textsc{Sat} problem, \textsc{3Sat} is determining the satisfiability of a formula in CNF where each clause is limited to at most three literals.
 \end{CountingDefinition}
 
 \textsc{IndependentSet} is NP-complete.
@@ -131,18 +133,22 @@ $\rightarrow$ independent set can contain at moast $m$ nodes (one from each tria
 nodes for each of the $m$ clauses ($i$) for each of the 3 literals ($j$)
 \item edges $E = \{ [ v_{ij}, v_{ik}  ] : \ i = 1, ..., m; j \neq k \} \cup \{ [ v_{ij}, v_{lk}  ] : \ i  \neq l, \alpha{ij} = \neg \alpha_{lk} \}$ \\
 edges between the nodes in one clause (triangle edges) \\
-edges between nodes with the same corresponding literal, but negated
+edges between nodes with the same corresponding literal, but negated\\
+
+\item there is an indepentent set $I$ of $K$ nodes in $G$ only if $\phi$ is satisfiable
+\item $I$ must contain a node from each triangle
+\item negated literals are connected: $I$ cannot contain a literal and its negation
+\item $I$ is a truth assignment of $\phi$:
+\begin{itemize}
+\item true literals: nodes in $I$
+\item one true literal per clause
+\end{itemize}
 
 \end{itemize}
 
 
 
 
-
-\color{red} TODO \\
-\color{black}
-\color{violet} Questions:
-\color{black}
 
 %---------------------------------------------------------------
 
@@ -155,12 +161,50 @@ edges between nodes with the same corresponding literal, but negated
 
 \subsection*{\textsc{HamiltonPath} is NP-complete}
 
+
+\begin{CountingDefinition}[\textsc{HamiltonPath}]{def:validLabelPlacement}
+A \textsc{HamiltonPath} is a path in a graph that visits each node exactly once.
+\end{CountingDefinition}
+
 \textsc{HamiltonPath} is NP-complete.
 
 \ \\
 \textbf{Proof idea:}
 \begin{itemize}
-\item Another reduction from \textsc{3Sat}
+\item reduction from \textsc{3Sat} to \textsc{HamiltonPath}
+\item given: formula $\phi$ in CNF with $n$ variales $x_1,...,x_n$ and $m$ clauses $C_1,...,C_m$ with each 3 variables
+\item construct a graph $R(\phi)$ that has a hamilton path only if $\phi$ is satisfiable:
+
+\item boolean variables:
+
+\begin{itemize}
+\item choice between true and false
+\item all occurences of $x$ must have the same value (and $\neg x$ the opposite)
+\item use \textit{choice} gadget (like flip flop)
+\end{itemize}
+
+\item XOR:
+
+\begin{itemize}
+\item[]
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.5]{xor.jpg}
+\end{center}
+\caption{XOR subgraph from the book \cite{book} with the relevant edges marked additionally for better readibility}
+\end{figure}
+\item use \textit{consistency} gadget
+\item because of hamilton path: there are only two ways to traverse through this sub graph (as shown above)
+\item leads to exclusive or (XOR)
+\item[]
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.2]{xor2.jpg}
+\end{center}
+\caption{XOR connecting two independent edges (\textit{consistency} gadget) \cite{book}}
+\end{figure}
+\end{itemize}
+
 
 \end{itemize}
 

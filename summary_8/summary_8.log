@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.10.14)  2 DEC 2022 15:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.10.14)  2 DEC 2022 16:26
 entering extended mode
 **./summary_8.tex
 (summary_8.tex
@@ -1041,6 +1041,12 @@ LaTeX Warning: Label `def:validLabelPlacement' multiply defined.
 
 LaTeX Warning: Label `def:validLabelPlacement' multiply defined.
 
+
+LaTeX Warning: Label `def:validLabelPlacement' multiply defined.
+
+
+LaTeX Warning: Label `def:validLabelPlacement' multiply defined.
+
 )
 \openout1 = `summary_8.aux'.
 
@@ -1166,7 +1172,7 @@ LaTeX Font Warning: Font shape `OT1/cmss/bx/sc' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 93.
 
 
-Overfull \hbox (7.70648pt too wide) in paragraph at lines 97--102
+Overfull \hbox (7.70648pt too wide) in paragraph at lines 97--100
 \OT1/cmr/m/n/10.95 Question: Is there a set $\OML/cmm/m/it/10.95 I \OMS/cmsy/m/
 n/10.95  \OML/cmm/m/it/10.95 V$ \OT1/cmr/m/n/10.95 of $\OML/cmm/m/it/10.95 k \
 OT1/cmr/m/n/10.95 = \OMS/cmsy/m/n/10.95 j\OML/cmm/m/it/10.95 I\OMS/cmsy/m/n/10.
@@ -1176,12 +1182,12 @@ IndependentSet\OT1/cmr/m/n/10.95 )
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/bx/sc' undefined
-(Font)              using `OT1/cmr/bx/n' instead on input line 102.
+(Font)              using `OT1/cmr/bx/n' instead on input line 100.
 
 <triangle.jpg, id=4, 754.31813pt x 253.69781pt>
 File: triangle.jpg Graphic file (type jpg)
 <use triangle.jpg>
-Package pdftex.def Info: triangle.jpg  used on input line 112.
+Package pdftex.def Info: triangle.jpg  used on input line 114.
 (pdftex.def)             Requested size: 377.15814pt x 126.84859pt.
 
 Package scrlayer-scrpage Warning: \headheight to low.
@@ -1192,7 +1198,7 @@ Package scrlayer-scrpage Warning: \headheight to low.
 (scrlayer-scrpage)                e.g., setting geometry's option
 (scrlayer-scrpage)                `head=40.8pt'.
 (scrlayer-scrpage)                I'll also decrease \topmargin on input line 1
-32.
+31.
 
 
 Overfull \vbox (23.8pt too high) has occurred while \output is active []
@@ -1200,7 +1206,22 @@ Overfull \vbox (23.8pt too high) has occurred while \output is active []
  [1{C:/Users/pinak/AppData/Local/MiKTeX/pdftex/config/pdftex.map}
 
  <./triangle.jpg>]
-[2] [3] (summary_8.aux)
+Underfull \hbox (badness 10000) in paragraph at lines 134--137
+
+ []
+
+<xor.jpg, id=18, 759.58781pt x 168.63pt>
+File: xor.jpg Graphic file (type jpg)
+<use xor.jpg>
+Package pdftex.def Info: xor.jpg  used on input line 192.
+(pdftex.def)             Requested size: 379.79297pt x 84.31479pt.
+[2 <./xor.jpg>]
+<xor2.jpg, id=24, 501.37312pt x 219.06844pt>
+File: xor2.jpg Graphic file (type jpg)
+<use xor2.jpg>
+Package pdftex.def Info: xor2.jpg  used on input line 202.
+(pdftex.def)             Requested size: 100.27284pt x 43.8129pt.
+ [3 <./xor2.jpg>] [4] (summary_8.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -1212,13 +1233,13 @@ Package logreq Info: Writing requests to 'summary_8.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 26835 strings out of 478927
- 566501 string characters out of 2852534
- 1419258 words of memory out of 3000000
- 44302 multiletter control sequences out of 15000+600000
+ 26855 strings out of 478927
+ 566806 string characters out of 2852534
+ 1420352 words of memory out of 3000000
+ 44320 multiletter control sequences out of 15000+600000
  410914 words of font info for 54 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 130i,19n,130p,10606b,1402s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 130i,19n,130p,10606b,1473s stack positions out of 5000i,500n,10000p,200000b,80000s
  <C:\Users\pinak\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
 1095.pk><C:/Users/pinak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
 ts/cm/cmbx10.pfb><C:/Users/pinak/AppData/Local/Programs/MiKTeX/fonts/type1/publ
@@ -1233,9 +1254,9 @@ inak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb>
 sy10.pfb><C:/Users/pinak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
 nts/cm/cmti10.pfb><C:/Users/pinak/AppData/Local/Programs/MiKTeX/fonts/type1/pub
 lic/amsfonts/symbols/msbm10.pfb>
-Output written on summary_8.pdf (3 pages, 252155 bytes).
+Output written on summary_8.pdf (4 pages, 390617 bytes).
 PDF statistics:
- 76 PDF objects out of 1000 (max. 8388607)
+ 81 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 18 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 28 words of extra memory for PDF output out of 10000 (max. 10000000)
 
