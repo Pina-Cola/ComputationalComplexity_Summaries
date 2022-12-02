@@ -76,7 +76,7 @@ Summary for the chapters \textit{9.3} and \textit{9.4}. \cite{book, CC}
 
 An undirected graph $G$ is a pair of sets $(V, E)$ where $V$ is the finite set of nodes and $E$ is a set of unordered pairs in $V$ that are symmetric: 
 \begin{align*}
-\forall i,j \in E, i \neq j: \  (i, j) \in E \Rightarrow (j, i) \in E 
+\forall \ i,j \in E, i \neq j: \  (i, j) \in E \Rightarrow (j, i) \in E 
 \end{align*}
 
 \end{CountingDefinition}
@@ -106,7 +106,23 @@ Question: Is there a set $I \subseteq V$ of $k = |I|$ nodes with no edges in bet
 \ \\
 \textbf{Proof idea:}
 \begin{itemize}
-\item triangle construction
+\item triangle construction: any independent set can contain at most one node of the triangle
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.5]{triangle.jpg}
+\end{center}
+\caption{Graph with triangles \cite{book}}
+\end{figure}
+\item consider only graphs whose nodes can be partitioned in $m$ disjoint triangles \\
+$\rightarrow$ independent set can contain at moast $m$ nodes (one from each triangle)
+\item reduction from \textsc{3Sat} to \textsc{IndependentSet}
+\item construct graph of formula $\phi$:
+\begin{itemize}
+\item each literal as a node
+\item clauses as triangles
+\item edges between nodes in different triangles if they correspond to the same literal (negated)
+\item $K = m$ ($m$ clauses) 
+\end{itemize}
 \end{itemize}
 
 
