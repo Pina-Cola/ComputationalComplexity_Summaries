@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.10.14)  1 DEC 2022 14:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.10.14)  2 DEC 2022 13:26
 entering extended mode
 **./summary_8.tex
 (summary_8.tex
@@ -1038,6 +1038,9 @@ LaTeX Warning: Label `def:validLabelPlacement' multiply defined.
 
 LaTeX Warning: Label `def:validLabelPlacement' multiply defined.
 
+
+LaTeX Warning: Label `def:validLabelPlacement' multiply defined.
+
 )
 \openout1 = `summary_8.aux'.
 
@@ -1146,25 +1149,34 @@ Package biblatex Info: ... file 'summary_8.bbl' found.
  (summary_8.bbl)
 Package biblatex Info: Reference section=0 on input line 61.
 Package biblatex Info: Reference segment=0 on input line 61.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 77.
 
-
-LaTeX Font Warning: Font shape `OT1/cmss/bx/sc' undefined
-(Font)              using `OT1/cmss/bx/n' instead on input line 82.
-
-LaTeX Font Info:    Trying to load font information for U+msa on input line 88.
 
 (C:\Users\pinak\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 88.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 77.
 
 
 (C:\Users\pinak\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 
+LaTeX Font Warning: Font shape `OT1/cmss/bx/sc' undefined
+(Font)              using `OT1/cmss/bx/n' instead on input line 93.
+
+
+Overfull \hbox (7.70648pt too wide) in paragraph at lines 97--102
+\OT1/cmr/m/n/10.95 Question: Is there a set $\OML/cmm/m/it/10.95 I \OMS/cmsy/m/
+n/10.95  \OML/cmm/m/it/10.95 V$ \OT1/cmr/m/n/10.95 of $\OML/cmm/m/it/10.95 k \
+OT1/cmr/m/n/10.95 = \OMS/cmsy/m/n/10.95 j\OML/cmm/m/it/10.95 I\OMS/cmsy/m/n/10.
+95 j$ \OT1/cmr/m/n/10.95 nodes with no edges in be-tween? (\OT1/cmr/m/sc/10.95 
+IndependentSet\OT1/cmr/m/n/10.95 ) 
+ []
+
+
 LaTeX Font Warning: Font shape `OT1/cmr/bx/sc' undefined
-(Font)              using `OT1/cmr/bx/n' instead on input line 91.
+(Font)              using `OT1/cmr/bx/n' instead on input line 102.
 
 
 Package scrlayer-scrpage Warning: \headheight to low.
@@ -1175,7 +1187,7 @@ Package scrlayer-scrpage Warning: \headheight to low.
 (scrlayer-scrpage)                e.g., setting geometry's option
 (scrlayer-scrpage)                `head=40.8pt'.
 (scrlayer-scrpage)                I'll also decrease \topmargin on input line 2
-25.
+07.
 
 
 Overfull \vbox (23.8pt too high) has occurred while \output is active []
@@ -1194,10 +1206,10 @@ Package logreq Info: Writing requests to 'summary_8.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 26822 strings out of 478927
- 566272 string characters out of 2852534
- 1419209 words of memory out of 3000000
- 44290 multiletter control sequences out of 15000+600000
+ 26826 strings out of 478927
+ 566365 string characters out of 2852534
+ 1421258 words of memory out of 3000000
+ 44294 multiletter control sequences out of 15000+600000
  410914 words of font info for 54 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  130i,19n,130p,10606b,1171s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1213,7 +1225,7 @@ cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Users/pinak
 ers/pinak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.p
 fb><C:/Users/pinak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/sy
 mbols/msbm10.pfb>
-Output written on summary_8.pdf (3 pages, 116059 bytes).
+Output written on summary_8.pdf (3 pages, 119512 bytes).
 PDF statistics:
  65 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

@@ -72,12 +72,23 @@ Summary for the chapters \textit{9.3} and \textit{9.4}. \cite{book, CC}
 
 
 
+\begin{CountingDefinition}[Undirected graph]{def:validLabelPlacement}
+
+An undirected graph $G$ is a pair of sets $(V, E)$ where $V$ is the finite set of nodes and $E$ is a set of unordered pairs in $V$ that are symmetric: 
+\begin{align*}
+\forall i,j \in E, i \neq j: \  (i, j) \in E \Rightarrow (j, i) \in E 
+\end{align*}
+
+\end{CountingDefinition}
 
 
 
 
 
 
+
+
+%---------------------------------------------------------------
 
 \subsection*{\textsc{IndependentSet}}
 
@@ -85,9 +96,9 @@ Summary for the chapters \textit{9.3} and \textit{9.4}. \cite{book, CC}
 
 \textsc{IndependentSet}
 \ \\
-Input: An undirected Graph $G$ and a number $k$.
+Input: An undirected Graph $G = (V, E)$ and a number $k$.
 \ \\
-Question: Is there a set of $k$ nodes with no edges in between? (\textsc{IndependentSet})
+Question: Is there a set $I \subseteq V$ of $k = |I|$ nodes with no edges in between? (\textsc{IndependentSet})
 \end{CountingDefinition}
 
 \textsc{IndependentSet} is NP-complete.
