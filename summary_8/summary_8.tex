@@ -191,7 +191,7 @@ A \textsc{HamiltonPath} is a path in a graph that visits each node exactly once.
 \begin{center}
 \includegraphics[scale=0.5]{xor.jpg}
 \end{center}
-\caption{XOR subgraph from the book \cite{book} with the relevant edges marked additionally for better readibility}
+\caption{XOR subgraph from the book \cite{book} with the relevant edges marked additionally}
 \end{figure}
 \item use \textit{consistency} gadget
 \item because of hamilton path: there are only two ways to traverse through this sub graph (as shown above)
@@ -211,6 +211,18 @@ A \textsc{HamiltonPath} is a path in a graph that visits each node exactly once.
 \item one side for each literal
 \item if literal is false: hamilton path traveres triangle side
 \item at least one literal need to be true: else all three edges of triangle will be traversed and this is not a hamilton path 
+\end{itemize}
+
+\item put everything together as graph $G$:
+\begin{itemize}
+\item $G$ has $n$ copies of the \textit{choice} gadget as a chain (one for each variable)
+\item[]
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.4]{choicegadgets.jpg}
+\end{center}
+\caption{\textit{Choice} gadgets marked in graph from the book \cite{book}}
+\end{figure}
 \end{itemize}
 
 
