@@ -10,6 +10,8 @@
 \usepackage{float}
 \usepackage{xcolor}
 \pagestyle{scrheadings}
+\usepackage{stmaryrd}
+\let\stmaryrdLightning\lightning
 \clearscrheadfoot
 
 \usepackage[backend=biber, maxbibnames=99]{biblatex}
@@ -290,12 +292,125 @@ Question: Is there a round tour of length $\leq B$ that visits all \textit{citie
 \ \\
 \textbf{Proof idea:}
 \begin{itemize}
-\item budget of nodes is $B = |V| + 1$
+\item reduce \textsc{HamiltonPath} to \textsc{Tsp}
+\item given: graph $G$ with $n$ nodes
+\item design: matrix $d_{ij}$ and a budget $B$ of nodes with $B = |V| + 1$ such that there is a tour of length $B$ or less only if the $G$ has a hamilton path
+\item $d_{ij}$ usually contains the distance from city $i$ to city $j$
+\item $n$ cities: one node for each city in the graph \\
+$\rightarrow$ $n$ nodes
+\item distance between two cities $i$ and $j$ is 1 if there is an edge $[i,j]$ and 2 otherwise
+\end{itemize}
+
+
+\textbf{Example:} \ \\
+
+
+%------------------------------------
+
+\begin{minipage}{0.7\textwidth}
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.18]{tsp_1.png}
+% \includegraphics[scale=0.4]{tsp3.jpg}
+\end{center}
+\caption{Corresponding table to the graph}
+\end{figure}
+
+\end{minipage}\begin{minipage}{0.05\textwidth}
+\ \\
+\end{minipage}\begin{minipage}{0.25\textwidth}
+\begin{tabular}{c|c|c|c|c|c|}
+ & A & B & C & D & E \\
+\hline
+A & -- & 1 & 2 & 2 & 2 \\
+\hline
+B & 1 & -- & 1 & 1 & 2 \\
+\hline
+C & 2 & 1 & -- & 2 & 1 \\
+\hline
+D & 2 & 1 & 2 & -- & 1 \\
+\hline
+E & 2 & 2 & 1 & 1 & -- \\
+\hline
+\end{tabular}
+
+
+\end{minipage}
+
+\begin{itemize}
+\item undirected: distances are symmetric, leads to $d_{ij} = d_{ji}$
+\item set limit to $B = |V|+1 = 6$
+\item $\sum^{n}_{i=1} d_{\pi(i), \pi(i+1)}$ is as small as possible
+\item $\pi$ is a permutation
+\item[] The following sum for the example can at most be 6:
+\begin{align*}
+ \text{A to B: } & \  d_{\pi(0), \pi(1)} =  1 \\
+  \text{B to C: } & \  d_{\pi(1), \pi(2)} = 1\\
+   \text{C to E: } & \  d_{\pi(2), \pi(3)} = 1 \\
+ \text{E to D: } & \  d_{\pi(3), \pi(4)} =  1\\
+ \text{D to A: } & \  d_{\pi(4), \pi(0)} = \stmaryrdLightning
+ \\
+ & \ \sum = \stmaryrdLightning
+\end{align*}
+Graph has no cykle.
 \end{itemize}
 
 
 
 
+
+%------------------------------------
+
+\begin{minipage}{0.7\textwidth}
+\begin{figure}[H]
+\begin{center}
+% \includegraphics[scale=0.18]{tsp_2.png}
+% \includegraphics[scale=0.4]{tsp3.jpg}
+\end{center}
+\caption{Corresponding table to the graph}
+\end{figure}
+
+\end{minipage}\begin{minipage}{0.05\textwidth}
+\ \\
+\end{minipage}\begin{minipage}{0.25\textwidth}
+\begin{tabular}{c|c|c|c|c|c|}
+ & A & B & C & D & E \\
+\hline
+A & -- & 1 & 2 & 2 & 2 \\
+\hline
+B & 1 & -- & 1 & 2 & 2 \\
+\hline
+C & 2 & 1 & -- & 2 & 1 \\
+\hline
+D & 1 & 2 & 2 & -- & 1 \\
+\hline
+E & 2 & 2 & 1 & 1 & -- \\
+\hline
+\end{tabular}
+
+
+\end{minipage}
+
+\begin{itemize}
+\item undirected: distances are symmetric, leads to $d_{ij} = d_{ji}$
+\item set limit to $B = |V|+1 = 6$
+\item $\sum^{n}_{i=1} d_{\pi(i), \pi(i+1)}$ is as small as possible
+\item $\pi$ is a permutation
+\item[] The following sum for the example can at most be 6:
+\begin{align*}
+ \text{A to B: } & \  d_{\pi(0), \pi(1)} =  1 \\
+  \text{B to C: } & \  d_{\pi(1), \pi(2)} = 1\\
+   \text{C to E: } & \  d_{\pi(2), \pi(3)} = 1 \\
+ \text{E to D: } & \  d_{\pi(3), \pi(4)} =  1\\
+ \text{D to A: } & \  d_{\pi(4), \pi(0)} = \stmaryrdLightning
+ \\
+ & \ \sum = \stmaryrdLightning
+\end{align*}
+Graph has no cykle.
+\end{itemize}
+
+
+\ \\
 \color{red} TODO \\
 \color{black}
 \color{violet} Questions:
