@@ -238,8 +238,23 @@ A \textsc{HamiltonPath} is a path in a graph that visits each node exactly once.
 
 \item finally all $3m$ nodes of the triangles, the last node of the chain of \textit{choice} gadgets and a new node 3 are connected with all possible edges
 \item a single node 2 is connectes to the node 3 \\
+\begin{itemize}
+\item[]
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.4]{12.jpg}
+\end{center}
+\caption{Nodes 1 and 2 marked (start and end node) in graph from the book \cite{book}}
+\end{figure}
+\end{itemize}
 
 \item graph has a hamilton path only if $\phi$ has a satisfying truth assignment
+\item for hamilton path: start node is node 1 and end node is node 2
+\item from node 1 it must traverse one of the parallel edges of the \textit{choice} gadget for the first variable
+\item exclusive ors must be traversed
+\item whole chain of \textit{choice} gadgets will be traversed \\
+$\rightarrow$ in this way a truth assignment $T$ is created
+\item then the triangles are traversed
 
 
 \end{itemize}
