@@ -199,7 +199,7 @@ A \textsc{HamiltonPath} is a path in a graph that visits each node exactly once.
 \item[]
 \begin{figure}[H]
 \begin{center}
-\includegraphics[scale=0.2]{xor2.jpg}
+\includegraphics[scale=0.3]{xor2.jpg}
 \end{center}
 \caption{XOR connecting two independent edges (\textit{consistency} gadget) \cite{book}}
 \end{figure}
@@ -224,6 +224,22 @@ A \textsc{HamiltonPath} is a path in a graph that visits each node exactly once.
 \caption{\textit{Choice} gadgets marked in graph from the book \cite{book}}
 \end{figure}
 \end{itemize}
+
+\item $G$ has $m$ triangles (one for each clause) with edges for each clause in the triangle
+\begin{itemize}
+\item[]
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.4]{triangle2.jpg}
+\end{center}
+\caption{Clauses marked in graph from the book \cite{book}}
+\end{figure}
+\end{itemize}
+
+\item finally all $3m$ nodes of the triangles, the last node of the chain of \textit{choice} gadgets and a new node 3 are connected with all possible edges
+\item a single node 2 is connectes to the node 3 \\
+
+\item graph has a hamilton path only if $\phi$ has a satisfying truth assignment
 
 
 \end{itemize}
