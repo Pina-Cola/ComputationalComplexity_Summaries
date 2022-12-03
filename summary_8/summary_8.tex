@@ -411,12 +411,6 @@ E & 2 & 2 & 1 & 1 & -- \\
 %\end{itemize}
 
 
-\ \\
-\color{red} TODO \\
-proof \\
-\color{black}
-\color{violet} Questions:
-\color{black}
 
 %---------------------------------------------------------------
 
@@ -535,7 +529,17 @@ Given a set $X$, with $|X| = 3q$ (so, the size of $X$ is a multiple of $3$), and
 \item given: set of $n$ integers $w_i,...,w_n$ and an integer $K$
 \item find: subset of the given integers that sums up exactly to $K$ \\
 
-\item
+\item reduce from \textsc{ExactCoverBy3Sets} to \textsc{Knapsack}
+\item given: instance $\{ S_1, S_2,...,S_n \}$ of \textsc{ExactCoverBy3Sets}
+\item Are there disjoint sets among the given ones that cover the set $X=\{1,2,...,3q\}$?
+\item given sets as bit vectors $\{0,1\}^{3q}$
+\item find a subset of these integers that add up to $K = 2^n -1$ (find the all-ones vector)
+\item but: binary integer addition is diferent from set union
+\item example: $3+5+7 = 15 \equiv 0011+0101+0111 = 1111$ but the corresponding sets are $\{3,4\},\{2,4\},\{2,3,4\}$
+\item $\{3,4\},\{2,4\},\{2,3,4\}$ are not disjoint and not a exact cover of $\{1,2,3,4\}$
+\item vectors not in base 2 but in base $n+1$ \\
+set $S_i$ becomes then $w_i= \sum_{j \in S_i}(n+1)^{3m-j}$
+\item there is a set of integer that adds up to $K$ only if there is an exact cover among $\{ S_1, S_2,...,S_n \}$
 
 \end{itemize}
 
@@ -543,18 +547,6 @@ Given a set $X$, with $|X| = 3q$ (so, the size of $X$ is a multiple of $3$), and
 
 
 
-
-
-
-
-
-
-
-
-\color{red} TODO \\
-\color{black}
-\color{violet} Questions:
-\color{black}
 
 %---------------------------------------------------------------
 
