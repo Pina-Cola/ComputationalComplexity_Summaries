@@ -348,11 +348,11 @@ E & 2 & 2 & 1 & 1 & -- \\
   \text{B to C: } & \  d_{\pi(1), \pi(2)} = 1\\
    \text{C to E: } & \  d_{\pi(2), \pi(3)} = 1 \\
  \text{E to D: } & \  d_{\pi(3), \pi(4)} =  1\\
- \text{D to A: } & \  d_{\pi(4), \pi(0)} = \stmaryrdLightning
+ \text{D to A: } & \  d_{\pi(4), \pi(0)} = 2
  \\
- & \ \sum = \stmaryrdLightning
+ & \ \sum = 6
 \end{align*}
-Graph has no cykle.
+
 \end{itemize}
 
 
@@ -361,53 +361,53 @@ Graph has no cykle.
 
 %------------------------------------
 
-\begin{minipage}{0.7\textwidth}
-\begin{figure}[H]
-\begin{center}
+%\begin{minipage}{0.7\textwidth}
+%\begin{figure}[H]
+%\begin{center}
 % \includegraphics[scale=0.18]{tsp_2.png}
 % \includegraphics[scale=0.4]{tsp3.jpg}
-\end{center}
-\caption{Corresponding table to the graph}
-\end{figure}
+%\end{center}
+%\caption{Corresponding table to the graph}
+%\end{figure}
 
-\end{minipage}\begin{minipage}{0.05\textwidth}
-\ \\
-\end{minipage}\begin{minipage}{0.25\textwidth}
-\begin{tabular}{c|c|c|c|c|c|}
- & A & B & C & D & E \\
-\hline
-A & -- & 1 & 2 & 2 & 2 \\
-\hline
-B & 1 & -- & 1 & 2 & 2 \\
-\hline
-C & 2 & 1 & -- & 2 & 1 \\
-\hline
-D & 1 & 2 & 2 & -- & 1 \\
-\hline
-E & 2 & 2 & 1 & 1 & -- \\
-\hline
-\end{tabular}
+%\end{minipage}\begin{minipage}{0.05\textwidth}
+%\ \\
+%\end{minipage}\begin{minipage}{0.25\textwidth}
+%\begin{tabular}{c|c|c|c|c|c|}
+% & A & B & C & D & E \\
+%\hline
+%A & -- & 1 & 2 & 2 & 2 \\
+%\hline
+%B & 1 & -- & 1 & 2 & 2 \\
+%\hline
+%C & 2 & 1 & -- & 2 & 1 \\
+%\hline
+%D & 1 & 2 & 2 & -- & 1 \\
+%\hline
+%E & 2 & 2 & 1 & 1 & -- \\
+%\hline
+%\end{tabular}
 
 
-\end{minipage}
+%\end{minipage}
 
-\begin{itemize}
-\item undirected: distances are symmetric, leads to $d_{ij} = d_{ji}$
-\item set limit to $B = |V|+1 = 6$
-\item $\sum^{n}_{i=1} d_{\pi(i), \pi(i+1)}$ is as small as possible
-\item $\pi$ is a permutation
-\item[] The following sum for the example can at most be 6:
-\begin{align*}
- \text{A to B: } & \  d_{\pi(0), \pi(1)} =  1 \\
-  \text{B to C: } & \  d_{\pi(1), \pi(2)} = 1\\
-   \text{C to E: } & \  d_{\pi(2), \pi(3)} = 1 \\
- \text{E to D: } & \  d_{\pi(3), \pi(4)} =  1\\
- \text{D to A: } & \  d_{\pi(4), \pi(0)} = \stmaryrdLightning
- \\
- & \ \sum = \stmaryrdLightning
-\end{align*}
-Graph has no cykle.
-\end{itemize}
+%\begin{itemize}
+%\item undirected: distances are symmetric, leads to $d_{ij} = d_{ji}$
+%\item set limit to $B = |V|+1 = 6$
+%\item $\sum^{n}_{i=1} d_{\pi(i), \pi(i+1)}$ is as small as possible
+%\item $\pi$ is a permutation
+%\item[] The following sum for the example can at most be 6:
+%\begin{align*}
+% \text{A to B: } & \  d_{\pi(0), \pi(1)} =  1 \\
+%  \text{B to C: } & \  d_{\pi(1), \pi(2)} = 1\\
+%   \text{C to E: } & \  d_{\pi(2), \pi(3)} = 1 \\
+% \text{E to D: } & \  d_{\pi(3), \pi(4)} =  1\\
+% \text{D to A: } & \  d_{\pi(4), \pi(0)} = 1
+% \\
+% & \ \sum = 5
+%\end{align*}
+%Answer to \textsc{Tsp} is \textit{yes}.
+%\end{itemize}
 
 
 \ \\
