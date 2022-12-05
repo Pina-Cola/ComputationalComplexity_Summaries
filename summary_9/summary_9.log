@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.10.14)  5 DEC 2022 14:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.10.14)  5 DEC 2022 14:46
 entering extended mode
 **./summary_9.tex
 (summary_9.tex
@@ -1053,6 +1053,9 @@ LaTeX Warning: Label `def:validLabelPlacement' multiply defined.
 
 LaTeX Warning: Label `def:validLabelPlacement' multiply defined.
 
+
+LaTeX Warning: Label `def:validLabelPlacement' multiply defined.
+
 )
 \openout1 = `summary_9.aux'.
 
@@ -1161,13 +1164,13 @@ Package biblatex Info: ... file 'summary_9.bbl' found.
  (summary_9.bbl)
 Package biblatex Info: Reference section=0 on input line 61.
 Package biblatex Info: Reference segment=0 on input line 61.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 204
+LaTeX Font Info:    Trying to load font information for U+msa on input line 141
 .
 
 (C:\Users\pinak\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 204
+LaTeX Font Info:    Trying to load font information for U+msb on input line 141
 .
 
 (C:\Users\pinak\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
@@ -1181,8 +1184,8 @@ Package scrlayer-scrpage Warning: \headheight to low.
 (scrlayer-scrpage)                processing, but you should do this yourself,
 (scrlayer-scrpage)                e.g., setting geometry's option
 (scrlayer-scrpage)                `head=40.8pt'.
-(scrlayer-scrpage)                I'll also decrease \topmargin on input line 2
-04.
+(scrlayer-scrpage)                I'll also decrease \topmargin on input line 1
+92.
 
 
 Overfull \vbox (23.8pt too high) has occurred while \output is active []
@@ -1198,22 +1201,25 @@ Package logreq Info: Writing requests to 'summary_9.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 26817 strings out of 478927
- 566212 string characters out of 2852534
- 1423411 words of memory out of 3000000
- 44287 multiletter control sequences out of 15000+600000
- 410272 words of font info for 52 fonts, out of 8000000 for 9000
+ 26822 strings out of 478927
+ 566294 string characters out of 2852534
+ 1423458 words of memory out of 3000000
+ 44291 multiletter control sequences out of 15000+600000
+ 410613 words of font info for 53 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 130i,20n,130p,10606b,1137s stack positions out of 5000i,500n,10000p,200000b,80000s
-<C:/Users/pinak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
-cmbx10.pfb><C:/Users/pinak/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
-fonts/cm/cmr10.pfb><C:/Users/pinak/AppData/Local/Programs/MiKTeX/fonts/type1/pu
-blic/amsfonts/cm/cmsl10.pfb><C:/Users/pinak/AppData/Local/Programs/MiKTeX/fonts
-/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Users/pinak/AppData/Local/Programs/M
-iKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on summary_9.pdf (3 pages, 71027 bytes).
+ 130i,19n,130p,10606b,1137s stack positions out of 5000i,500n,10000p,200000b,80000s
+ <C:\Users\pinak\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
+1095.pk><C:/Users/pinak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
+ts/cm/cmbx10.pfb><C:/Users/pinak/AppData/Local/Programs/MiKTeX/fonts/type1/publ
+ic/amsfonts/cm/cmmi10.pfb><C:/Users/pinak/AppData/Local/Programs/MiKTeX/fonts/t
+ype1/public/amsfonts/cm/cmr10.pfb><C:/Users/pinak/AppData/Local/Programs/MiKTeX
+/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/Users/pinak/AppData/Local/Progra
+ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Users/pinak/AppData/L
+ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/pinak/A
+ppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on summary_9.pdf (3 pages, 92996 bytes).
 PDF statistics:
- 40 PDF objects out of 1000 (max. 8388607)
+ 55 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
