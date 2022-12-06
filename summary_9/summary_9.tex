@@ -243,15 +243,23 @@ Given $x$, find a string $y$ such that $R(x,y)$ if it exists, else return \texti
 
 \end{itemize}
 
+\begin{CountingDefinition}[FNP]{def:validLabelPlacement}
+Class of all function problems asspciated with languages in NP.
+\end{CountingDefinition}
 
 
 \begin{CountingDefinition}[FP]{def:validLabelPlacement}
-Content
+FP is the subclass of FNP that contains function problems, that can be solved in polynomial time.
 \end{CountingDefinition}
 
-\begin{CountingDefinition}[FNP]{def:validLabelPlacement}
-Content
-\end{CountingDefinition}
+\textbf{Examples:}
+\begin{itemize}
+\item \textsc{FSat} is in FNP but expected to be in FP
+\item \textsc{HornSat} is in FP
+\item \textsc{BipartiteGraph} is in FP
+\end{itemize}
+
+
 
 
 \begin{itemize}
