@@ -164,7 +164,7 @@ Self-reducibilty:
 
 
 \color{red} TODO \\
-Self-reducibility
+Self-reducibility \\
 \color{black}
 \color{violet} Questions: \\
 \color{black}
@@ -204,6 +204,7 @@ What is the shortest possible route that visits each city exactly once and retur
 
 \color{red} TODO \\
 algorithm TSP (?) \\
+maybe example (?)
 \color{black}
 \color{violet} Questions:
 \color{black}
@@ -219,6 +220,30 @@ algorithm TSP (?) \\
 %------------------------------------------------------------
 
 \subsection*{FP and FNP}
+
+\begin{CountingDefinition}[Lanugage $L$]{def:validLabelPlacement}
+$L= \{ x: (x,y) \in R \textit{ for some } y \}$ \ 
+\\
+$L$ gets an input $x$ and finds a $y$ with $((x,y) \in R$ and the relation $R \subseteq \Sigma^* \times \Sigma^*$.
+\end{CountingDefinition}
+
+\begin{CountingDefinition}[NP]{def:validLabelPlacement}
+The language $L \subseteq \Sigma^*$ is in NP only if there is a polynomially decidable and polynomially balanced relation $R$ such that  $L= \{ x: (x,y) \in R \textit{ for some } y \}$.
+\end{CountingDefinition}
+
+Relationship between decision and function problems:
+\begin{itemize}
+\item $L$ is a lanuage in NP
+\begin{itemize}
+\item \textbf{Decision problem:} \\
+There is a string $y$ with $R(x,y)$ only if $x \in L$.
+\item \textbf{Function problem:} \\
+Given $x$, find a string $y$ such that $R(x,y)$ if it exists, else return \textit{no}.
+\end{itemize}
+
+\end{itemize}
+
+
 
 \begin{CountingDefinition}[FP]{def:validLabelPlacement}
 Content
