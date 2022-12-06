@@ -19,6 +19,33 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
+    \entry{DD}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=38d30839da09cd7fac524939643ff14d}{%
+           family={(Website)},
+           familyi={(\bibinitperiod},
+           given={Dr\bibnamedelima Datenschutz},
+           giveni={D\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \strng{namehash}{38d30839da09cd7fac524939643ff14d}
+      \strng{fullhash}{38d30839da09cd7fac524939643ff14d}
+      \strng{bibnamehash}{38d30839da09cd7fac524939643ff14d}
+      \strng{authorbibnamehash}{38d30839da09cd7fac524939643ff14d}
+      \strng{authornamehash}{38d30839da09cd7fac524939643ff14d}
+      \strng{authorfullhash}{38d30839da09cd7fac524939643ff14d}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Last opened 11.11.2022}
+      \field{title}{P vs. NP: Ein Geschenk der Informatik an die Mathematik}
+      \verb{urlraw}
+      \verb https://www.dr-datenschutz.de/p-vs-np-ein-geschenk-der-informatik-an-die-mathematik/#:~:text=Hierbei%20werden%20von%20einem%20Computer,effizient%20l%C3%B6sen%20lassen%20oder%20nicht.
+      \endverb
+      \verb{url}
+      \verb https://www.dr-datenschutz.de/p-vs-np-ein-geschenk-der-informatik-an-die-mathematik/#:~:text=Hierbei%20werden%20von%20einem%20Computer,effizient%20l%C3%B6sen%20lassen%20oder%20nicht.
+      \endverb
+    \endentry
     \entry{CC}{misc}{}
       \name{author}{1}{}{%
         {{hash=2c63120ec0e3550707d1ff8da6f9b51f}{%
@@ -38,6 +65,33 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Lecture notes in Computational Complexity}
+    \endentry
+    \entry{RSA}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=b417e1373fb53a2727561e6bf7fa7799}{%
+           family={Laboratories},
+           familyi={L\bibinitperiod},
+           given={RSA},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{b417e1373fb53a2727561e6bf7fa7799}
+      \strng{fullhash}{b417e1373fb53a2727561e6bf7fa7799}
+      \strng{bibnamehash}{b417e1373fb53a2727561e6bf7fa7799}
+      \strng{authorbibnamehash}{b417e1373fb53a2727561e6bf7fa7799}
+      \strng{authornamehash}{b417e1373fb53a2727561e6bf7fa7799}
+      \strng{authorfullhash}{b417e1373fb53a2727561e6bf7fa7799}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Website. Last opened 06.12.2022}
+      \field{title}{What is the factoring problem?}
+      \verb{urlraw}
+      \verb http://security.nknu.edu.tw/crypto/faq/html/2-3-3.html
+      \endverb
+      \verb{url}
+      \verb http://security.nknu.edu.tw/crypto/faq/html/2-3-3.html
+      \endverb
     \endentry
     \entry{book}{book}{}
       \name{author}{1}{}{%

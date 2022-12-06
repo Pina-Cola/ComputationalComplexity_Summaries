@@ -204,7 +204,7 @@ What is the shortest possible route that visits each city exactly once and retur
 
 \color{red} TODO \\
 algorithm TSP (?) \\
-maybe example (?)
+maybe example (?) \\
 \color{black}
 \color{violet} Questions:
 \color{black}
@@ -315,31 +315,10 @@ A function problem $A$ reduces to a function problem $B$ if the following holds:
 
 \begin{itemize}
 \item FP = FNP only if P = NP
-\end{itemize}
 
-\color{red} TODO \\
-\color{black}
-\color{violet} Questions:
-\color{black}
+\item Computing a satisfying assignment bit by bit
 
 
-
-
-
-
-
-
-
-%------------------------------------------------------------
-
-\subsection*{Computing a satisfying assignment bit by bit}
-
-\begin{CountingDefinition}[Title]{def:validLabelPlacement}
-Content
-\end{CountingDefinition}
-
-
-\begin{itemize}
 \item \textsc{Sat$'$} is a formular $\varphi$ plus an assignment that satisfies $\varphi$
 \item assignment as clauses that connects the single variables or their negation with $\land$
 \end{itemize}
@@ -385,16 +364,28 @@ Content
 
 %------------------------------------------------------------
 
-\subsection*{Another argument}
+\subsection*{Cryptography}
+
+Cryptography argument \cite{DD, book, GTI}: 
+\begin{itemize}
+\item P vs. NP problem is an unsolved problem
+\item currently clear: a correct solution to an NP problem can be checked for correctness in polynomial time
+\item experts wish NP problems to remain almost unsolvable because of cryptography
+\item complexity in cryptography is not only desirable, but necessary
+\item important to know that most encryption methods used today are based solely on the fact that the effort to \textit{guess} the key is too high \\
+$\rightarrow$ problem of \textit{guessing} is an NP problem
+\item proof of the solvability of NP problems means the end of all currently used encryption methods
+\item[$\rightarrow$] cryptographic argument: if P=NP, no safe encoding exists
+\end{itemize}
+
+
+
 
 \begin{CountingDefinition}[Title]{def:validLabelPlacement}
 Content
 \end{CountingDefinition}
 
 
-\begin{itemize}
-\item cryptographic argument: if P=NP, no safe encoding exists
-\end{itemize}
 
 \color{red} TODO \\
 \color{black}
@@ -427,6 +418,47 @@ Content
 \color{violet} Questions:
 \color{black}
 
+
+
+
+
+
+
+
+
+
+%------------------------------------------------------------
+
+\subsection*{Total Functions}
+
+
+\begin{itemize}
+\item certain function problems in FNP are quaranteed to never return \textit{no}
+\end{itemize}
+
+\begin{CountingDefinition}[FACTORING]{def:validLabelPlacement}
+Given an integer $N$.
+
+Find its prime decomposition $N = p_1^{k_1}, p_2^{k_2}, ..., p_m^{k_m}$ together with the primality certificates of $p_1,...,p_m$.
+\end{CountingDefinition}
+
+Example \cite{RSA}:
+\begin{itemize}
+\item the factors of 15 are 3 and 5 
+\item the factoring problem is to find 3 and 5 when given 15  \\
+\end{itemize}
+
+\begin{itemize}
+\item prime factorization requires splitting an integer into factors that are prime numbers
+\item every integer has a unique prime factorization
+\item \textsc{Factoring} is in FNP
+\item 
+\end{itemize}
+
+\color{red} TODO \\
+\color{black}
+\color{violet} Questions:
+\color{black}
 
 
 

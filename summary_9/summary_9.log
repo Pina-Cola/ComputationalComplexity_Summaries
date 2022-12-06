@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.10.14)  6 DEC 2022 21:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.10.14)  6 DEC 2022 21:43
 entering extended mode
 **./summary_9.tex
 (summary_9.tex
@@ -1215,8 +1215,12 @@ Overfull \vbox (23.8pt too high) has occurred while \output is active []
 
  [1{C:/Users/pinak/AppData/Local/MiKTeX/pdftex/config/pdftex.map}
 
-] [2] [3] [4] [5]
-(summary_9.aux)
+] [2] [3] [4]
+Underfull \hbox (badness 10000) in paragraph at lines 448--449
+
+ []
+
+[5] [6] (summary_9.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -1228,10 +1232,10 @@ Package logreq Info: Writing requests to 'summary_9.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 26853 strings out of 478927
- 566921 string characters out of 2852534
- 1426761 words of memory out of 3000000
- 44318 multiletter control sequences out of 15000+600000
+ 26860 strings out of 478927
+ 567129 string characters out of 2852534
+ 1426827 words of memory out of 3000000
+ 44325 multiletter control sequences out of 15000+600000
  411783 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  130i,19n,130p,10606b,1319s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1240,19 +1244,21 @@ Here is how much of TeX's memory you used:
 ts/cm/cmbx10.pfb><C:/Users/pinak/AppData/Local/Programs/MiKTeX/fonts/type1/publ
 ic/amsfonts/cm/cmcsc10.pfb><C:/Users/pinak/AppData/Local/Programs/MiKTeX/fonts/
 type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/pinak/AppData/Local/Programs/MiKT
-eX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/pinak/AppData/Local/Progr
-ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/pinak/AppData/Loc
-al/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/pinak/AppD
-ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/Users/p
-inak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb>
-<C:/Users/pinak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cm
-sy10.pfb><C:/Users/pinak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
-nts/cm/cmsy8.pfb><C:/Users/pinak/AppData/Local/Programs/MiKTeX/fonts/type1/publ
-ic/amsfonts/cm/cmti10.pfb><C:/Users/pinak/AppData/Local/Programs/MiKTeX/fonts/t
-ype1/public/amsfonts/cm/cmtt10.pfb>
-Output written on summary_9.pdf (5 pages, 171829 bytes).
+eX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/pinak/AppData/Local/Progr
+ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/pinak/AppData/Loc
+al/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/pinak/App
+Data/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/pi
+nak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/U
+sers/pinak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl10.
+pfb><C:/Users/pinak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/c
+m/cmssbx10.pfb><C:/Users/pinak/AppData/Local/Programs/MiKTeX/fonts/type1/public
+/amsfonts/cm/cmsy10.pfb><C:/Users/pinak/AppData/Local/Programs/MiKTeX/fonts/typ
+e1/public/amsfonts/cm/cmsy8.pfb><C:/Users/pinak/AppData/Local/Programs/MiKTeX/f
+onts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/pinak/AppData/Local/Programs
+/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on summary_9.pdf (6 pages, 200137 bytes).
 PDF statistics:
- 87 PDF objects out of 1000 (max. 8388607)
+ 100 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
