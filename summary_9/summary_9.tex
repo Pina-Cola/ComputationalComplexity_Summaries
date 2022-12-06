@@ -131,10 +131,46 @@ If $\phi$ is satisfiable, return a satisfying truth assignment and otherwise ret
 
 \end{itemize}
 
+Algorithm for \textsc{FSat}:
+
+\begin{itemize}
+\item expression $\phi$ with variables $x_1, ... , x_n$
+
+\item ask if $\phi$ is satisfiable:
+\begin{itemize}
+\item if \textit{no}: stop and return \textit{no}
+\item if \textit{yes}: come up with satisying truth assignment
+
+\begin{itemize}
+\item consider two expressions: $\phi[x_1 = \text{true}]$ and $\phi[x_1 = \text{false}]$
+\item check which one is satisfiable \\
+(if both are, chose one)
+\item substitute the value of $x_1$ in $\phi$
+\item continue with $x_2$
+\item at most $2n$ calls to find the satisfying truth assignment
+\end{itemize}
+
+
+\end{itemize}
+
+
+\end{itemize}
 
 
 
 
+
+Self-reducibilty:
+
+\begin{itemize}
+\item 
+\end{itemize}
+
+
+\color{red} TODO \\
+\color{black}
+\color{violet} Questions:
+\color{black}
 
 
 
