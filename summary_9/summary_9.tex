@@ -164,9 +164,9 @@ Self-reducibilty:
 
 
 \color{red} TODO \\
+Self-reducibility
 \color{black}
 \color{violet} Questions: \\
-Self-reducibility
 \color{black}
 
 
@@ -183,7 +183,7 @@ Self-reducibility
 Given a list of cities and the distances between each pair of cities.
 
 \ \\ 
-Is there a shortest possible route that visits each city exactly once and returns to the origin city?
+Is there a possible route of length $k$ that visits each city exactly once and returns to the origin city?
 \end{CountingDefinition}
 
 
@@ -196,10 +196,14 @@ What is the shortest possible route that visits each city exactly once and retur
 
 \begin{itemize}
 \item solve \textsc{Tsp} with an algorithm for \textsc{Tsp(D)}
+\item find optimum cost $C$ of the tour with binary search (between 0 and $2^n$)
+\item remove one intercity distance at a time to check if it is part of the optimal tour
+\item after $n^2$ calls only entries of the distance matrix are there that are used for the optimum tour
 \end{itemize}
 
 
 \color{red} TODO \\
+algorithm TSP (?) \\
 \color{black}
 \color{violet} Questions:
 \color{black}
