@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.10.14)  6 DEC 2022 15:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.10.14)  6 DEC 2022 15:30
 entering extended mode
 **./summary_9.tex
 (summary_9.tex
@@ -1056,6 +1056,18 @@ LaTeX Warning: Label `def:validLabelPlacement' multiply defined.
 
 LaTeX Warning: Label `def:validLabelPlacement' multiply defined.
 
+
+LaTeX Warning: Label `def:validLabelPlacement' multiply defined.
+
+
+LaTeX Warning: Label `def:validLabelPlacement' multiply defined.
+
+
+LaTeX Warning: Label `def:validLabelPlacement' multiply defined.
+
+
+LaTeX Warning: Label `def:validLabelPlacement' multiply defined.
+
 )
 \openout1 = `summary_9.aux'.
 
@@ -1164,18 +1176,26 @@ Package biblatex Info: ... file 'summary_9.bbl' found.
  (summary_9.bbl)
 Package biblatex Info: Reference section=0 on input line 61.
 Package biblatex Info: Reference segment=0 on input line 61.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 95.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 87.
 
 
 (C:\Users\pinak\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 95.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 87.
 
 
 (C:\Users\pinak\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
+Underfull \hbox (badness 10000) in paragraph at lines 87--88
+
+ []
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/bx/sc' undefined
+(Font)              using `OT1/cmr/bx/n' instead on input line 108.
+
 
 Package scrlayer-scrpage Warning: \headheight to low.
 (scrlayer-scrpage)                At least 40.8pt needed,
@@ -1185,7 +1205,7 @@ Package scrlayer-scrpage Warning: \headheight to low.
 (scrlayer-scrpage)                e.g., setting geometry's option
 (scrlayer-scrpage)                `head=40.8pt'.
 (scrlayer-scrpage)                I'll also decrease \topmargin on input line 1
-76.
+62.
 
 
 Overfull \vbox (23.8pt too high) has occurred while \output is active []
@@ -1195,6 +1215,9 @@ Overfull \vbox (23.8pt too high) has occurred while \output is active []
 ] [2] [3] [4]
 (summary_9.aux)
 
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
 LaTeX Warning: There were multiply-defined labels.
 
 Package logreq Info: Writing requests to 'summary_9.run.xml'.
@@ -1202,13 +1225,13 @@ Package logreq Info: Writing requests to 'summary_9.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 26825 strings out of 478927
- 566329 string characters out of 2852534
- 1423458 words of memory out of 3000000
- 44293 multiletter control sequences out of 15000+600000
- 410914 words of font info for 54 fonts, out of 8000000 for 9000
+ 26844 strings out of 478927
+ 566764 string characters out of 2852534
+ 1426712 words of memory out of 3000000
+ 44311 multiletter control sequences out of 15000+600000
+ 411082 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 130i,19n,130p,10606b,1137s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 130i,19n,130p,10606b,1319s stack positions out of 5000i,500n,10000p,200000b,80000s
  <C:\Users\pinak\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
 1095.pk><C:/Users/pinak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
 ts/cm/cmbx10.pfb><C:/Users/pinak/AppData/Local/Programs/MiKTeX/fonts/type1/publ
@@ -1220,10 +1243,11 @@ cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Users/pinak
 /AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Us
 ers/pinak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pf
 b><C:/Users/pinak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
-cmti10.pfb>
-Output written on summary_9.pdf (4 pages, 115331 bytes).
+cmti10.pfb><C:/Users/pinak/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
+fonts/cm/cmtt10.pfb>
+Output written on summary_9.pdf (4 pages, 141831 bytes).
 PDF statistics:
- 68 PDF objects out of 1000 (max. 8388607)
+ 73 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
