@@ -273,25 +273,31 @@ FP is the subclass of FNP that contains function problems, that can be solved in
 
 \subsection*{Reductions between function problems}
 
-\begin{CountingDefinition}[Title]{def:validLabelPlacement}
-Content
+\begin{CountingDefinition}[Reductions between function problems]{def:validLabelPlacement}
+A function problem $A$ reduces to a function problem $B$ if the following holds:
+\begin{itemize}
+\item $R$ and $S$ are string functions, $x$ and $z$ are strings
+\item If $x$ is an instance of $A$ then $R(x)$ is an instance of $B$.
+\item If $z$ is a correct output of $R(x)$, then $S(z)$ is a correct output of $x$.
+\end{itemize}
+
 \end{CountingDefinition}
 
-
 \begin{itemize}
+\item $R$ produces an instance $R(x)$ of the function problem $B$
+\item $S(z)$ is an constructed output for $x$ from any correct output $z$ of $R(x)$
 \item translate answers back to the original problem
 \item reduction is a pair $(R,S)$:
 \begin{itemize}
 \item $R$ translates input $x$ to input $x'$
-\item $S$ translates result $y'$ to result $y$
-\end{itemize}
-\item $A'$ is $B$ there ($A'$ does not exist on the slides)
+\item $S$ translates result $z'$ to result $z$
 \end{itemize}
 
-\color{red} TODO \\
-\color{black}
-\color{violet} Questions:
-\color{black}
+\item a function problem $A$ is complete for a class F$C$ if it is in F$C$ and all problems in that class reduce to $A$
+\item FP and FNP are closed under reduction
+\item reductions of function problems compose
+\end{itemize}
+
 
 
 
@@ -305,13 +311,10 @@ Content
 
 \subsection*{How to prove FP = FNP?}
 
-\begin{CountingDefinition}[Title]{def:validLabelPlacement}
-Content
-\end{CountingDefinition}
 
 
 \begin{itemize}
-\item 
+\item FP = FNP only if P = NP
 \end{itemize}
 
 \color{red} TODO \\
