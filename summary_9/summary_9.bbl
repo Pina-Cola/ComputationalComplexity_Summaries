@@ -66,6 +66,13 @@
       \field{labeltitlesource}{title}
       \field{title}{Lecture notes in Computational Complexity}
     \endentry
+    \entry{injective}{misc}{}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{labeltitlesource}{title}
+      \field{note}{\url{https://en.wikipedia.org/wiki/Injective_function}}
+      \field{title}{Image source: Injective}
+    \endentry
     \entry{RSA}{misc}{}
       \name{author}{1}{}{%
         {{hash=b417e1373fb53a2727561e6bf7fa7799}{%

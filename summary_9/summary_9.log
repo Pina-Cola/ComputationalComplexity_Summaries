@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.10.14)  7 DEC 2022 13:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.10.14)  7 DEC 2022 13:45
 entering extended mode
 **./summary_9.tex
 (summary_9.tex
@@ -1234,13 +1234,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 175--179
 
  []
 
-[2 <./fsat.jpg>] [3] [4] [5]
-Underfull \hbox (badness 10000) in paragraph at lines 464--465
+[2 <./fsat.jpg>] [3] [4]
+<injective.png, id=30, 180.675pt x 180.675pt>
+File: injective.png Graphic file (type png)
+<use injective.png>
+Package pdftex.def Info: injective.png  used on input line 439.
+(pdftex.def)             Requested size: 72.2687pt x 72.2687pt.
+ [5 <./injective.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 459--460
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 474--478
+Underfull \hbox (badness 10000) in paragraph at lines 478--482
 
  []
 
@@ -1256,13 +1262,13 @@ Package logreq Info: Writing requests to 'summary_9.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 26876 strings out of 478927
- 567387 string characters out of 2852534
- 1428909 words of memory out of 3000000
- 44339 multiletter control sequences out of 15000+600000
+ 26886 strings out of 478927
+ 567596 string characters out of 2852534
+ 1428958 words of memory out of 3000000
+ 44347 multiletter control sequences out of 15000+600000
  412385 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 130i,19n,130p,10606b,1340s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 130i,19n,130p,10606b,1406s stack positions out of 5000i,500n,10000p,200000b,80000s
  <C:\Users\pinak\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
 1095.pk><C:/Users/pinak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
 ts/cm/cmbx10.pfb><C:/Users/pinak/AppData/Local/Programs/MiKTeX/fonts/type1/publ
@@ -1280,9 +1286,9 @@ m/cmssbx10.pfb><C:/Users/pinak/AppData/Local/Programs/MiKTeX/fonts/type1/public
 e1/public/amsfonts/cm/cmsy8.pfb><C:/Users/pinak/AppData/Local/Programs/MiKTeX/f
 onts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/pinak/AppData/Local/Programs
 /MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on summary_9.pdf (7 pages, 368209 bytes).
+Output written on summary_9.pdf (7 pages, 373407 bytes).
 PDF statistics:
- 106 PDF objects out of 1000 (max. 8388607)
+ 109 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 18 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 23 words of extra memory for PDF output out of 10000 (max. 10000000)
 

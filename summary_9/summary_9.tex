@@ -354,7 +354,7 @@ A function problem $A$ reduces to a function problem $B$ if the following holds:
 
 %------------------------------------------------------------
 
-\subsection*{If FP=FNP optimuzation problems become easy}
+\subsection*{If FP=FNP optimization problems become easy}
 
 \begin{CountingDefinition}[Title]{def:validLabelPlacement}
 Content
@@ -416,40 +416,31 @@ Content
 
 
 
+
+
+
+
+
 %------------------------------------------------------------
 
 \subsection*{Total FNP}
 
-\begin{CountingDefinition}[Title]{def:validLabelPlacement}
-Content
-\end{CountingDefinition}
+\begin{CountingDefinition}[Total functions]{def:validLabelPlacement}
+Function problems in FNP that are quaranteed to never return \textit{no} are called total problems.
 
+\ \\
+In other words: A problem $R$ in FNP is called total if for every input string $x$ there is at least one string $y$ such that $R(x,y)$.
+\end{CountingDefinition}
 
 \begin{itemize}
-\item 
+\item total problems sound like they are injective (for every input exists at least one output) 
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.4]{injective.png}
+\end{center}
+\caption{Visualization of injection \cite{injective}}
+\end{figure}
 \end{itemize}
-
-\color{red} TODO \\
-\color{black}
-\color{violet} Questions:
-\color{black}
-
-
-
-
-
-
-
-
-
-
-%------------------------------------------------------------
-
-\subsection*{Total Functions}
-
-\begin{CountingDefinition}[Total functions]{def:validLabelPlacement}
-Function problems in FNP are quaranteed to never return \textit{no}.
-\end{CountingDefinition}
 
 
 \begin{CountingDefinition}[FACTORING]{def:validLabelPlacement}
@@ -457,6 +448,10 @@ Given an integer $N$.
 
 Find its prime decomposition $N = p_1^{k_1}, p_2^{k_2}, ..., p_m^{k_m}$ together with the primality certificates of $p_1,...,p_m$.
 \end{CountingDefinition}
+
+\begin{itemize}
+\item \textsc{Factoring} is a total function problem
+\end{itemize}
 
 Example \cite{RSA}:
 \begin{itemize}
@@ -471,15 +466,30 @@ Example \cite{RSA}:
 \item no known polynomial algorithm for \textsc{Factoring}
 \end{itemize}
 
+
+
+\begin{CountingDefinition}[TFNP]{def:validLabelPlacement}
+The sucblass of FNP that contains all total functions problems is denoted as TFNP.
+\end{CountingDefinition}
+
+
+
+
 \color{red} TODO \\
-it is not done! \\
-\color{black}
-\color{violet} Questions: \\
-
+\textsc{Factoring} is not done! \\
+examples for TFNP problems from the book \\ \\
 \color{black}
 
+\color{violet} Questions:
+\begin{itemize}
+\item Can the terms \textit{total function}, \textit{total problem} and \textit{total function problem} be used interchangeably?
+\end{itemize}
+
+\color{black}
 
 
+
+\color{black}
 
 
 
