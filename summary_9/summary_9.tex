@@ -75,6 +75,10 @@ Summary for the chapter \textit{10.3}. \cite{book, CC}
 
 \begin{CountingDefinition}[Function problem]{def:validLabelPlacement}
 Finding a specific solution to a problem if possible, else return \textit{no}.
+
+\ \\
+In other words: A function problem is defined by a binary relation $R(x, y)$. For every input $x$, an algorithm that solves the problem must output a $y$
+such that $R(x, y)$. If there is no such $y$, the answer must be \textit{no}.
 \end{CountingDefinition}
 
 \begin{itemize}
@@ -182,7 +186,7 @@ Self-reducibility \\ \\
 
 \textsc{FSat} draws its difficulty precisely from the possibility that there may be no truth assignment satisfying the given expression.
 
-\item[$\rightarrow$] Why is the difficulty coming from the possibility that there might be no truth assignment? It would in the first check of $\phi \in \textsc{Sat}$ return \textit{no} and terminate? 
+\item[$\rightarrow$] Why is the difficulty coming from the possibility that there might be no truth assignment? It would in the first check of $\phi \in \textsc{Sat}$ return \textit{no} and terminate? Is it because it takes longer for \textsc{Sat} to return \textit{no} on every computation than it takes if a \textit{yes} is found and all variables are substituted and checked with \textsc{Sat}?
 \end{itemize}
 
 \color{black}
