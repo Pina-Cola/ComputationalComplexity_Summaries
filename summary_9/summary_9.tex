@@ -119,7 +119,7 @@ If $\phi$ is satisfiable, return a satisfying truth assignment and otherwise ret
 
 
 \begin{itemize}
-\item for input $\phi$ there might be no satisying truth assignment 
+\item for input $\phi$ there might be no satisying truth assignment $\phi \notin \textsc{Sat}$
 \begin{itemize}
 \item return \textit{no}
 \end{itemize}
@@ -136,16 +136,16 @@ Algorithm for \textsc{FSat}:
 \begin{itemize}
 \item expression $\phi$ with variables $x_1, ... , x_n$
 
-\item ask if $\phi$ is satisfiable:
+\item ask if $\phi$ is satisfiable ($\phi \in \textsc{Sat}$):
 \begin{itemize}
 \item if \textit{no}: stop and return \textit{no}
 \item if \textit{yes}: come up with satisying truth assignment
 
 \begin{itemize}
 \item consider two expressions: $\phi[x_1 = \text{true}]$ and $\phi[x_1 = \text{false}]$
-\item check which one is satisfiable \\
+\item check which one is satisfiable ($\phi[x_1 = \text{true}] \in \textsc{Sat}$ or $\phi[x_1 = \text{false}] \in \textsc{Sat}$) \\
 (if both are, chose one)
-\item substitute the value of $x_1$ in $\phi$
+\item substitute the value of $x_1$ in $\phi$ 
 \item continue with $x_2$
 \item at most $2n$ calls to find the satisfying truth assignment
 \end{itemize}
@@ -153,6 +153,15 @@ Algorithm for \textsc{FSat}:
 \end{itemize}
 
 \end{itemize}
+
+Algorithm for \textsc{FSat} as pseudo code:
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.6]{fsat.jpg}
+\end{center}
+\caption{\textsc{FSat} algorithm as pseudo code \cite{RCV}}
+\end{figure}
 
 
 
@@ -164,12 +173,19 @@ Self-reducibilty:
 
 
 \color{red} TODO \\
-Self-reducibility \\
+Self-reducibility \\ \\
 \color{black}
 \color{violet} Questions: \\
+
+\begin{itemize}
+\item Book \cite{book}:
+
+\textsc{FSat} draws its difficulty precisely from the possibility that there may be no truth assignment satisfying the given expression.
+
+\item[$\rightarrow$] Why is the difficulty coming from the possibility that there might be no truth assignment? It would in the first check of $\phi \in \textsc{Sat}$ return \textit{no} and terminate? 
+\end{itemize}
+
 \color{black}
-
-
 
 
 
@@ -431,10 +447,10 @@ Content
 
 \subsection*{Total Functions}
 
+\begin{CountingDefinition}[Total functions]{def:validLabelPlacement}
+Function problems in FNP are quaranteed to never return \textit{no}.
+\end{CountingDefinition}
 
-\begin{itemize}
-\item certain function problems in FNP are quaranteed to never return \textit{no}
-\end{itemize}
 
 \begin{CountingDefinition}[FACTORING]{def:validLabelPlacement}
 Given an integer $N$.
@@ -452,16 +468,15 @@ Example \cite{RSA}:
 \item prime factorization requires splitting an integer into factors that are prime numbers
 \item every integer has a unique prime factorization
 \item \textsc{Factoring} is in FNP
-\item 
+\item no known polynomial algorithm for \textsc{Factoring}
 \end{itemize}
 
 \color{red} TODO \\
 it is not done! \\
 \color{black}
-\color{violet} Questions:
+\color{violet} Questions: \\
+
 \color{black}
-
-
 
 
 
