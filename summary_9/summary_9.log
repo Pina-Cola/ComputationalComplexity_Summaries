@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.10.14)  7 DEC 2022 14:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.10.14)  7 DEC 2022 15:40
 entering extended mode
 **./summary_9.tex
 (summary_9.tex
@@ -1226,19 +1226,14 @@ Package pdftex.def Info: fsat.jpg  used on input line 165.
 <injective.png, id=30, 180.675pt x 180.675pt>
 File: injective.png Graphic file (type png)
 <use injective.png>
-Package pdftex.def Info: injective.png  used on input line 398.
+Package pdftex.def Info: injective.png  used on input line 396.
 (pdftex.def)             Requested size: 72.2687pt x 72.2687pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 418--419
+Underfull \hbox (badness 10000) in paragraph at lines 424--425
 
  []
 
-[5 <./injective.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 437--441
-
- []
-
-[6] [7] (summary_9.aux)
+[5 <./injective.png>] [6] [7] (summary_9.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -1274,7 +1269,7 @@ m/cmssbx10.pfb><C:/Users/pinak/AppData/Local/Programs/MiKTeX/fonts/type1/public
 e1/public/amsfonts/cm/cmsy8.pfb><C:/Users/pinak/AppData/Local/Programs/MiKTeX/f
 onts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/pinak/AppData/Local/Programs
 /MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on summary_9.pdf (7 pages, 374776 bytes).
+Output written on summary_9.pdf (7 pages, 375232 bytes).
 PDF statistics:
  109 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
