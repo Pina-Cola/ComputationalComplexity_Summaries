@@ -355,13 +355,24 @@ $\rightarrow$ numerical matrix
 \item if not 0: \\
 determinant of symbolic matrix is not 0
 \item if 0: \\
-determinant of symbolic matrix probably 0
+determinant of symbolic matrix is probably 0
 \begin{itemize}
 \item numbers could be chosen such that the numrical determinant is 0 even though the symbolic one is not 0
 \end{itemize}
 \end{itemize}
 \end{itemize}
 
+
+\begin{CountingDefinition}[Monte Carlo algorithm]{def:validLabelPlacement}
+Randomized algorithm for deciding if a graph $G$ has a perfect matching with calculating the determinant of the corresponding matrix $A$ to $G$.
+
+\begin{itemize}
+\item choose $m$ random integers $i_1,...,i_m$ between $0$ and $2m$
+\item compute the determinant $|A|(i_1,...,i_m)$ with the Gaussian elimnation
+\item if $|A|(i_1,...,i_m) \neq 0$ reply \textit{$G$ has a perfect matching}
+\item if $|A|(i_1,...,i_m) = 0$ reply \textit{$G$ has probably no perfect matching}
+\end{itemize}
+\end{CountingDefinition}
 
 \ \\
 
