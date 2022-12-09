@@ -39,6 +39,13 @@
       \field{labeltitlesource}{title}
       \field{title}{Lecture notes in Computational Complexity}
     \endentry
+    \entry{bg}{misc}{}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labeltitlesource}{title}
+      \field{note}{\url{https://en.wikipedia.org/wiki/Bipartite_graph}}
+      \field{title}{Bipartite graph image source}
+    \endentry
     \entry{book}{book}{}
       \name{author}{1}{}{%
         {{hash=b3b407bb63367a850366076095ee1970}{%
