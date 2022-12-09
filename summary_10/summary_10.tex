@@ -239,6 +239,35 @@ $|B| = 1 \cdot 5 \cdot 9 +  2 \cdot 6 \cdot 7 + 3 \cdot 4 \cdot 8 - 7 \cdot 5 \c
 \\
 |A| = \sum_{\pi} \sigma(\pi) \prod^{n}_{i=1} A_{i, \pi(i)}
 \end{align*}
+\begin{itemize}
+\item $\sigma(\pi)$ decides if $+$ or $-$
+\item leads to $n!$ summands
+\item Example: $n= 3$ \\
+$3! = 6$ summands \\
+$6$ permutations for $\pi$ 
+\begin{itemize}
+\item[$+1$: ] $( \ 1 \ 2 \ 3 \ ) \ \ ( \ 2 \ 3 \ 1 \ ) \ \  ( \ 3 \ 1 \ 2 \ ) $
+\item[$-1$: ] $( \ 3 \ 2 \ 1 \ ) \ \ ( \ 2 \ 1 \ 3 \ ) \ \  ( \ 1 \ 3 \ 2 \ ) $
+\item[$\rightarrow$] $|A| = A_{1,1} \cdot A_{2,2} \cdot A_{3,3} + A_{2,1} \cdot A_{3,2} \cdot A_{1,3} + ...$
+\end{itemize}
+\end{itemize}
+
+
+
+\textbf{Gaussian elimination:}
+\begin{itemize}
+\item Gauß algorithm for solving LSE (linear systems of equations)
+\item allowed operations:
+\begin{itemize}
+\item addition of rwos
+\item subtraction of rows
+\item multiply row with integer $x$
+\item divide row by integer $x$
+\item switch to rows
+\end{itemize}
+\item wanted: 
+\end{itemize}
+
 
 
 
