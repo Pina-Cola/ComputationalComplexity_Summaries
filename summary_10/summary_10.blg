@@ -1,15 +1,15 @@
 [0] Config.pm:311> INFO - This is Biber 2.16
 [0] Config.pm:314> INFO - Logfile is 'summary_10.blg'
-[161] biber-MSWIN64:340> INFO - === 
-[207] Biber.pm:415> INFO - Reading 'summary_10.bcf'
-[402] Biber.pm:952> INFO - Found 5 citekeys in bib section 0
-[419] Biber.pm:4340> INFO - Processing section 0
-[435] Biber.pm:4531> INFO - Looking for bibtex format file 'references.bib' for section 0
-[493] bibtex.pm:1689> INFO - LaTeX decoding ...
-[517] bibtex.pm:1494> INFO - Found BibTeX data source 'references.bib'
-[578] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[579] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[579] Biber.pm:4168> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
-[579] Biber.pm:4174> INFO - No sort tailoring available for locale 'en-US'
-[584] bbl.pm:654> INFO - Writing 'summary_10.bbl' with encoding 'UTF-8'
-[587] bbl.pm:757> INFO - Output to summary_10.bbl
+[153] biber-MSWIN64:340> INFO - === 
+[221] Biber.pm:415> INFO - Reading 'summary_10.bcf'
+[374] Biber.pm:952> INFO - Found 5 citekeys in bib section 0
+[392] Biber.pm:4340> INFO - Processing section 0
+[408] Biber.pm:4531> INFO - Looking for bibtex format file 'references.bib' for section 0
+[475] bibtex.pm:1689> INFO - LaTeX decoding ...
+[485] bibtex.pm:1494> INFO - Found BibTeX data source 'references.bib'
+[533] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[534] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[534] Biber.pm:4168> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[534] Biber.pm:4174> INFO - No sort tailoring available for locale 'en-US'
+[538] bbl.pm:654> INFO - Writing 'summary_10.bbl' with encoding 'UTF-8'
+[541] bbl.pm:757> INFO - Output to summary_10.bbl
