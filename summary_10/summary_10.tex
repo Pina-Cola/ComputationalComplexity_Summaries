@@ -433,10 +433,6 @@ perfect matching exists
 \subsection*{Randomized complexity classes}
 
 
-\begin{itemize}
-\item randomized algorithms can be modeled with an ordinary non-deterministic Turing Machine with different interpretation of the meaning of accepting the input
-\end{itemize}
-
 \begin{CountingDefinition}[Monte Carlo Turing Machine]{def:validLabelPlacement}
 A polynomial Monte Carlo Turing Machine $M$ that decides a language $L$ is a nondeterministic Turing Machine with the following condition:
 
@@ -446,10 +442,21 @@ A polynomial Monte Carlo Turing Machine $M$ that decides a language $L$ is a non
 \end{itemize}
 \end{CountingDefinition}
 
+\begin{itemize}
+\item randomized algorithms can be modeled with an ordinary non-deterministic Turing Machine with different interpretation of the meaning of accepting the input
+\item no false positive answers+
+\item probability of false negatives is at most $\frac{1}{2}$
+\end{itemize}
 
 \begin{CountingDefinition}[RP]{def:validLabelPlacement}
-content
+Complexity class of all languages that are decided with polynomial Monte Carlo Turing Machines is denoted as RP.
 \end{CountingDefinition}
+
+\begin{itemize}
+\item RP lies between P and NP (P $\subseteq$ RP $\subseteq$ NP)
+\end{itemize}
+
+
 
 
 
@@ -457,6 +464,8 @@ content
 
 \color{red} TODO \\
 More detail on definition of Monte Carlo Turing Machine. \\
+Probability explanation \\
+More details on RP \\
 \color{black}
 \color{violet} Questions: \\
 More a to do than a question: More details on definition of Monte Carlo Turing Machine.
@@ -492,7 +501,7 @@ More a to do than a question: More details on definition of Monte Carlo Turing M
 \subsection*{ZPP}
 
 \begin{CountingDefinition}[ZPP]{def:validLabelPlacement}
-content
+RP $\cap$ coRP
 \end{CountingDefinition}
 
 \begin{itemize}
@@ -578,7 +587,7 @@ content
 \subsection*{BPP}
 
 \begin{CountingDefinition}[BPP]{def:validLabelPlacement}
-content
+Answers (\textit{yes} and \textit{no}) are correct with probability $\frac{3}{4}$.
 \end{CountingDefinition}
 
 \begin{itemize}
@@ -598,6 +607,47 @@ content
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+%-----------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+\subsection*{Randomized complexity classes}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.5]{cc1.jpg}
+\end{center}
+\caption{Relations between classes from the lecture slides \cite{CC}}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.5]{cc2.jpg}
+\end{center}
+\caption{Relations between classes from the lecture slides \cite{CC}}
+\end{figure}
+
+\ \\
+
+\color{red} TODO \\
+\color{black}
+\color{violet} Questions: \\
+\color{black}
 
 
 
