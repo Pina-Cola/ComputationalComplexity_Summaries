@@ -60,6 +60,26 @@ piko0011}
 
 \begin{document}
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%--------------------------------------------------------------------------------------------------------------
+
+
+
+
 \section*{Summary: Lecture 10}
 
 Summary for the chapters \textit{11.1} up to page 245 and \textit{11.2} (page 258 optional). \cite{book, CC}
@@ -71,15 +91,35 @@ Algorithms based on randomization.
 (The algorithm employs a degree of randomness as part of its logic or procedure.)
 \end{CountingDefinition}
 
-\subsection*{Symbolic Determinants}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%--------------------------------------------------------------------------------------------------------------
+
+
+
+\subsection*{Bipartite matching}
 
 \begin{CountingDefinition}[Bipartite Graph]{def:validLabelPlacement}
 A graph $G = (U,V,E)$ is called bipartite if the vertices can be divided into two disjoint and independent sets $U$ and $V$. (There are no edges between two elements of $U$ or two elements of $V$).
 
 \begin{figure}[H]
 \begin{center}
-\includegraphics[scale=0.13]{bg1.png}
-\includegraphics[scale=0.13]{bg2.png}
+\includegraphics[scale=0.12]{bg1.png}
+\includegraphics[scale=0.12]{bg2.png}
 \end{center}
 \caption{Examples of bipartife graphs with $U$ and $V$ marked in red and blue \cite{bg}}
 \end{figure}
@@ -87,22 +127,193 @@ A graph $G = (U,V,E)$ is called bipartite if the vertices can be divided into tw
 \end{CountingDefinition}
 
 \begin{CountingDefinition}[Problem: BipartiteMatching]{def:validLabelPlacement}
-asdf
+Given: Bipartite graph $G=(U,V,E)$.
+
+\ \\
+Is there a perfect matching $M \subseteq E$ such that for any two edges $(u,v)$ and $(u', v')$ in $M$ $u \neq u'$ and $v \neq v'$.
+
+\ \\
+I other words: A matching in a Bipartite Graph is a set of the edges chosen in such a way that no two edges share an endpoint. The matching $M$ is called perfect if for every node in $V$ there is some edge in $M$. 
+\cite{bm, book, bgm}
 \end{CountingDefinition}
 
 \begin{itemize}
-\item
+\item construct bipartite graph with $n$ nodes as $n \times n$ matrix $A$
+\item the element $A_{i,j}$ is a variable $x_{i,j}$ if $(i,j) \in E$
+\item the element $A_{i,j}$ is 0 if $(i,j) \notin E$
 \end{itemize}
+
+\textbf{Example: }
+
+\begin{minipage}{0.50\textwidth}
+
+\begin{center}
+\includegraphics[scale=0.28]{v1.png}
+\end{center}
+
+\end{minipage}
+\begin{minipage}{0.50\textwidth}
+
+
+$ A = \begin{pmatrix}
+0 & x_{1,2} & 0 & x_{1,4} \\
+x_{2,1} & 0 & x_{2,3} & 0 \\
+0 & x_{3,2} & 0 & x_{3,4} \\
+x_{4,1} & 0 & x_{4,3} & 0
+\end{pmatrix}$
+
+\end{minipage}
+
+\color{violet} Questions: \ \\
+Is EVERY node cotained in the subset $M$ when it is a perfect matching? Does a perfect matching then only exist with an even number of vertices and $|U| = |V|$? \ \\
+\color{black}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%--------------------------------------------------------------------------------------------------------------
+
+
+
+
+\subsection*{Determinant calculation}
+
+\textbf{Leibniz-formula:}
+\ \\ \ \\
+\begin{minipage}{0.1\textwidth}
+
+\ 
+
+
+\end{minipage}\begin{minipage}{0.3\textwidth}
+\ \\
+$ A = \begin{pmatrix}
+a & b & c  \\
+d & e & f \\
+g & h & i
+\end{pmatrix}$
+
+\end{minipage}
+\begin{minipage}{0.5\textwidth}
+
+$|A| = a \cdot e \cdot i +  b \cdot f \cdot g + c \cdot d \cdot h - g \cdot e \cdot c - h \cdot f \cdot a - i \cdot d \cdot b$
+
+
+\end{minipage}
+
+\ \\ \ \\
+\begin{minipage}{0.1\textwidth}
+
+\ 
+
+
+\end{minipage}\begin{minipage}{0.3\textwidth}
+\ \\
+$ B = \begin{pmatrix}
+1 & 2 & 3  \\
+4 & 5 & 6 \\
+7 & 8 & 9
+\end{pmatrix}$
+
+\end{minipage}
+\begin{minipage}{0.5\textwidth}
+
+$|B| = 1 \cdot 5 \cdot 9 +  2 \cdot 6 \cdot 7 + 3 \cdot 4 \cdot 8 - 7 \cdot 5 \cdot 3 - 8 \cdot 6 \cdot 1 - 9 \cdot 4 \cdot 2 = 0$
+
+
+\end{minipage}
+
+\begin{align*}
+\\
+|A| = \sum_{\pi} \sigma(\pi) \prod^{n}_{i=1} A_{i, \pi(i)}
+\end{align*}
+
+
+
+
+
+
+
+
+
+\ \\
 
 \color{red} TODO \\
 \color{black}
-\color{violet} Questions:
+\color{violet} Questions: \\
 \color{black}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%-----------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\subsection*{Symbolic Determinants}
+
+
+
+\ \\
+
+\color{red} TODO \\
+\color{black}
+\color{violet} Questions: \\
+\color{black}
+
+
+
+
+
 
 \begin{itemize}
 \item some slides about stuff that is not in the book
 \item Satz von Rice
 \end{itemize}
+
+
+\color{red} TODO \\
+\color{black}
+\color{violet} Questions: \\
+\color{black}
+
 
 
 \newpage

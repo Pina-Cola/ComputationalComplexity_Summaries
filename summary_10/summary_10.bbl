@@ -46,6 +46,50 @@
       \field{note}{\url{https://en.wikipedia.org/wiki/Bipartite_graph}}
       \field{title}{Bipartite graph image source}
     \endentry
+    \entry{bm}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=f1e069787ece74531d112559945c6871}{%
+           family={GeeksforGeeks},
+           familyi={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{f1e069787ece74531d112559945c6871}
+      \strng{fullhash}{f1e069787ece74531d112559945c6871}
+      \strng{bibnamehash}{f1e069787ece74531d112559945c6871}
+      \strng{authorbibnamehash}{f1e069787ece74531d112559945c6871}
+      \strng{authornamehash}{f1e069787ece74531d112559945c6871}
+      \strng{authorfullhash}{f1e069787ece74531d112559945c6871}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{\url{https://www.geeksforgeeks.org/maximum-bipartite-matching/}, last opened: 09.12.22}
+      \field{title}{Maximum Bipartite Matching}
+    \endentry
+    \entry{bgm}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=2e5f2317f0ac54b750326520280e9e9f}{%
+           family={Kopparty},
+           familyi={K\bibinitperiod},
+           given={Swastik},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Rutgers University}%
+      }
+      \strng{namehash}{2e5f2317f0ac54b750326520280e9e9f}
+      \strng{fullhash}{2e5f2317f0ac54b750326520280e9e9f}
+      \strng{bibnamehash}{2e5f2317f0ac54b750326520280e9e9f}
+      \strng{authorbibnamehash}{2e5f2317f0ac54b750326520280e9e9f}
+      \strng{authornamehash}{2e5f2317f0ac54b750326520280e9e9f}
+      \strng{authorfullhash}{2e5f2317f0ac54b750326520280e9e9f}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{\url{https://sites.math.rutgers.edu/~sk1233/courses/graphtheory-F11/matching.pdf}, last opened 09.12.22}
+      \field{title}{Bipartite Graphs and Matchings}
+      \field{year}{2011}
+    \endentry
     \entry{book}{book}{}
       \name{author}{1}{}{%
         {{hash=b3b407bb63367a850366076095ee1970}{%

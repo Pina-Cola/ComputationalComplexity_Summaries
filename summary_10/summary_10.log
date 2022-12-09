@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.10.14)  9 DEC 2022 14:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.10.14)  9 DEC 2022 15:40
 entering extended mode
 **./summary_10.tex
 (summary_10.tex
@@ -1146,14 +1146,14 @@ Package biblatex Info: ... file 'summary_10.bbl' found.
  (summary_10.bbl)
 Package biblatex Info: Reference section=0 on input line 61.
 Package biblatex Info: Reference segment=0 on input line 61.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 77.
-
+LaTeX Font Info:    Trying to load font information for U+msa on input line 117
+.
 
 (C:\Users\pinak\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 77.
-
+LaTeX Font Info:    Trying to load font information for U+msb on input line 117
+.
 
 (C:\Users\pinak\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -1161,13 +1161,27 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 <bg1.png, id=4, 1204.5pt x 595.22375pt>
 File: bg1.png Graphic file (type png)
 <use bg1.png>
-Package pdftex.def Info: bg1.png  used on input line 81.
-(pdftex.def)             Requested size: 156.5905pt x 77.3818pt.
+Package pdftex.def Info: bg1.png  used on input line 121.
+(pdftex.def)             Requested size: 144.53375pt x 71.42377pt.
 <bg2.png, id=6, 1602.98875pt x 403.5075pt>
 File: bg2.png Graphic file (type png)
 <use bg2.png>
-Package pdftex.def Info: bg2.png  used on input line 82.
-(pdftex.def)             Requested size: 208.39584pt x 52.45781pt.
+Package pdftex.def Info: bg2.png  used on input line 122.
+(pdftex.def)             Requested size: 192.35034pt x 48.41881pt.
+<v1.png, id=7, 418.18735pt x 350.05782pt>
+File: v1.png Graphic file (type png)
+<use v1.png>
+Package pdftex.def Info: v1.png  used on input line 151.
+(pdftex.def)             Requested size: 117.09166pt x 98.0155pt.
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 148--166
+[]$[]$ $[]$ 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 193--215
+
+ []
 
 
 Package scrlayer-scrpage Warning: \headheight to low.
@@ -1177,15 +1191,37 @@ Package scrlayer-scrpage Warning: \headheight to low.
 (scrlayer-scrpage)                processing, but you should do this yourself,
 (scrlayer-scrpage)                e.g., setting geometry's option
 (scrlayer-scrpage)                `head=40.8pt'.
-(scrlayer-scrpage)                I'll also decrease \topmargin on input line 1
-08.
+(scrlayer-scrpage)                I'll also decrease \topmargin on input line 2
+15.
 
 
 Overfull \vbox (23.8pt too high) has occurred while \output is active []
 
  [1{C:/Users/pinak/AppData/Local/MiKTeX/pdftex/config/pdftex.map}
 
- <./bg1.png> <./bg2.png>] [2] (summary_10.aux)
+ <./bg1.png> <./bg2.png> <./v1.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 216--237
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 251--252
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 294--295
+
+ []
+
+[2]
+Overfull \hbox (6.59683pt too wide) in paragraph at lines 322--322
+[]\OT1/cmr/m/n/10.95 GeeksforGeeks. \OT1/cmr/m/it/10.95 Max-i-mum Bi-par-tite M
+atch-ing\OT1/cmr/m/n/10.95 . $\OT1/cmtt/m/n/10.95 https : / / www . geeksforgee
+ks . org / maximum -[]
+ []
+
+[3] (summary_10.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -1194,25 +1230,31 @@ Package logreq Info: Writing requests to 'summary_10.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 26834 strings out of 478927
- 566427 string characters out of 2852534
- 1417247 words of memory out of 3000000
- 44299 multiletter control sequences out of 15000+600000
+ 26845 strings out of 478927
+ 566640 string characters out of 2852534
+ 1424315 words of memory out of 3000000
+ 44309 multiletter control sequences out of 15000+600000
  410781 words of font info for 54 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  130i,19n,130p,10607b,1521s stack positions out of 5000i,500n,10000p,200000b,80000s
  <C:\Users\pinak\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
 1095.pk><C:/Users/pinak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
 ts/cm/cmbx10.pfb><C:/Users/pinak/AppData/Local/Programs/MiKTeX/fonts/type1/publ
-ic/amsfonts/cm/cmmi10.pfb><C:/Users/pinak/AppData/Local/Programs/MiKTeX/fonts/t
-ype1/public/amsfonts/cm/cmr10.pfb><C:/Users/pinak/AppData/Local/Programs/MiKTeX
-/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/Users/pinak/AppData/Local/Progra
-ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Users/pinak/AppData/L
-ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/pinak/
-AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on summary_10.pdf (2 pages, 179013 bytes).
+ic/amsfonts/cm/cmex10.pfb><C:/Users/pinak/AppData/Local/Programs/MiKTeX/fonts/t
+ype1/public/amsfonts/cm/cmmi10.pfb><C:/Users/pinak/AppData/Local/Programs/MiKTe
+X/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/pinak/AppData/Local/Progra
+ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/pinak/AppData/Loca
+l/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/pinak/AppDa
+ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/Users/pi
+nak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><
+C:/Users/pinak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cms
+y10.pfb><C:/Users/pinak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
+ts/cm/cmsy8.pfb><C:/Users/pinak/AppData/Local/Programs/MiKTeX/fonts/type1/publi
+c/amsfonts/cm/cmti10.pfb><C:/Users/pinak/AppData/Local/Programs/MiKTeX/fonts/ty
+pe1/public/amsfonts/cm/cmtt10.pfb>
+Output written on summary_10.pdf (3 pages, 285652 bytes).
 PDF statistics:
- 57 PDF objects out of 1000 (max. 8388607)
+ 87 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 23 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 28 words of extra memory for PDF output out of 10000 (max. 10000000)
 
