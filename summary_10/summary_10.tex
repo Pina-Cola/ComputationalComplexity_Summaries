@@ -374,6 +374,36 @@ Randomized algorithm for deciding if a graph $G$ has a perfect matching with cal
 \end{itemize}
 \end{CountingDefinition}
 
+\begin{itemize}
+\item if perfect matching found: decision is reliable and final
+\item if perfect matching not found: possibility of false negative
+\end{itemize}
+
+\begin{CountingDefinition}[Monte Carlo algorithm]{def:validLabelPlacement}
+(Algorithm above) decides whether a symbolic matrix is \textbf{not} indentically to zero.
+\end{CountingDefinition}
+
+\textbf{Reducing chance of false negatives:}
+\begin{itemize}
+\item perform many independent experiments
+\item chose each time random integers (independently)
+\item repeat $k$ times the evaluation of the determinant of the symbolic matrix
+\begin{itemize}
+\item answer always zero: \\
+chance that $G$ hs no perfect matching is higher ($1-(\frac{1}{2})^k$)
+\item answer different from zero once: \\
+perfect matching exists
+\end{itemize}
+\end{itemize}
+
+
+\textbf{Monte Carlo algorithm:}
+\begin{itemize}
+\item Monte Carlo algorithm has no false positives
+\item probability of false negatives is bounded
+\item time needed always polynomieal
+\end{itemize}
+
 \ \\
 
 \color{red} TODO \\
