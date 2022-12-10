@@ -589,97 +589,48 @@ $M$ decides $L$ by majority.
 \end{CountingDefinition}
 
 \begin{itemize}
-\item P is a syntactic class (not a semantic class)
+\item PP is a syntactic class (not a semantic class)
+\item NP $\subseteq$ PP
 \end{itemize}
 
-\ \\
+\begin{minipage}{0.5\textwidth}
 
-\color{red} TODO \\
-example of majsat? \\
-difference between syntactic and semantic classes \\
-\color{black}
-\color{violet} Questions: \\
-\color{black}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-%-----------------------------------------------------------------------------------------------------------------------------
-
-
-
-
-
-
-\subsection*{NP $\subseteq$ PP}
-
-
+\textbf{Syntactic class:}
 \begin{itemize}
-\item
+\item has a complete language $L$
+\item P and NP
+
+%\begin{align*}
+%\{ (M,x) : M \in \mathbb{M} \textit{ and } M(x) = yes \}
+%\end{align*}
 \end{itemize}
 
-\ \\
+\end{minipage}\begin{minipage}{0.5\textwidth}
 
-\color{red} TODO \\
-\color{black}
-\color{violet} Questions: \\
-\color{black}
+\textbf{Semantic class:}
+\begin{itemize}
+\item no complete problems
+\item there is no easy way to tell whether a machine always halts with a certified output
 
+\end{itemize}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-%-----------------------------------------------------------------------------------------------------------------------------
-
-
-
-
-
-
-\subsection*{BPP}
+\end{minipage}
 
 \begin{CountingDefinition}[BPP]{def:validLabelPlacement}
 Answers (\textit{yes} and \textit{no}) are correct with probability $\frac{3}{4}$.
 \end{CountingDefinition}
 
-\begin{itemize}
-\item
-\end{itemize}
 
 \ \\
 
 \color{red} TODO \\
+example of majsat? \\
+BPP \\
 \color{black}
 \color{violet} Questions: \\
 \color{black}
+
+
 
 
 
@@ -706,7 +657,7 @@ Answers (\textit{yes} and \textit{no}) are correct with probability $\frac{3}{4}
 
 
 
-\subsection*{Randomized complexity classes}
+\subsection*{Relations between randomized complexity classes}
 
 \begin{figure}[H]
 \begin{center}
@@ -725,25 +676,13 @@ Answers (\textit{yes} and \textit{no}) are correct with probability $\frac{3}{4}
 \ \\
 
 \color{red} TODO \\
+more explanation \\
 \color{black}
 \color{violet} Questions: \\
 \color{black}
 
 
 
-
-\begin{itemize}
-\item some slides about stuff that is not in the book
-\item Satz von Rice
-\end{itemize}
-
-
-\color{red} TODO \\
-some slides about stuff that is not in the book \\
-Satz von Rice \\
-\color{black}
-\color{violet} Questions: \\
-\color{black}
 
 
 

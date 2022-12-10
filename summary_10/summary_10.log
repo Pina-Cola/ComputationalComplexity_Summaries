@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.10.14)  10 DEC 2022 17:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.10.14)  10 DEC 2022 18:23
 entering extended mode
 **./summary_10.tex
 (summary_10.tex
@@ -1248,43 +1248,33 @@ Underfull \hbox (badness 10000) in paragraph at lines 463--464
  []
 
 [4] [5]
-Underfull \hbox (badness 10000) in paragraph at lines 595--596
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 638--639
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 677--678
+Underfull \hbox (badness 10000) in paragraph at lines 624--625
 
  []
 
 <cc1.jpg, id=43, 378.66469pt x 112.16907pt>
 File: cc1.jpg Graphic file (type jpg)
 <use cc1.jpg>
-Package pdftex.def Info: cc1.jpg  used on input line 713.
+Package pdftex.def Info: cc1.jpg  used on input line 664.
 (pdftex.def)             Requested size: 189.33188pt x 56.08438pt.
 <cc2.jpg, id=44, 134.00063pt x 27.85406pt>
 File: cc2.jpg Graphic file (type jpg)
 <use cc2.jpg>
-Package pdftex.def Info: cc2.jpg  used on input line 720.
+Package pdftex.def Info: cc2.jpg  used on input line 671.
 (pdftex.def)             Requested size: 67.00014pt x 13.92699pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 725--726
+Underfull \hbox (badness 10000) in paragraph at lines 676--677
 
  []
 
-[6 <./cc1.jpg> <./cc2.jpg>] [7]
-Overfull \hbox (6.59683pt too wide) in paragraph at lines 753--753
+[6 <./cc1.jpg> <./cc2.jpg>]
+Overfull \hbox (6.59683pt too wide) in paragraph at lines 692--692
 []\OT1/cmr/m/n/10.95 GeeksforGeeks. \OT1/cmr/m/it/10.95 Max-i-mum Bi-par-tite M
 atch-ing\OT1/cmr/m/n/10.95 . $\OT1/cmtt/m/n/10.95 https : / / www . geeksforgee
 ks . org / maximum -[]
  []
 
-[8] (summary_10.aux)
+[7] (summary_10.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -1293,11 +1283,11 @@ Package logreq Info: Writing requests to 'summary_10.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 26912 strings out of 478927
- 567745 string characters out of 2852534
+ 26904 strings out of 478927
+ 567651 string characters out of 2852534
  1425734 words of memory out of 3000000
- 44368 multiletter control sequences out of 15000+600000
- 412627 words of font info for 61 fonts, out of 8000000 for 9000
+ 44362 multiletter control sequences out of 15000+600000
+ 411082 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  130i,19n,130p,10607b,1521s stack positions out of 5000i,500n,10000p,200000b,80000s
  <C:\Users\pinak\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
@@ -1317,9 +1307,9 @@ ic/amsfonts/cm/cmsy10.pfb><C:/Users/pinak/AppData/Local/Programs/MiKTeX/fonts/t
 ype1/public/amsfonts/cm/cmsy8.pfb><C:/Users/pinak/AppData/Local/Programs/MiKTeX
 /fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/pinak/AppData/Local/Progra
 ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on summary_10.pdf (8 pages, 488533 bytes).
+Output written on summary_10.pdf (7 pages, 488263 bytes).
 PDF statistics:
- 119 PDF objects out of 1000 (max. 8388607)
+ 116 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  48 words of extra memory for PDF output out of 10000 (max. 10000000)
 
