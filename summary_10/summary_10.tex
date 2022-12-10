@@ -574,21 +574,29 @@ Is it true that the majority of the $2^n$ truth assignments to its variables sat
 \end{CountingDefinition}
 
 \begin{itemize}
-\item
+\item \textsc{MajSat} is probably not in NP
+\item \textsc{MajSat} is probably not in RP
+\item \textsc{MajSat} is in PP
 \end{itemize}
+
 
 \begin{CountingDefinition}[PP]{def:validLabelPlacement}
 The class PP contains all languages $L$, such that there is a nondeterminsic polynomial Turing Machine $M$ such that for all inputs $x$: 
 \begin{itemize}
-\item[\ ] $x \in L$ only if more than half of the computations end up accepting (\textit{yes})
+\item[\ ] $x \in L$ only if more than half of the computations end up accepting (\textit{yes}).
 \end{itemize}
 $M$ decides $L$ by majority.
 \end{CountingDefinition}
+
+\begin{itemize}
+\item P is a syntactic class (not a semantic class)
+\end{itemize}
 
 \ \\
 
 \color{red} TODO \\
 example of majsat? \\
+difference between syntactic and semantic classes \\
 \color{black}
 \color{violet} Questions: \\
 \color{black}
