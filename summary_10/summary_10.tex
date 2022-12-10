@@ -512,14 +512,26 @@ More a to do than a question: More details on definition of Monte Carlo Turing M
 \item one has no false positives
 \item one has no false negatives
 \end{itemize}
-run enough experiments on both: right answer will come up \\
+\item run enough experiments on both: right answer will come up \\
 (either a positive answer from the one with no false positives or a negative answer from the one with no false negatives)
+\item correct answer will be known for sure
+\item execute both algorithms independent $k$ times: probability that the correct answer is not obtained is $\frac{1}{2^k}$
 \end{itemize}
 
 \end{itemize}
+
+\begin{CountingDefinition}[LasVegas algorithm]{def:validLabelPlacement}
+
+The LasVegas algorithm as a Monte Carlo algorithm and its complement (one has no false positives and one has no false negatives). It runs $k$ independent experiments on both and the right answer will come up. (Either a positive answer from the one with no false positives or a negative answer from the one with no false negatives.)
+
+
+\end{CountingDefinition}
 
 \begin{CountingDefinition}[ZPP]{def:validLabelPlacement}
-RP $\cap$ coRP
+RP $\cap$ coRP 
+
+\ \\
+Complexity class of all languages that are decided with LasVegas algorithms is denoted as RP.
 \end{CountingDefinition}
 
 \begin{itemize}
