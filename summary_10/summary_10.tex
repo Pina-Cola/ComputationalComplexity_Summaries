@@ -434,7 +434,7 @@ perfect matching exists
 
 
 \begin{CountingDefinition}[Monte Carlo Turing Machine]{def:validLabelPlacement}
-A polynomial Monte Carlo Turing Machine $M$ that decides a language $L$ is a nondeterministic Turing Machine with the following condition:
+A polynomial Monte Carlo Turing Machine $M$ that decides a language $L$ is a nondeterministic Turing Machine with exactly two choices in each step and the following conditions:
 
 \begin{itemize}
 \item if $x \in L$ then at least half of the computations on $x$ halt with \textit{yes}
@@ -500,6 +500,24 @@ More a to do than a question: More details on definition of Monte Carlo Turing M
 
 \subsection*{ZPP}
 
+\begin{itemize}
+\item Is RP closed under complement?
+\item RP: no false positive answers but false negative answers possible
+\item coRP: no false negative answers but false positive answers possible
+\item RP $\cap$ coRP seems interesting:
+
+\begin{itemize}
+\item problem in this class has two Monte Carlo algorithms:
+\begin{itemize}
+\item one has no false positives
+\item one has no false negatives
+\end{itemize}
+run enough experiments on both: right answer will come up \\
+(either a positive answer from the one with no false positives or a negative answer from the one with no false negatives)
+\end{itemize}
+
+\end{itemize}
+
 \begin{CountingDefinition}[ZPP]{def:validLabelPlacement}
 RP $\cap$ coRP
 \end{CountingDefinition}
@@ -561,6 +579,43 @@ content
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%-----------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+\subsection*{NP $\subseteq$ PP}
+
+
+\begin{itemize}
+\item
+\end{itemize}
+
+\ \\
+
+\color{red} TODO \\
+\color{black}
+\color{violet} Questions: \\
+\color{black}
 
 
 
