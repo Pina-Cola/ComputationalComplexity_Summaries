@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.10.14)  10 DEC 2022 17:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.10.14)  10 DEC 2022 17:25
 entering extended mode
 **./summary_10.tex
 (summary_10.tex
@@ -1062,6 +1062,9 @@ LaTeX Warning: Label `def:validLabelPlacement' multiply defined.
 
 LaTeX Warning: Label `def:validLabelPlacement' multiply defined.
 
+
+LaTeX Warning: Label `def:validLabelPlacement' multiply defined.
+
 )
 \openout1 = `summary_10.aux'.
 
@@ -1245,48 +1248,43 @@ Underfull \hbox (badness 10000) in paragraph at lines 463--464
  []
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 541--542
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 584--585
+Underfull \hbox (badness 10000) in paragraph at lines 588--589
 
  []
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 625--626
+Underfull \hbox (badness 10000) in paragraph at lines 630--631
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 664--665
+Underfull \hbox (badness 10000) in paragraph at lines 669--670
 
  []
 
 <cc1.jpg, id=42, 378.66469pt x 112.16907pt>
 File: cc1.jpg Graphic file (type jpg)
 <use cc1.jpg>
-Package pdftex.def Info: cc1.jpg  used on input line 700.
+Package pdftex.def Info: cc1.jpg  used on input line 705.
 (pdftex.def)             Requested size: 189.33188pt x 56.08438pt.
 <cc2.jpg, id=43, 134.00063pt x 27.85406pt>
 File: cc2.jpg Graphic file (type jpg)
 <use cc2.jpg>
-Package pdftex.def Info: cc2.jpg  used on input line 707.
+Package pdftex.def Info: cc2.jpg  used on input line 712.
 (pdftex.def)             Requested size: 67.00014pt x 13.92699pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 712--713
+Underfull \hbox (badness 10000) in paragraph at lines 717--718
 
  []
 
-[6 <./cc1.jpg> <./cc2.jpg>]
-Overfull \hbox (6.59683pt too wide) in paragraph at lines 740--740
+[6 <./cc1.jpg> <./cc2.jpg>] [7]
+Overfull \hbox (6.59683pt too wide) in paragraph at lines 745--745
 []\OT1/cmr/m/n/10.95 GeeksforGeeks. \OT1/cmr/m/it/10.95 Max-i-mum Bi-par-tite M
 atch-ing\OT1/cmr/m/n/10.95 . $\OT1/cmtt/m/n/10.95 https : / / www . geeksforgee
 ks . org / maximum -[]
  []
 
-[7] (summary_10.aux)
+[8] (summary_10.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -1295,13 +1293,13 @@ Package logreq Info: Writing requests to 'summary_10.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 26905 strings out of 478927
- 567615 string characters out of 2852534
- 1424687 words of memory out of 3000000
- 44362 multiletter control sequences out of 15000+600000
+ 26909 strings out of 478927
+ 567710 string characters out of 2852534
+ 1425734 words of memory out of 3000000
+ 44366 multiletter control sequences out of 15000+600000
  412326 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 130i,20n,130p,10607b,1521s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 130i,19n,130p,10607b,1521s stack positions out of 5000i,500n,10000p,200000b,80000s
  <C:\Users\pinak\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
 1095.pk><C:/Users/pinak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
 ts/cm/cmbx10.pfb><C:/Users/pinak/AppData/Local/Programs/MiKTeX/fonts/type1/publ
@@ -1318,9 +1316,9 @@ s/cm/cmsy10.pfb><C:/Users/pinak/AppData/Local/Programs/MiKTeX/fonts/type1/publi
 c/amsfonts/cm/cmsy8.pfb><C:/Users/pinak/AppData/Local/Programs/MiKTeX/fonts/typ
 e1/public/amsfonts/cm/cmti10.pfb><C:/Users/pinak/AppData/Local/Programs/MiKTeX/
 fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on summary_10.pdf (7 pages, 476650 bytes).
+Output written on summary_10.pdf (8 pages, 478759 bytes).
 PDF statistics:
- 111 PDF objects out of 1000 (max. 8388607)
+ 114 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  48 words of extra memory for PDF output out of 10000 (max. 10000000)
 

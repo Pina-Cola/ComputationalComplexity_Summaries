@@ -500,8 +500,14 @@ More a to do than a question: More details on definition of Monte Carlo Turing M
 
 \subsection*{ZPP}
 
+\begin{CountingDefinition}[LasVegas algorithm]{def:validLabelPlacement}
+
+The LasVegas algorithm as a Monte Carlo algorithm and its complement (one has no false positives and one has no false negatives). It runs $k$ independent experiments on both and the right answer will come up. (Either a positive answer from the one with no false positives or a negative answer from the one with no false negatives.)
+
+
+\end{CountingDefinition}
+
 \begin{itemize}
-\item Is RP closed under complement?
 \item RP: no false positive answers but false negative answers possible
 \item coRP: no false negative answers but false positive answers possible
 \item RP $\cap$ coRP seems interesting:
@@ -516,16 +522,12 @@ More a to do than a question: More details on definition of Monte Carlo Turing M
 (either a positive answer from the one with no false positives or a negative answer from the one with no false negatives)
 \item correct answer will be known for sure
 \item execute both algorithms independent $k$ times: probability that the correct answer is not obtained is $\frac{1}{2^k}$
+\item[$\rightarrow$] called LasVegas algorithm
 \end{itemize}
 
 \end{itemize}
 
-\begin{CountingDefinition}[LasVegas algorithm]{def:validLabelPlacement}
 
-The LasVegas algorithm as a Monte Carlo algorithm and its complement (one has no false positives and one has no false negatives). It runs $k$ independent experiments on both and the right answer will come up. (Either a positive answer from the one with no false positives or a negative answer from the one with no false negatives.)
-
-
-\end{CountingDefinition}
 
 \begin{CountingDefinition}[ZPP]{def:validLabelPlacement}
 RP $\cap$ coRP 
@@ -534,16 +536,7 @@ RP $\cap$ coRP
 Complexity class of all languages that are decided with LasVegas algorithms is denoted as RP.
 \end{CountingDefinition}
 
-\begin{itemize}
-\item
-\end{itemize}
 
-\ \\
-
-\color{red} TODO \\
-\color{black}
-\color{violet} Questions: \\
-\color{black}
 
 
 
@@ -573,17 +566,29 @@ Complexity class of all languages that are decided with LasVegas algorithms is d
 
 \subsection*{PP}
 
-\begin{CountingDefinition}[PP]{def:validLabelPlacement}
-content
+\begin{CountingDefinition}[Problem: MAJSAT]{def:validLabelPlacement}
+Given: Boolean expression $\varphi$
+
+\ \\
+Is it true that the majority of the $2^n$ truth assignments to its variables satisfy it?
 \end{CountingDefinition}
 
 \begin{itemize}
 \item
 \end{itemize}
 
+\begin{CountingDefinition}[PP]{def:validLabelPlacement}
+The class PP contains all languages $L$, such that there is a nondeterminsic polynomial Turing Machine $M$ such that for all inputs $x$: 
+\begin{itemize}
+\item[\ ] $x \in L$ only if more than half of the computations end up accepting (\textit{yes})
+\end{itemize}
+$M$ decides $L$ by majority.
+\end{CountingDefinition}
+
 \ \\
 
 \color{red} TODO \\
+example of majsat? \\
 \color{black}
 \color{violet} Questions: \\
 \color{black}
