@@ -460,20 +460,6 @@ Complexity class of all languages that are decided with polynomial Monte Carlo T
 
 
 
-\ \\
-
-\color{red} TODO \\
-More detail on definition of Monte Carlo Turing Machine. \\
-Probability explanation \\
-More details on RP \\
-\color{black}
-\color{violet} Questions: \\
-More a to do than a question: More details on definition of Monte Carlo Turing Machine.
-\color{black}
-
-
-
-
 
 
 
@@ -620,15 +606,12 @@ $M$ decides $L$ by majority.
 Answers (\textit{yes} and \textit{no}) are correct with probability $\frac{3}{4}$.
 \end{CountingDefinition}
 
+\begin{itemize}
+\item unclear whether BPP $\subseteq$ NP
+\item BPP is closed under complement: coBPP = BPP
+\item BPP is a semantic class
+\end{itemize}
 
-\ \\
-
-\color{red} TODO \\
-example of majsat? \\
-BPP \\
-\color{black}
-\color{violet} Questions: \\
-\color{black}
 
 
 
@@ -661,25 +644,43 @@ BPP \\
 
 \begin{figure}[H]
 \begin{center}
-\includegraphics[scale=0.5]{cc1.jpg}
-\end{center}
-\caption{Relations between classes from the lecture slides \cite{CC}}
-\end{figure}
-
-\begin{figure}[H]
-\begin{center}
 \includegraphics[scale=0.5]{cc2.jpg}
 \end{center}
 \caption{Relations between classes from the lecture slides \cite{CC}}
 \end{figure}
 
-\ \\
 
-\color{red} TODO \\
-more explanation \\
-\color{black}
-\color{violet} Questions: \\
-\color{black}
+\begin{itemize}
+\item unclear whether BPP $\subseteq$ NP
+\end{itemize}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.5]{cc1.jpg}
+\end{center}
+\caption{Relations between classes from the lecture slides \cite{CC}}
+\end{figure}
+
+\begin{itemize}
+\item RP $\subseteq$ BPP:
+\begin{itemize}
+\item every language in RP has a BPP algorithm:
+\begin{itemize}
+\item run algorithm twice to assure that the probability of false negatives is less than $\frac{1}{4}$
+\item probability of false positives is 0 ($0 \leq \frac{1}{4}$)
+\end{itemize}
+\end{itemize}
+\item BPP $\subseteq$ PP:
+\begin{itemize}
+\item majority of PP: $> \frac{1}{2}$
+\item majority of BPP: $> \frac{3}{4}$
+\end{itemize}
+\item[$\rightarrow$] RP $\subseteq$ BPP $\subseteq$ PP
+\end{itemize}
+
+
+
+
 
 
 
