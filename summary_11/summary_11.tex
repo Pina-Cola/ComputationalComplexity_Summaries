@@ -76,8 +76,28 @@ Content
 \item optimization problems: find less than perfect answers
 \item $\epsilon$ for how many percent are \textit{perfect}
 \item PTAS: how much do you care about the result? algorithm will adapt time to this
-
 \end{itemize}
+
+\begin{align*}
+\frac{c(M(x))- \text{OPT}(x)}{c(M(x))} \leq \epsilon
+\end{align*}
+
+\begin{CountingDefinition}[Decision problem: Node Cover]{def:validLabelPlacement}
+Given: Graph $G=(V,E)$ and $k \in \mathbb{N}$
+
+\ \\
+Is there a subset $V' \subseteq V$ with $|V'| \leq k$ such that every edge $e \in E$ contains a node from the subset $V'$?
+\end{CountingDefinition}
+
+
+\begin{CountingDefinition}[Optimization problem: Node Cover]{def:validLabelPlacement}
+Given: Graph $G=(V,E)$ and $k \in \mathbb{N}$
+
+\ \\
+Something else :D
+\end{CountingDefinition}
+
+
 
 \color{red} TODO \\
 \color{black}
