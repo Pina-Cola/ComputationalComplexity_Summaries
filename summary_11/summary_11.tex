@@ -82,7 +82,7 @@ Content
 \frac{c(M(x))- \text{OPT}(x)}{c(M(x))} \leq \epsilon
 \end{align*}
 
-\begin{CountingDefinition}[Decision problem: Node Cover]{def:validLabelPlacement}
+\begin{CountingDefinition}[Node Cover: Decision problem]{def:validLabelPlacement}
 Given: Graph $G=(V,E)$ and $k \in \mathbb{N}$
 
 \ \\
@@ -90,11 +90,26 @@ Is there a subset $V' \subseteq V$ with $|V'| \leq k$ such that every edge $e \i
 \end{CountingDefinition}
 
 
-\begin{CountingDefinition}[Optimization problem: Node Cover]{def:validLabelPlacement}
+\begin{CountingDefinition}[Node Cover: Optimization problem]{def:validLabelPlacement}
 Given: Graph $G=(V,E)$ and $k \in \mathbb{N}$
 
 \ \\
 Something else :D
+\end{CountingDefinition}
+
+\begin{CountingDefinition}[Maximum Cut: Decision problem]{def:validLabelPlacement}
+Given: Graph $G=(V,E)$ and $k \in \mathbb{N}$
+
+\ \\
+Is there a subset $V' \subseteq V$ such that there are at least $k$ edges between $V \setminus V'$ and $V'$?
+\end{CountingDefinition}
+
+
+\begin{CountingDefinition}[Maximum Cut: Optimization problem]{def:validLabelPlacement}
+Given: Graph $G=(V,E)$
+
+\ \\
+Find the subset $V' \subseteq V$ such that there is the maximum number of edges between $V \setminus V'$ and $V'$?
 \end{CountingDefinition}
 
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.10.14)  12 DEC 2022 14:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.10.14)  12 DEC 2022 14:31
 entering extended mode
 **./summary_11.tex
 (summary_11.tex
@@ -1038,6 +1038,12 @@ LaTeX Warning: Label `def:validLabelPlacement' multiply defined.
 
 LaTeX Warning: Label `def:validLabelPlacement' multiply defined.
 
+
+LaTeX Warning: Label `def:validLabelPlacement' multiply defined.
+
+
+LaTeX Warning: Label `def:validLabelPlacement' multiply defined.
+
 )
 \openout1 = `summary_11.aux'.
 
@@ -1167,7 +1173,7 @@ Package scrlayer-scrpage Warning: \headheight to low.
 (scrlayer-scrpage)                e.g., setting geometry's option
 (scrlayer-scrpage)                `head=40.8pt'.
 (scrlayer-scrpage)                I'll also decrease \topmargin on input line 1
-08.
+23.
 
 
 Overfull \vbox (23.8pt too high) has occurred while \output is active []
@@ -1183,10 +1189,10 @@ Package logreq Info: Writing requests to 'summary_11.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 26819 strings out of 478927
- 566301 string characters out of 2852534
- 1418214 words of memory out of 3000000
- 44288 multiletter control sequences out of 15000+600000
+ 26823 strings out of 478927
+ 566385 string characters out of 2852534
+ 1424306 words of memory out of 3000000
+ 44292 multiletter control sequences out of 15000+600000
  410613 words of font info for 53 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  130i,19n,130p,10607b,1169s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1202,7 +1208,7 @@ AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/User
 s/pinak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb
 ><C:/Users/pinak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symb
 ols/msbm10.pfb>
-Output written on summary_11.pdf (2 pages, 109987 bytes).
+Output written on summary_11.pdf (2 pages, 111875 bytes).
 PDF statistics:
  62 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
