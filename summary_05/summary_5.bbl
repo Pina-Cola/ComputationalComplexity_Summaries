@@ -1,0 +1,179 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{HAMPATH}{article}{}
+      \name{author}{4}{}{%
+        {{hash=f522cf8db4c9427fdf0e3e43b862fe56}{%
+           family={Baumgardner},
+           familyi={B\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=4343c8f86690f7a09a4803a2c737c863}{%
+           family={Acker},
+           familyi={A\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+        {{hash=87123d7a672d6760c81370c2c7992602}{%
+           family={Adefuye},
+           familyi={A\bibinitperiod},
+           given={O.},
+           giveni={O\bibinitperiod}}}%
+        {{hash=38026ba4ee6b102b47bf3ffb41325c8f}{%
+           family={al.},
+           familyi={a\bibinitperiod},
+           prefix={et},
+           prefixi={e\bibinitperiod}}}%
+      }
+      \strng{namehash}{884a9b1c96248893c991c0a204c58d6e}
+      \strng{fullhash}{6394824eaef2a383d84d2bd9bdc53fcf}
+      \strng{bibnamehash}{6394824eaef2a383d84d2bd9bdc53fcf}
+      \strng{authorbibnamehash}{6394824eaef2a383d84d2bd9bdc53fcf}
+      \strng{authornamehash}{884a9b1c96248893c991c0a204c58d6e}
+      \strng{authorfullhash}{6394824eaef2a383d84d2bd9bdc53fcf}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{J Biol Eng}
+      \field{note}{DOI: \url{https://doi.org/10.1186/1754-1611-3-11}}
+      \field{number}{11}
+      \field{title}{Solving a Hamiltonian Path Problem with a bacterial computer}
+      \field{volume}{3}
+      \field{year}{2009}
+    \endentry
+    \entry{booleanC}{misc}{}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{labeltitlesource}{title}
+      \field{note}{\url{https://upload.wikimedia.org/wikipedia/en/thumb/d/df/Three_input_Boolean_circuit.jpg/300px-Three_input_Boolean_circuit.jpg}}
+      \field{title}{Image source: Boolean Circuit}
+    \endentry
+    \entry{PNPsets}{misc}{}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{labeltitlesource}{title}
+      \field{note}{\url{https://www.techno-science.net/actualite/np-conjecture-000-000-partie-denouee-N21607.html}}
+      \field{title}{Image source: P-NP sets}
+    \endentry
+    \entry{HPSAT}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=a9bb5173a0f16b364512964e7a4b026c}{%
+           family={Lyuu},
+           familyi={L\bibinitperiod},
+           given={Prof.\bibnamedelimi Yuh-Dauh},
+           giveni={P\bibinitperiod\bibinitdelim Y\bibinithyphendelim D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {National Taiwan University}%
+      }
+      \strng{namehash}{a9bb5173a0f16b364512964e7a4b026c}
+      \strng{fullhash}{a9bb5173a0f16b364512964e7a4b026c}
+      \strng{bibnamehash}{a9bb5173a0f16b364512964e7a4b026c}
+      \strng{authorbibnamehash}{a9bb5173a0f16b364512964e7a4b026c}
+      \strng{authornamehash}{a9bb5173a0f16b364512964e7a4b026c}
+      \strng{authorfullhash}{a9bb5173a0f16b364512964e7a4b026c}
+      \field{extraname}{1}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{\url{https://www.csie.ntu.edu.tw/~lyuu/complexity/2011/20111018.pdf}}
+      \field{title}{Lecture slides on Reduction of hamiltonian path to sat}
+      \field{year}{2011}
+    \endentry
+    \entry{RCV}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=a9bb5173a0f16b364512964e7a4b026c}{%
+           family={Lyuu},
+           familyi={L\bibinitperiod},
+           given={Prof.\bibnamedelimi Yuh-Dauh},
+           giveni={P\bibinitperiod\bibinitdelim Y\bibinithyphendelim D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {National Taiwan University}%
+      }
+      \strng{namehash}{a9bb5173a0f16b364512964e7a4b026c}
+      \strng{fullhash}{a9bb5173a0f16b364512964e7a4b026c}
+      \strng{bibnamehash}{a9bb5173a0f16b364512964e7a4b026c}
+      \strng{authorbibnamehash}{a9bb5173a0f16b364512964e7a4b026c}
+      \strng{authornamehash}{a9bb5173a0f16b364512964e7a4b026c}
+      \strng{authorfullhash}{a9bb5173a0f16b364512964e7a4b026c}
+      \field{extraname}{2}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{\url{https://www.csie.ntu.edu.tw/~lyuu/complexity/2004/c_20041020.pdf}}
+      \field{title}{Lecture slides on Reductions}
+      \field{year}{2004}
+    \endentry
+    \entry{book}{book}{}
+      \name{author}{1}{}{%
+        {{hash=b3b407bb63367a850366076095ee1970}{%
+           family={Papadimitriou},
+           familyi={P\bibinitperiod},
+           given={Christos\bibnamedelima H.},
+           giveni={C\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Addison-Wesley Publishing Company}%
+      }
+      \strng{namehash}{b3b407bb63367a850366076095ee1970}
+      \strng{fullhash}{b3b407bb63367a850366076095ee1970}
+      \strng{bibnamehash}{b3b407bb63367a850366076095ee1970}
+      \strng{authorbibnamehash}{b3b407bb63367a850366076095ee1970}
+      \strng{authornamehash}{b3b407bb63367a850366076095ee1970}
+      \strng{authorfullhash}{b3b407bb63367a850366076095ee1970}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Computational Complexity}
+      \field{year}{1994}
+    \endentry
+    \entry{GTI}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=c4802eccfe4320a166f281b8ed69ed1f}{%
+           family={Schwentick},
+           familyi={S\bibinitperiod},
+           given={Prof.\bibnamedelimi Dr.\bibnamedelimi Thomas},
+           giveni={P\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {TU Dortmund}%
+      }
+      \strng{namehash}{c4802eccfe4320a166f281b8ed69ed1f}
+      \strng{fullhash}{c4802eccfe4320a166f281b8ed69ed1f}
+      \strng{bibnamehash}{c4802eccfe4320a166f281b8ed69ed1f}
+      \strng{authorbibnamehash}{c4802eccfe4320a166f281b8ed69ed1f}
+      \strng{authornamehash}{c4802eccfe4320a166f281b8ed69ed1f}
+      \strng{authorfullhash}{c4802eccfe4320a166f281b8ed69ed1f}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{\url{https://www.cs.tu-dortmund.de/nps/de/Studium/Ordnungen_Handbuecher_Beschluesse/Modulhandbuecher/Archiv/Bachelor_LA_GyGe_Inf_Modellv/_Module/INF-BfP-GTI/index.html}}
+      \field{title}{Lecture slides in Grundbegriffe der theoretischen Informatik}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

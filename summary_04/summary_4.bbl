@@ -1,0 +1,82 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{JE}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=5bc705fbb2f250ed1b9e6e0878e5c89f}{%
+           family={Erickson},
+           familyi={E\bibinitperiod},
+           given={Jeff},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {University Illinois Urbana-Champaign}%
+      }
+      \strng{namehash}{5bc705fbb2f250ed1b9e6e0878e5c89f}
+      \strng{fullhash}{5bc705fbb2f250ed1b9e6e0878e5c89f}
+      \strng{bibnamehash}{5bc705fbb2f250ed1b9e6e0878e5c89f}
+      \strng{authorbibnamehash}{5bc705fbb2f250ed1b9e6e0878e5c89f}
+      \strng{authornamehash}{5bc705fbb2f250ed1b9e6e0878e5c89f}
+      \strng{authorfullhash}{5bc705fbb2f250ed1b9e6e0878e5c89f}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{\url{http://jeffe.cs.illinois.edu/teaching/algorithms/models/09-nondeterminism.pdf}}
+      \field{title}{Nondeterministic Turing Machine}
+      \field{year}{2016}
+    \endentry
+    \entry{unknown}{misc}{}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labeltitlesource}{title}
+      \field{note}{\url{ http://www.cs.toronto.edu/~ashe/logspace_handout.pdf}}
+      \field{title}{Logarithmic Space and NL-Completeness}
+      \field{year}{2020}
+    \endentry
+    \entry{book}{book}{}
+      \name{author}{1}{}{%
+        {{hash=b3b407bb63367a850366076095ee1970}{%
+           family={Papadimitriou},
+           familyi={P\bibinitperiod},
+           given={Christos\bibnamedelima H.},
+           giveni={C\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Addison-Wesley Publishing Company}%
+      }
+      \strng{namehash}{b3b407bb63367a850366076095ee1970}
+      \strng{fullhash}{b3b407bb63367a850366076095ee1970}
+      \strng{bibnamehash}{b3b407bb63367a850366076095ee1970}
+      \strng{authorbibnamehash}{b3b407bb63367a850366076095ee1970}
+      \strng{authornamehash}{b3b407bb63367a850366076095ee1970}
+      \strng{authorfullhash}{b3b407bb63367a850366076095ee1970}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Computational Complexity}
+      \field{year}{1994}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
